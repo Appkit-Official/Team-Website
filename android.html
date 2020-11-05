@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from codequest.com/android by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:14:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>codequest - Android app development Poland</title>
+  <meta name="description"
+    content="codequest creates native Android applications using Java and Kotlin. We are based in Warsaw, Poland. Contact us for a free quote of your project.">
+  <meta property="og:title" content="codequest is a software development studio.">
+  <meta property="og:description"
+    content="We are a collective of engineers, product designers, and creatives who take products from zero to one. Hire us to build you a world-class iOS, Android, or Web app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="assets/images/static/logo-fb.png">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="341">
+  <meta property="fb:app_id" content="1028261210595998">
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB3VBMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///9JtlwCAAAAnXRSTlMAACqt87AsF7zAGWD9/maHjBVn1ddqFgFCw/zGRVvn9elfAk3qnVw/Ppzm7FEh0Lc1AzO01CSErxiriQ7d2Sgl1t9hDyezfHa2Cu82Mu2xDDHaGjQ89BId4iMf2yBo8vlPS/dtBVCo9qcHBqLHqVMTuVi+VONS4VkILgmgG+ifux76+2vktbINHEaX2HKPdwRzk0xH8Y5pY5KZzckQO+TsXgAAAAFiS0dEnp+yowsAAAAHdElNRQfhARIVMAuExVrDAAAB/0lEQVQ4y3WT/UOLURTH962paKNNVjbtYVRbEU/yVmgpWkjewrxkasKEvETEZGRJ3oni/K/Ovbd57vOo88vO8z2fe86559y5XJYBRcVu94oSwLW0obSM2FauWgYAyj0C8K5eJgWwhqRVLAkAPv9aBVSuC/yPoKp6fZAWLRjaUAVnvCYsQh7DkH1s3BSBPf/mLSyHa+vqozWxBnYbt9qqYFsTd799h8kizOadXqKWXdAT7OZDe/aqQ0BgH3+2FlIAbdHy/UQHDlpKe5yo41B9p1CArsOysSNWUaBbNpwoYg09xfJqR4/pNY/3SvFEHwMnlX/qtA6UxtWpMwyc7Zd+i08HzjVJ0YgycL5S+heSOnCxQ4qXLjOAKwPCv5rSm7w2KLT+IXmN9PXh0A2im7csIHObaHDkzt3M4mDMe6OM11lzuM9JH/jMfzmBhwbRozFTHYikHnOCJ/oyMB7jkr0VT58B4yWtjfwx0WNbFp4nxGN7UZbNvgzzqmh0Eo59+1+RZrnXznjqDSfwqqj4bRiztSDjNOXPhuLxkQn/W7ITQLWIJyYRyQcC+QimJfFOu+UMC++7rDkkxfuOacBQjgfVnSkA6Vk3P+1ZrUbfByaMj2k1qE+fecG5L3m9S0m4vyrg23dnXBA/eA5zCvjJ8V955z+nbT640K6A5G9P7Z9C/C/xA8QH+Fot/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMS0xOFQyMTo0ODoxMSswMTowMHFg98oAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDEtMThUMjE6NDg6MTErMDE6MDAAPU92AAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    sizes="32x32">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABL1BMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///+4qfXxAAAAY3RSTlMAAFDn6FIGrrEHHIzv8I4dIL3+1Z7UviEEl5sbmUKh8soXFsjzokMf0oeEKOB9e+Eqa9D8tAoJ/dFsAbb5BWr4uRg69KNg4jwizM4jnE5xcpq7RfbtPz7s90eG+saIC+kyMAy2BLHkAAAAAWJLR0Rkwtq4CQAAAAd0SU1FB+EBEhUwCvPCalUAAADZSURBVBjTNc9pXwFRFAbw+0TFJLsMJkK2bDEhW0ZSZGkVZYnO9/8O3Zn78/zum/O/z4tzGOMBDkzmQ4Dtg6NjIot1D4B0YiM6tTtEB3C63B6v1+c+8+sCyAEKSkBIIUXmgvNw5CKq/8Til4kkWCpNlBHVKyKfn2VzRHkBBaLiNZNLZfWmokPVUrutywyNaLNVbwPtu47WbRjV+2Lvod9P9B6fjEWAwZBU4u95JCCk1caT6cvkVX2TDHj/+JyB52u++Dag+rOMpwDHarmuiGM2gd8tsDMrf3z+Byi4H3ZKAKd+AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTAxLTE4VDIxOjQ4OjEwKzAxOjAw1xf8fgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wMS0xOFQyMTo0ODoxMCswMTowMKZKRMIAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
+    sizes="16x16">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WR3GZLJ');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3315161-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-3315161-2', { 'optimize_id': 'GTM-NGDNXF2' });
+  </script>
+  <!-- End Global site tag (gtag.js) -->
+  <!-- Add display:none until DOM Content is loaded to avoid Flash of Unstyled Content-->
+  <style>
+    .no-unstyled-content {
+      display: none;
+    }
+  </style>
+  <script>document.documentElement.className = 'no-unstyled-content';</script>
+  <!-- Facebook Pixel Code-->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      '../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1506046949701910');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1506046949701910&amp;ev=PageView&amp;noscript=1"></noscript>
+  <!-- End Facebook Pixel Code-->
+  <!-- Hotjar Tracking Code for https://codequest.com/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1696973, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body class="on-top" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager (noscript)-->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR3GZLJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript)-->
+  <header class="page-header">
+    <div class="page-header__top"><a class="page-header__logo" href="index.html">
+        <svg class="svg-icon" width="1em" height="1em" aria-labelledby="codequestLogo codequestMainPage" role="img">
+          <title id="codequestLogo">codequest - Go to the main page</title>
+          <desc id="codequestMainPage">Go to the main page</desc>
+          <use xlink:href="#icon-codequest"></use>
+        </svg></a>
+      <div class="page-header__menu" role="navigation">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__menu-list-item">
+            <button class="page-header__menu-link page-header__menu-link--case-studies" data-js-case-studies-toggle
+              tabindex="0">Case studies</button>
+            <div class="page-header__case-studies-dropdown-wrapper" data-js-case-studies-dropdown>
+              <div class="case-studies-dropdown__triangle"></div>
+              <div class="page-header__case-studies-dropdown">
+                <ul class="case-studies-dropdown__list">
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/wellme.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Wellme</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/foundersuite.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Foundersuite</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/nvent.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Install Pro 360</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/booli.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Booli</strong> / iOS app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/selecthub.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>SelectHub</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/kredytmarket.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>kredytmarket</strong> / Web app
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="careers.html">Careers</a>
+          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="faq.html">FAQ</a></li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="https://medium.com/codequest"
+              target="_blank">Blog
+              <svg class="svg-icon" width="0.8em" height="0.8em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__menu-list-item" id="call-to-action-link">
+            <button class="page-header__menu-link" onclick="goToContactPage()">Start project with us</button>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header--background"></div>
+      <div class="page-header__hamburger"><a class="navigation-trigger" href="#"><span
+            class="navigation-helper"></span><span class="navigation-helper"></span><span
+            class="navigation-helper"></span></a></div>
+      <nav class="page-header__nav">
+        <ul class="page-header__dropdown-menu">
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="index.html">Home</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link page-header__dropdown-menu-link--case-studies"
+              data-js-mobile-case-studies-toggle>Case studies</button>
+            <ul class="page-header__dropdown-menu-case-studies-list" data-js-mobile-case-studies-dropdown>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/wellme.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Wellme</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/foundersuite.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Foundersuite</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/nvent.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Install Pro 360</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/booli.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Booli</strong> / <span class="case-studies-link__app-type">iOS app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/selecthub.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>SelectHub</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/kredytmarket.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>kredytmarket</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+            </ul>          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="careers.html">Careers</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="faq.html">FAQ</a>
+          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="https://medium.com/codequest" target="_blank">Blog
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link" onclick="goToContactPage()">Hire us!</button>
+          </li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--header facebookIconDesc--header" role="img">
+                <title id="facebookIcon--header">Like us on Facebook</title>
+                <desc id="facebookIconDesc--header">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--header linkedinIconDesc--header" role="img">
+                <title id="linkedinIcon--header">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--header">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--header twitterIconDesc--header" role="img">
+                <title id="twitterIcon--header">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--header">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--header githubIconDesc--header"
+                role="img">
+                <title id="githubIcon--header">Fork us on GitHub</title>
+                <desc id="githubIconDesc--header">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section
+      class="page-block page-block--selectable-narrow page-block--solid-green-bg page-block--extra-space page-block--double-description page-block--white-text"
+      id="android-main">
+      <h1 class="page-block__title title-center-box">Android development in Kotlin and Java</h1>
+      <p class="page-block__desc page-block--wide">We build powerful native Android applications</p>
+      <div class="page-block__graphic-desktop"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+          y="0px" width="687.9px" height="327.7px" viewBox="0 0 687.9 327.7"
+          style="enable-background:new 0 0 687.9 327.7;" xml:space="preserve">
+          <style>
+            .android-graphic-web-00 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <path class="android-graphic-web-00" d="M390.9,22.9l11.4-17c1-1.4,0.6-3.4-0.9-4.4C400,0.6,398,1,397,2.4l-12,18c-12.4-5-26.4-7.8-41.1-7.8
+		c-14.7,0-28.7,2.8-41.1,7.8l-12-18c-1-1.4-2.9-1.8-4.4-0.9c-1.4,1-1.8,2.9-0.9,4.4l11.4,17c-26.6,12.7-45,35.8-47.4,62.6h188.6
+		C435.9,58.7,417.5,35.6,390.9,22.9z M306.1,66.1c-5.2,0-9.5-4.2-9.5-9.5c0-5.2,4.2-9.5,9.5-9.5s9.5,4.2,9.5,9.5
+		C315.6,61.9,311.4,66.1,306.1,66.1z M381.8,66.1c-5.2,0-9.5-4.2-9.5-9.5c0-5.2,4.2-9.5,9.5-9.5s9.5,4.2,9.5,9.5
+		C391.3,61.9,387,66.1,381.8,66.1z" />
+            <path class="android-graphic-web-00" d="M249.4,100.8v141.8c0,14.5,11.8,26.3,26.3,26.3h13.7v38.9c0,10.4,8.5,18.9,18.9,18.9
+		c10.4,0,18.9-8.5,18.9-18.9v-38.9h33.6v38.9c0,10.4,8.5,18.9,18.9,18.9c10.4,0,18.9-8.5,18.9-18.9v-38.9h13.7
+		c14.5,0,26.3-11.8,26.3-26.3V100.8H249.4z" />
+            <path class="android-graphic-web-00" d="M217.9,104c-10.4,0-18.9,8.5-18.9,18.9v80.9c0,10.4,8.5,18.9,18.9,18.9c10.4,0,18.9-8.5,18.9-18.9v-80.9
+		C236.8,112.4,228.3,104,217.9,104z" />
+            <path class="android-graphic-web-00" d="M470.1,104c-10.4,0-18.9,8.5-18.9,18.9v80.9c0,10.4,8.5,18.9,18.9,18.9c10.4,0,18.9-8.5,18.9-18.9v-80.9
+		C489,112.4,480.5,104,470.1,104z" />
+            <path class="android-graphic-web-00" d="M112.2,80.8l6.6-9.9c0.6-0.8,0.3-2-0.5-2.5c-0.8-0.6-2-0.3-2.5,0.5l-6.9,10.4c-7.2-2.9-15.3-4.5-23.8-4.5
+		c-8.5,0-16.6,1.6-23.8,4.5l-6.9-10.4c-0.6-0.8-1.7-1.1-2.5-0.5c-0.8,0.6-1.1,1.7-0.5,2.5l6.6,9.9c-15.4,7.3-26.1,20.7-27.4,36.3
+		h109.2C138.2,101.5,127.5,88.2,112.2,80.8z M63.1,105.8c-3,0-5.5-2.5-5.5-5.5c0-3,2.5-5.5,5.5-5.5c3,0,5.5,2.5,5.5,5.5
+		C68.5,103.4,66.1,105.8,63.1,105.8z M106.9,105.8c-3,0-5.5-2.5-5.5-5.5c0-3,2.5-5.5,5.5-5.5s5.5,2.5,5.5,5.5
+		C112.4,103.4,109.9,105.8,106.9,105.8z" />
+            <path class="android-graphic-web-00" d="M30.2,125.9V208c0,8.4,6.8,15.2,15.2,15.2h7.9v22.5c0,6,4.9,11,11,11c6,0,11-4.9,11-11v-22.5h19.5v22.5
+		c0,6,4.9,11,11,11c6,0,11-4.9,11-11v-22.5h7.9c8.4,0,15.2-6.8,15.2-15.2v-82.1H30.2z" />
+            <path class="android-graphic-web-00"
+              d="M12,127.7c-6,0-11,4.9-11,11v46.9c0,6,4.9,11,11,11c6,0,11-4.9,11-11v-46.9C22.9,132.6,18,127.7,12,127.7z" />
+            <path class="android-graphic-web-00" d="M158,127.7c-6,0-11,4.9-11,11v46.9c0,6,4.9,11,11,11c6,0,11-4.9,11-11v-46.9C168.9,132.6,164,127.7,158,127.7z
+		" />
+            <path class="android-graphic-web-00" d="M630.2,80.8l6.6-9.9c0.6-0.8,0.3-2-0.5-2.5c-0.8-0.6-2-0.3-2.5,0.5l-6.9,10.4c-7.2-2.9-15.3-4.5-23.8-4.5
+		c-8.5,0-16.6,1.6-23.8,4.5l-6.9-10.4c-0.6-0.8-1.7-1.1-2.5-0.5c-0.8,0.6-1.1,1.7-0.5,2.5l6.6,9.9c-15.4,7.3-26.1,20.7-27.4,36.3
+		h109.2C656.2,101.5,645.5,88.2,630.2,80.8z M581.1,105.8c-3,0-5.5-2.5-5.5-5.5c0-3,2.5-5.5,5.5-5.5s5.5,2.5,5.5,5.5
+		C586.5,103.4,584.1,105.8,581.1,105.8z M624.9,105.8c-3,0-5.5-2.5-5.5-5.5c0-3,2.5-5.5,5.5-5.5c3,0,5.5,2.5,5.5,5.5
+		C630.4,103.4,627.9,105.8,624.9,105.8z" />
+            <path class="android-graphic-web-00" d="M548.2,125.9V208c0,8.4,6.8,15.2,15.2,15.2h7.9v22.5c0,6,4.9,11,11,11c6,0,11-4.9,11-11v-22.5h19.5v22.5
+		c0,6,4.9,11,11,11c6,0,11-4.9,11-11v-22.5h7.9c8.4,0,15.2-6.8,15.2-15.2v-82.1H548.2z" />
+            <path class="android-graphic-web-00" d="M530,127.7c-6,0-11,4.9-11,11v46.9c0,6,4.9,11,11,11c6,0,11-4.9,11-11v-46.9C540.9,132.6,536,127.7,530,127.7z
+		" />
+            <path class="android-graphic-web-00" d="M676,127.7c-6,0-11,4.9-11,11v46.9c0,6,4.9,11,11,11c6,0,11-4.9,11-11v-46.9C686.9,132.6,682,127.7,676,127.7z
+		" />
+            <polyline class="android-graphic-web-00 android-routes android-route1"
+              points="249.3,163.1 286.3,163.1 286.3,138.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route2"
+              points="249.3,173.1 299.3,173.1 299.3,150.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route3"
+              points="335.3,101.1 335.3,146.1 319.3,146.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route4"
+              points="401.3,153.1 419.3,153.1 419.3,223.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route5"
+              points="368.3,163.3 368.3,185.1 318.3,185.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route6"
+              points="376.3,171.1 376.3,200.1 335.3,200.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route7"
+              points="394.2,163.3 405.3,163.3 405.3,210.1 	" />
+            <line class="android-graphic-web-00 android-routes android-route8" x1="391.3" y1="168.1" x2="391.3"
+              y2="242.1" />
+            <polyline class="android-graphic-web-00 android-routes android-route9"
+              points="401.3,142.1 419.3,142.1 419.3,120.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route10"
+              points="391.3,138.1 391.3,123.1 401.3,123.1 401.3,101.1 	" />
+            <line class="android-graphic-web-00 android-routes android-route11" x1="381.3" y1="140.1" x2="381.3"
+              y2="101.1" />
+            <polyline class="android-graphic-web-00 android-routes android-route12"
+              points="368.3,138.1 368.3,120.1 348.8,100.6 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route13"
+              points="362.3,150.1 348.3,150.1 348.3,134.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route14"
+              points="362.3,156.5 348.3,156.5 348.3,169.1 	" />
+            <line class="android-graphic-web-00 android-routes android-route15" x1="249.7" y1="222.7" x2="362.3"
+              y2="222.7" />
+            <polyline class="android-graphic-web-00 android-routes android-route16"
+              points="249.7,235.8 319.3,235.8 344.3,235.8 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route17"
+              points="250.5,250.1 306.3,250.1 306.3,296.1 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route18"
+              points="250.5,210.1 286.3,210.1 297.8,198.6 	" />
+            <polyline class="android-graphic-web-00 android-routes android-route19"
+              points="548.4,153.1 581.3,153.1 581.3,190.1 	" />
+            <line class="android-graphic-web-00 android-routes android-route20" x1="657.6" y1="198.1" x2="634.3"
+              y2="198.1" />
+            <polyline class="android-graphic-web-00 android-routes android-route21"
+              points="101.4,126.1 101.4,168.1 122.9,189.5 	" />
+            <line class="android-graphic-web-00 android-routes android-route22" x1="30.4" y1="153.1" x2="51.3"
+              y2="153.1" />
+            <path class="android-graphic-web-00 android-heart" d="M401.3,148.6c0-0.1,0-0.2,0-0.3l0,0c-0.3-5.7-5-10.2-10.8-10.2c-3.7,0-7,1.9-8.9,4.7c-1.9-2.8-5.2-4.7-8.9-4.7
+		c-6,0-10.8,4.8-10.8,10.8c0,0.2,0,0.4,0,0.6l0,0c0,12.7,19.7,25.4,19.7,25.4s14.9-10.6,18.8-21.7c0.6-1.3,0.9-2.8,0.9-4.3
+		C401.3,148.8,401.3,148.7,401.3,148.6z" />
+            <circle class="android-graphic-web-00 android-circles android-circle1" cx="286.3" cy="134.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle2" cx="299.3" cy="146.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle3" cx="314.3" cy="146.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle18" cx="301.3" cy="194.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle6" cx="331.3" cy="200.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle14" cx="348.3" cy="174.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle4" cx="419.3" cy="227.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle9" cx="419.3" cy="114.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle13" cx="348.3" cy="130.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle5" cx="314.3" cy="185.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle7" cx="405.3" cy="214.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle8" cx="391.3" cy="246.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle15" cx="367.3" cy="223.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle16" cx="348.3" cy="236.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle17" cx="306.3" cy="300.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle19" cx="581.3" cy="194.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle20" cx="630.3" cy="199.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle21" cx="126.3" cy="193.1" r="4" />
+            <circle class="android-graphic-web-00 android-circles android-circle22" cx="56.3" cy="153.1" r="4" />
+          </g>
+        </svg>
+
+      </div>
+      <div class="page-block__graphic-mobile"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+          y="0px" width="205.6px" height="230.6px" viewBox="0 0 205.6 230.6"
+          style="enable-background:new 0 0 205.6 230.6;" xml:space="preserve">
+          <style>
+            .android-graphic-mobile-00 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <g>
+              <g>
+                <path class="android-graphic-mobile-00" d="M135.7,16.4l8-12c0.7-1,0.4-2.4-0.6-3.1c-1-0.7-2.4-0.4-3.1,0.6l-8.4,12.6c-8.7-3.5-18.5-5.5-28.8-5.5
+				c-10.3,0-20.1,2-28.8,5.5L65.5,2c-0.7-1-2.1-1.3-3.1-0.6c-1,0.7-1.3,2.1-0.6,3.1l8,12c-18.6,8.9-31.6,25.1-33.2,44H169
+				C167.3,41.5,154.4,25.3,135.7,16.4z M76.2,46.7c-3.7,0-6.6-3-6.6-6.6c0-3.7,3-6.6,6.6-6.6c3.7,0,6.6,3,6.6,6.6
+				C82.9,43.8,79.9,46.7,76.2,46.7z M129.3,46.7c-3.7,0-6.6-3-6.6-6.6c0-3.7,3-6.6,6.6-6.6c3.7,0,6.6,3,6.6,6.6
+				C136,43.8,133,46.7,129.3,46.7z" />
+                <path class="android-graphic-mobile-00"
+                  d="M36.4,71.1v99.6c0,10.2,8.3,18.4,18.4,18.4h9.6v27.3c0,7.3,5.9,13.3,13.3,13.3c7.3,0,13.3-5.9,13.3-13.3
+				v-27.3h23.6v27.3c0,7.3,5.9,13.3,13.3,13.3c7.3,0,13.3-5.9,13.3-13.3v-27.3h9.6c10.2,0,18.4-8.3,18.4-18.4V71.1H36.4z" />
+                <path class="android-graphic-mobile-00" d="M14.3,73.3C6.9,73.3,1,79.2,1,86.6v56.8c0,7.3,5.9,13.3,13.3,13.3c7.3,0,13.3-5.9,13.3-13.3V86.6
+				C27.6,79.2,21.6,73.3,14.3,73.3z" />
+                <path class="android-graphic-mobile-00" d="M191.3,73.3c-7.3,0-13.3,5.9-13.3,13.3v56.8c0,7.3,5.9,13.3,13.3,13.3c7.3,0,13.3-5.9,13.3-13.3V86.6
+				C204.6,79.2,198.6,73.3,191.3,73.3z" />
+              </g>
+            </g>
+            <polyline class="android-graphic-mobile-00 android-routes android-route17"
+              points="36.3,121.8 71.4,121.8 71.4,105.7 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route18"
+              points="96.7,71.3 96.7,102.8 85.5,102.8 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route1"
+              points="36.3,114.8 62.3,114.8 62.3,97.2 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route2"
+              points="143,107.8 155.7,107.8 155.7,156.9 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route3"
+              points="119.8,114.9 119.8,130.2 84.8,130.2 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route4"
+              points="125.5,120.4 125.5,140.7 96.7,140.7 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route5"
+              points="138,114.9 145.8,114.9 145.8,147.8 	" />
+            <line class="android-graphic-mobile-00 android-routes android-route6" x1="136" y1="118.3" x2="136"
+              y2="170.2" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route7"
+              points="143,100 155.7,100 155.7,84.6 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route8"
+              points="136,97.2 136,86.7 143,86.7 143,71.3 	" />
+            <line class="android-graphic-mobile-00 android-routes android-route9" x1="129" y1="98.6" x2="129"
+              y2="71.3" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route10"
+              points="119.8,97.2 119.8,84.6 106.2,70.9 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route11"
+              points="115.6,105.7 105.8,105.7 105.8,94.4 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route12"
+              points="115.6,110.2 105.8,110.2 105.8,119 	" />
+            <line class="android-graphic-mobile-00 android-routes android-route13" x1="36.6" y1="156.6" x2="115.6"
+              y2="156.6" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route14"
+              points="36.6,165.8 85.5,165.8 103,165.8 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route15"
+              points="37.2,175.8 76.3,175.8 76.3,208.1 	" />
+            <polyline class="android-graphic-mobile-00 android-routes android-route16"
+              points="37.2,147.8 62.3,147.8 70.4,139.7 	" />
+            <g>
+              <path class="android-graphic-mobile-00 android-heart" d="M143,104.6c0-0.1,0-0.2,0-0.2l0,0c-0.2-4-3.5-7.1-7.6-7.1c-2.6,0-4.9,1.3-6.2,3.3c-1.4-2-3.7-3.3-6.2-3.3
+			c-4.2,0-7.6,3.4-7.6,7.6c0,0.2,0,0.3,0,0.4l0,0c0,8.9,13.8,17.9,13.8,17.9s10.5-7.4,13.2-15.3c0.4-0.9,0.6-2,0.6-3
+			C143,104.7,143,104.7,143,104.6z" />
+            </g>
+            <circle class="android-graphic-mobile-00 android-circles android-circle1" cx="62.3" cy="94.4" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle17" cx="71.4" cy="102.8" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle18" cx="82" cy="102.8" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle16" cx="72.8" cy="136.5" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle4" cx="93.9" cy="140.7" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle12" cx="105.8" cy="122.5" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle3" cx="82" cy="130.2" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle2" cx="155.7" cy="159.7" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle7" cx="155.7" cy="80.4" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle11" cx="105.8" cy="91.6" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle5" cx="145.8" cy="150.6" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle6" cx="136" cy="173" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle13" cx="119.2" cy="156.9" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle14" cx="105.8" cy="166" r="2.8" />
+            <circle class="android-graphic-mobile-00 android-circles android-circle15" cx="76.3" cy="210.9" r="2.8" />
+          </g>
+        </svg>
+
+      </div>
+      <p class="page-block__desc page-block--narrow page-block--second-desc">
+        codequest does development of native Android applications in Java and Kotlin.
+        With the amount of Android devices increasing this operative system is surely worth considering when building
+        your app.
+      </p>
+    </section>
+    <section class="page-block page-block--solid-white-bg page-block--extra-space page-block--narrow-tiles" id="why">
+      <h2 class="page-block__title">Kotlin development</h2>
+      <p class="page-block__desc">
+        Kotlin is the latest Google supported language to write apps for Android. It has gotten a lot of buzz and is
+        considered a brilliant alternative to Java.
+        At codequest we write Android apps using both technologies. Here is a short overview of the many benefits of
+        Kotlin.
+      </p>
+      <div class="tiles green-solid-titles">
+        <section class="tile android__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-android_and-java"></use>
+            </svg>
+            <h3 class="tile__title">Works well with Java</h3>
+          </header>
+          <p class="page-block__desc">
+            If you already have an app built in Java you don’t need to worry: Kotlin modules will work alongside
+            the programming code and integrate with all existing Java libraries and frameworks as well as JVM.
+          </p>
+        </section>
+        <section class="tile android__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-productivity"></use>
+            </svg>
+            <h3 class="tile__title">Increased Productivity</h3>
+          </header>
+          <p class="page-block__desc">
+            When writing in Kotlin a developer does not have to deal with a big amount of repetitive coding.
+            According to sources developers use about 20% less code than in Java.
+            Kotlin has a intuitive and compact interface which saves time and fastens deployment.
+          </p>
+        </section>
+        <section class="tile android__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-less-errors"></use>
+            </svg>
+            <h3 class="tile__title">Less prone to errors</h3>
+          </header>
+          <p class="page-block__desc">
+            Kotlin helps developers avoid errors using the NullPointExceptions.
+            Its efficient compiler is specifically designed to auto cast the mistakes.
+            It also has features to add new functionalities to existing classes and much more.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section class="page-block page-block--solid-light-bg" id="what">
+      <h2 class="page-block__title">Android globally</h2>
+      <p class="page-block__desc">With 85% of the worldwide smartphone shipments being for Android, development of your
+        app for Android is surely a good strategy.</p>
+    </section>
+    <section class="page-block page-block--solid-light-bg page-block--no-padding" id="our-work">
+      <div class="figure">
+        <p class="figure__description">Android dominates in terms of market share of all new smartphone shipments with
+          about 85% of the market share vs around 15% for iOS. Especially in some markets such as Asia, Africa or South
+          America Android dominance is almost total. Therefore many startups decide to build their app for both iOS and
+          Android in parallell.</p>
+        <figure class="figure__container"><img class="figure__image lazyload blur-up"
+            data-src="/assets/images/projects/graph-android@2x.png" alt="android development poland">
+          <figcaption class="figure__caption"><a class="figure__caption-link"
+              href="https://www.idc.com/promo/smartphone-market-share/os">https://www.idc.com/promo/smartphone-market-share/os</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section
+      class="page-block page-block--selectable-narrow page-block--solid-white-bg page-block--extra-space page-block--double-description"
+      id="why-not">
+      <h2 class="page-block__title">When should I consider React Native?</h2>
+      <p class="page-block__desc">
+        There are certain apps that could benefit from another approach.
+        As we use the best tool for the job we can also develop your app in React Native!
+      </p>
+      <div class="logos">
+        <div class="element"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+            x="0px" y="0px" width="64.8px" height="57.6px" viewBox="0 0 64.8 57.6"
+            style="enable-background:new 0 0 64.8 57.6;" xml:space="preserve" aria-hidden="true">
+            <style>
+              .logo-react-native-00 {
+                fill: #7DD7F8;
+              }
+            </style>
+            <defs>
+            </defs>
+            <g>
+              <path class="logo-react-native-00" d="M53.2,18.7c-0.7-0.2-1.4-0.5-2.1-0.7c0.1-0.5,0.2-0.9,0.3-1.4c1.6-7.7,0.5-13.8-3-15.9
+		C45.1-1.2,39.6,0.8,34,5.7c-0.5,0.5-1.1,1-1.6,1.5c-0.4-0.3-0.7-0.7-1.1-1C25.5,1,19.6-1.2,16.1,0.8c-3.4,2-4.4,7.8-3,15
+		c0.1,0.7,0.3,1.4,0.5,2.1c-0.8,0.2-1.6,0.5-2.4,0.8C4.4,21.1,0,24.9,0,28.8c0,4,4.7,8,11.8,10.5c0.6,0.2,1.2,0.4,1.8,0.5
+		c-0.2,0.8-0.4,1.5-0.5,2.3c-1.4,7.1-0.3,12.8,3.1,14.7c3.5,2,9.3-0.1,15-5c0.4-0.4,0.9-0.8,1.4-1.2c0.6,0.5,1.2,1.1,1.8,1.6
+		c5.5,4.7,10.9,6.6,14.3,4.7c3.5-2,4.6-8.1,3.1-15.5c-0.1-0.6-0.2-1.1-0.4-1.7c0.4-0.1,0.8-0.2,1.2-0.4c7.4-2.5,12.3-6.4,12.3-10.5
+		C64.8,24.9,60.2,21.1,53.2,18.7z M35.8,7.8c4.8-4.2,9.2-5.8,11.3-4.6c2.2,1.3,3,6.3,1.6,12.9c-0.1,0.4-0.2,0.9-0.3,1.3
+		c-2.7-0.6-5.6-1.1-8.7-1.4c-1.8-2.5-3.6-4.8-5.5-6.8C34.8,8.7,35.3,8.2,35.8,7.8z M19.1,32.1c0.6,1.1,1.2,2.2,1.8,3.4
+		c0.7,1.1,1.3,2.2,2,3.3c-2.1-0.2-4.1-0.6-6-1C17.6,35.9,18.3,34,19.1,32.1z M19.1,25.6c-0.8-1.9-1.5-3.8-2.1-5.6
+		c1.8-0.4,3.8-0.8,5.9-1c-0.7,1.1-1.3,2.2-2,3.3C20.3,23.3,19.7,24.4,19.1,25.6z M20.6,28.8c0.9-1.8,1.8-3.5,2.8-5.2v0
+		c1-1.7,2-3.4,3.1-5c1.9-0.1,3.9-0.2,5.9-0.2c2,0,4,0.1,5.9,0.2c1.1,1.6,2.1,3.3,3.1,5c1,1.7,1.9,3.4,2.8,5.2
+		c-0.9,1.8-1.8,3.5-2.8,5.2l0,0c-1,1.7-2,3.4-3.1,5c-1.9,0.1-3.9,0.2-5.9,0.2c-2,0-4-0.1-5.9-0.2c-1.1-1.6-2.2-3.3-3.2-5
+		C22.4,32.3,21.4,30.6,20.6,28.8z M43.8,35.4c0.7-1.1,1.3-2.3,1.9-3.4c0.9,2,1.6,3.9,2.2,5.7c-1.9,0.4-3.9,0.8-6,1
+		C42.5,37.6,43.2,36.5,43.8,35.4z M45.7,25.6c-0.6-1.1-1.2-2.3-1.9-3.4c-0.6-1.1-1.3-2.2-2-3.2c2.1,0.3,4,0.6,5.9,1
+		C47.2,21.8,46.5,23.6,45.7,25.6z M32.4,11.1c1.3,1.4,2.6,2.9,3.8,4.6c-2.5-0.1-5.1-0.1-7.7,0C29.8,14,31.1,12.5,32.4,11.1z
+		 M17.5,3.2c2.2-1.3,7,0.5,12,5c0.3,0.3,0.6,0.6,1,0.9c-1.9,2-3.7,4.3-5.5,6.8c-3,0.3-6,0.7-8.6,1.3c-0.2-0.7-0.3-1.3-0.4-2v0
+		C14.6,9.1,15.5,4.4,17.5,3.2z M14.3,37.1c-0.5-0.2-1.1-0.3-1.6-0.5c-3.2-1.1-5.8-2.5-7.6-4c-1.6-1.4-2.4-2.7-2.4-3.8
+		c0-2.4,3.5-5.4,9.4-7.4c0.7-0.3,1.5-0.5,2.2-0.7c0.8,2.6,1.9,5.4,3.2,8.2C16.2,31.6,15.2,34.4,14.3,37.1z M29.3,49.7
+		c-2.5,2.2-5,3.8-7.2,4.5h0c-2,0.7-3.6,0.7-4.5,0.2c-2-1.2-2.9-5.7-1.7-11.8c0.1-0.7,0.3-1.4,0.5-2.1c2.7,0.6,5.6,1,8.7,1.3
+		c1.8,2.5,3.7,4.8,5.6,6.9C30.2,49,29.7,49.4,29.3,49.7z M32.5,46.6c-1.3-1.4-2.6-3-3.9-4.7c1.2,0,2.5,0.1,3.8,0.1
+		c1.3,0,2.6,0,3.9-0.1C35,43.6,33.8,45.2,32.5,46.6z M49.3,50.4c-0.4,2.1-1.2,3.5-2.1,4c-2,1.2-6.4-0.4-11.1-4.4
+		c-0.5-0.5-1.1-1-1.6-1.5c1.8-2,3.6-4.3,5.4-6.9c3.1-0.3,6.1-0.7,8.8-1.4c0.1,0.5,0.2,1.1,0.4,1.6C49.6,45.2,49.7,48.1,49.3,50.4z
+		 M51.6,36.6L51.6,36.6c-0.4,0.1-0.7,0.2-1.1,0.3c-0.8-2.6-1.9-5.4-3.3-8.2c1.3-2.8,2.4-5.5,3.2-8.1c0.7,0.2,1.3,0.4,1.9,0.6
+		c6,2.1,9.6,5.1,9.6,7.5C62,31.3,58,34.5,51.6,36.6z" />
+              <path class="logo-react-native-00"
+                d="M32.4,34.5c3.2,0,5.8-2.6,5.8-5.8c0-3.2-2.6-5.8-5.8-5.8s-5.8,2.6-5.8,5.8C26.6,31.9,29.2,34.5,32.4,34.5z" />
+            </g>
+          </svg>
+
+        </div>
+      </div>
+      <p class="page-block__desc page-block--narrow page-block--second-desc">
+        If you are looking to build a simple app with few fancy features or if you are looking to create
+        a Proof of Concept to try with your market or with your investors then React Native could be a good solution:
+        This approach allows us to build an app for iOS and Android using one set of code.
+      </p>
+      <div class="page-block__button-read-more"><a class="page-block__button-text"
+          href="react-native-development.html" hreflang="en">Read more</a></div>
+    </section>
+    <section class="page-block page-block--call-to-action page-block--solid-green-bg" id="call-to-action">
+      <h2 class="page-block__title">Write us today to get your free estimate!</h2>
+      <p class="page-block__desc">We at codequest are polyglot engineers that master many technologies. We can help
+        building your app in Go or Elixir as well!</p>
+      <div class="page-block__button">
+        <button class="color-green hover-green page-block__button-link" onclick="goToContactPage()">Start project with
+          us</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer" id="footer">
+    <h2 class="visuallyhidden">Footer</h2>
+    <div class="page-footer__logo">
+      <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+        <use xlink:href="#icon-codequest-white"></use>
+      </svg>
+    </div>
+    <nav class="page-footer__nav">
+      <ul class="page-footer__list">
+        <li class="page-footer__list-item"><a class="page-footer__link" href="index.html">Home</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="services.html">Services</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="careers.html">Careers</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="faq.html">FAQ</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="https://medium.com/codequest">Blog
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-external-link"></use>
+            </svg></a></li>
+        <li class="page-footer__list-item">
+          <button class="page-footer__link" onclick="goToContactPage()">Hire us!</button>
+        </li>
+        <li class="page-footer__list-item page-footer__list-item--privacy-policy"><a class="page-footer__link"
+            href="privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+    <div class="page-footer__address">
+      <address itemscope itemtype="http://schema.org/Organization"></address>
+      <link itemprop="url" href="index.html">
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">E-mail and phone number</h3>
+        <ul class="page-footer__list page-footer__instant-contact">
+          <li class="page-footer__list-item">
+            <div class="instant-contact__wrapper">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+              <span class="gvbngb instant-contact__contact" role="link" tabindex="0" aria-label="Message us"
+                data-fek9t8b-hedgehog="olleh" data-fek9t8b-bagithi="moc" data-fek9t8b-siyo="tseuqedoc"
+                data-fek9t8b-enamabla="">
+                <!--[if IE]>
+                <style>.gvbngb{unicode-bidi:bidi-override;direction:rtl;}</style><![endif]-->
+                <style>
+                  .gvbngb:after {
+                    content: attr(data-fek9t8b-bagithi)'.'attr(data-fek9t8b-siyo)'@'attr(data-fek9t8b-hedgehog);
+                    unicode-bidi: bidi-override;
+                    direction: rtl;
+                  }
+
+                  @supports (-ms-ime-align:auto) {
+                    .gvbngb {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .gvbngb:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+
+                  @media all and (-ms-high-contrast:none),
+                  (-ms-high-contrast:active) {
+                    .gvbngb {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .gvbngb:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+                </style>
+              </span>
+            </div>
+          </li>
+          <li class="page-footer__list-item"><a class="page-footer__link" href="tel:+48531861864" itemprop="telephone">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-phone"></use>
+              </svg>+48 531 861 864</a></li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--footer facebookIconDesc--footer" role="img">
+                <title id="facebookIcon--footer">Like us on Facebook</title>
+                <desc id="facebookIconDesc--footer">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--footer linkedinIconDesc--footer" role="img">
+                <title id="linkedinIcon--footer">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--footer">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--footer twitterIconDesc--footer" role="img">
+                <title id="twitterIcon--footer">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--footer">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--footer githubIconDesc--footer"
+                role="img">
+                <title id="githubIcon--footer">Fork us on GitHub</title>
+                <desc id="githubIconDesc--footer">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">Office address and Invoice details</h3><span
+          class="page-footer__office-address-title" itemprop="name">Office address:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Plac Dąbrowskiego 1</span><br><span
+            itemprop="postalCode">00-057</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p><span class="page-footer__invoice-address-title" itemprop="name">Invoice details:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Zamiany 8 LU 202</span><br><span
+            itemprop="postalCode">02-786</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">REGON, VAT UE and KRS</h3>
+        <dl class="page-footer__finances">
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">REGON</dt>
+            <dd class="page-footer__finances-desc">146176183</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">VAT UE</dt>
+            <dd class="page-footer__finances-desc" itemprop="taxID">9512357282</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">KRS</dt>
+            <dd class="page-footer__finances-desc">0000424452</dd>
+          </div>
+        </dl>
+        <ul class="page-footer__list page-footer__subsidies">
+          <li class="page-footer__list-item page-footer__subsidies-ue-funds"><a class="page-footer__link"
+              href="https://www.poir.gov.pl/en/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="EFIcon UEPOIRLink" role="img">
+                <title id="EFIcon">European Funds Smart Growth</title>
+                <desc id="UEPOIRLink">Go to European Operational Programme Smart Growth website</desc>
+                <use xlink:href="#icon-funds-uf"></use>
+              </svg></a></li>
+          <li class="page-footer__list-item page-footer__subsidies-er-funds"><a class="page-footer__link"
+              href="http://ec.europa.eu/regional_policy/en/funding/erdf/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="ERDFIcon UEERDFLink" role="img">
+                <title id="ERDFIcon">European Regional Development Fund</title>
+                <desc id="UEERDFLink">Go to European Regional Development Fund website</desc>
+                <use xlink:href="#icon-funds-eu"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+  <footer class="cookies-footer" id="cookies-footer">
+    <div class="cookies-footer__content">
+      <svg class="svg-icon" width="32px" height="32px" aria-hidden="true">
+        <use xlink:href="#icon-cookie-small-icon"></use>
+      </svg>
+      <p class="cookies-footer__desc">I am aware, that information about the administrator and my rights related to my
+        personal data, as well as the <a href="privacy-policy.html">cookies policy</a>, can be found in the Rules
+        for the
+        Processing and Protection of Personal Data in codequest sp. z o.o.</p>
+    </div>
+    <button class="cookies-footer__button" id="understand-button">Thanks!
+      <svg class="svg-icon" width="12px" height="12px" aria-hidden="true">
+        <use xlink:href="#icon-thumbs-up-solid"></use>
+      </svg>
+    </button>
+  </footer>
+  <script>
+    WebFontConfig = {
+      google: {
+        families: [
+          'Lato:400,700,900',
+          'PT Serif:400,400i,700,700i'
+        ],
+      },
+      timeout: 2000
+    };
+  </script>
+  <script src="../ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
+  <script>
+    const goToContactPage = function () {
+      fbq('track', 'goToContactPage', {
+        content_name: 'Go to contact page',
+        content_ids: ['contact'],
+        content_type: 'product',
+      });
+      window.location.pathname = '/contact';
+    }
+  </script>
+  <script type="text/javascript">
+    _linkedin_partner_id = "2597492";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function () {
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })();
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=2597492&amp;fmt=gif" />
+  </noscript>  <script type="text/javascript" src="assets/main.js"></script>
+</body>
+
+
+<!-- Mirrored from codequest.com/android by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:14:22 GMT -->
+</html>

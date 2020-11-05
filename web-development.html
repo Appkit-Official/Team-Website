@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from codequest.com/web-development by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:14:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>codequest - Custom Web App Development in Poland</title>
+  <meta name="description"
+    content="Our portfolio includes Ruby on Rails development and development in Angular and React. We also specialize in microservices written in Go and Elixir.">
+  <meta property="og:title" content="codequest is a software development studio.">
+  <meta property="og:description"
+    content="We are a collective of engineers, product designers, and creatives who take products from zero to one. Hire us to build you a world-class iOS, Android, or Web app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="assets/images/static/logo-fb.png">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="341">
+  <meta property="fb:app_id" content="1028261210595998">
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB3VBMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///9JtlwCAAAAnXRSTlMAACqt87AsF7zAGWD9/maHjBVn1ddqFgFCw/zGRVvn9elfAk3qnVw/Ppzm7FEh0Lc1AzO01CSErxiriQ7d2Sgl1t9hDyezfHa2Cu82Mu2xDDHaGjQ89BId4iMf2yBo8vlPS/dtBVCo9qcHBqLHqVMTuVi+VONS4VkILgmgG+ifux76+2vktbINHEaX2HKPdwRzk0xH8Y5pY5KZzckQO+TsXgAAAAFiS0dEnp+yowsAAAAHdElNRQfhARIVMAuExVrDAAAB/0lEQVQ4y3WT/UOLURTH962paKNNVjbtYVRbEU/yVmgpWkjewrxkasKEvETEZGRJ3oni/K/Ovbd57vOo88vO8z2fe86559y5XJYBRcVu94oSwLW0obSM2FauWgYAyj0C8K5eJgWwhqRVLAkAPv9aBVSuC/yPoKp6fZAWLRjaUAVnvCYsQh7DkH1s3BSBPf/mLSyHa+vqozWxBnYbt9qqYFsTd799h8kizOadXqKWXdAT7OZDe/aqQ0BgH3+2FlIAbdHy/UQHDlpKe5yo41B9p1CArsOysSNWUaBbNpwoYg09xfJqR4/pNY/3SvFEHwMnlX/qtA6UxtWpMwyc7Zd+i08HzjVJ0YgycL5S+heSOnCxQ4qXLjOAKwPCv5rSm7w2KLT+IXmN9PXh0A2im7csIHObaHDkzt3M4mDMe6OM11lzuM9JH/jMfzmBhwbRozFTHYikHnOCJ/oyMB7jkr0VT58B4yWtjfwx0WNbFp4nxGN7UZbNvgzzqmh0Eo59+1+RZrnXznjqDSfwqqj4bRiztSDjNOXPhuLxkQn/W7ITQLWIJyYRyQcC+QimJfFOu+UMC++7rDkkxfuOacBQjgfVnSkA6Vk3P+1ZrUbfByaMj2k1qE+fecG5L3m9S0m4vyrg23dnXBA/eA5zCvjJ8V955z+nbT640K6A5G9P7Z9C/C/xA8QH+Fot/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMS0xOFQyMTo0ODoxMSswMTowMHFg98oAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDEtMThUMjE6NDg6MTErMDE6MDAAPU92AAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    sizes="32x32">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABL1BMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///+4qfXxAAAAY3RSTlMAAFDn6FIGrrEHHIzv8I4dIL3+1Z7UviEEl5sbmUKh8soXFsjzokMf0oeEKOB9e+Eqa9D8tAoJ/dFsAbb5BWr4uRg69KNg4jwizM4jnE5xcpq7RfbtPz7s90eG+saIC+kyMAy2BLHkAAAAAWJLR0Rkwtq4CQAAAAd0SU1FB+EBEhUwCvPCalUAAADZSURBVBjTNc9pXwFRFAbw+0TFJLsMJkK2bDEhW0ZSZGkVZYnO9/8O3Zn78/zum/O/z4tzGOMBDkzmQ4Dtg6NjIot1D4B0YiM6tTtEB3C63B6v1+c+8+sCyAEKSkBIIUXmgvNw5CKq/8Til4kkWCpNlBHVKyKfn2VzRHkBBaLiNZNLZfWmokPVUrutywyNaLNVbwPtu47WbRjV+2Lvod9P9B6fjEWAwZBU4u95JCCk1caT6cvkVX2TDHj/+JyB52u++Dag+rOMpwDHarmuiGM2gd8tsDMrf3z+Byi4H3ZKAKd+AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTAxLTE4VDIxOjQ4OjEwKzAxOjAw1xf8fgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wMS0xOFQyMTo0ODoxMCswMTowMKZKRMIAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
+    sizes="16x16">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WR3GZLJ');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3315161-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-3315161-2', { 'optimize_id': 'GTM-NGDNXF2' });
+  </script>
+  <!-- End Global site tag (gtag.js) -->
+  <!-- Add display:none until DOM Content is loaded to avoid Flash of Unstyled Content-->
+  <style>
+    .no-unstyled-content {
+      display: none;
+    }
+  </style>
+  <script>document.documentElement.className = 'no-unstyled-content';</script>
+  <!-- Facebook Pixel Code-->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      '../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1506046949701910');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1506046949701910&amp;ev=PageView&amp;noscript=1"></noscript>
+  <!-- End Facebook Pixel Code-->
+  <!-- Hotjar Tracking Code for https://codequest.com/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1696973, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body class="on-top" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager (noscript)-->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR3GZLJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript)-->
+  <header class="page-header">
+    <div class="page-header__top"><a class="page-header__logo" href="index.html">
+        <svg class="svg-icon" width="1em" height="1em" aria-labelledby="codequestLogo codequestMainPage" role="img">
+          <title id="codequestLogo">codequest - Go to the main page</title>
+          <desc id="codequestMainPage">Go to the main page</desc>
+          <use xlink:href="#icon-codequest"></use>
+        </svg></a>
+      <div class="page-header__menu" role="navigation">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__menu-list-item">
+            <button class="page-header__menu-link page-header__menu-link--case-studies" data-js-case-studies-toggle
+              tabindex="0">Case studies</button>
+            <div class="page-header__case-studies-dropdown-wrapper" data-js-case-studies-dropdown>
+              <div class="case-studies-dropdown__triangle"></div>
+              <div class="page-header__case-studies-dropdown">
+                <ul class="case-studies-dropdown__list">
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/wellme.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Wellme</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/foundersuite.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Foundersuite</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/nvent.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Install Pro 360</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/booli.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Booli</strong> / iOS app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/selecthub.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>SelectHub</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/kredytmarket.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>kredytmarket</strong> / Web app
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="careers.html">Careers</a>
+          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="faq.html">FAQ</a></li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="https://medium.com/codequest"
+              target="_blank">Blog
+              <svg class="svg-icon" width="0.8em" height="0.8em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__menu-list-item" id="call-to-action-link">
+            <button class="page-header__menu-link" onclick="goToContactPage()">Start project with us</button>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header--background"></div>
+      <div class="page-header__hamburger"><a class="navigation-trigger" href="#"><span
+            class="navigation-helper"></span><span class="navigation-helper"></span><span
+            class="navigation-helper"></span></a></div>
+      <nav class="page-header__nav">
+        <ul class="page-header__dropdown-menu">
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="index.html">Home</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link page-header__dropdown-menu-link--case-studies"
+              data-js-mobile-case-studies-toggle>Case studies</button>
+            <ul class="page-header__dropdown-menu-case-studies-list" data-js-mobile-case-studies-dropdown>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/wellme.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Wellme</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/foundersuite.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Foundersuite</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/nvent.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Install Pro 360</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/booli.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Booli</strong> / <span class="case-studies-link__app-type">iOS app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/selecthub.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>SelectHub</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/kredytmarket.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>kredytmarket</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+            </ul>          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="careers.html">Careers</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="faq.html">FAQ</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="https://medium.com/codequest" target="_blank">Blog
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link" onclick="goToContactPage()">Hire us!</button>
+          </li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--header facebookIconDesc--header" role="img">
+                <title id="facebookIcon--header">Like us on Facebook</title>
+                <desc id="facebookIconDesc--header">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--header linkedinIconDesc--header" role="img">
+                <title id="linkedinIcon--header">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--header">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--header twitterIconDesc--header" role="img">
+                <title id="twitterIcon--header">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--header">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--header githubIconDesc--header"
+                role="img">
+                <title id="githubIcon--header">Fork us on GitHub</title>
+                <desc id="githubIconDesc--header">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="animated-circuit animated-circuit--mini-double--web-development">
+      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 832 783" width="0" height="0">
+        <path class="sa0"
+          d="M700.58 423.37 690.89 423.37 630.1 423.37 570.29 363.55 570.29 321.17 570.29 281.35 582.19 269.46 582.19 244.19">
+        </path>
+        <path class="sa0"
+          d="M700.58 415.37 690.89 415.37 632.72 415.37 578.78 361.42 578.78 321.17 592.51 307.43 592.51 284.04"></path>
+        <path class="sa0"
+          d="M443.46 623.84 443.46 576.34 443.46 555.09 480.29 517.26 480.29 441.5 468.36 429.57 468.36 321.17 468.36 313.5 411.54 256.69 411.54 205.67 342.54 136.66 243 37.13">
+        </path>
+        <path class="sa0"
+          d="M451.26 623.84 451.26 576.34 451.26 560.09 489.42 521.93 489.42 436.17 478.39 425.14 478.39 321.17 478.39 309.83 421.58 253.02 421.58 202.83 342.81 124.06 260.75 42">
+        </path>
+        <path class="sa0"
+          d="M459.06 623.84 459.06 576.34 459.06 564.34 497.68 525.72 497.68 430.84 487.92 421.08 487.92 321.17 487.92 303.41 431.61 247.1 431.61 199.15 342.39 109.93 277.03 44.57">
+        </path>
+        <path class="sa0" d="M361.99 77.83 483.38 199.22 483.38 213.04"></path>
+        <path class="sa0" d="M353.99 81.46 461.51 188.99 461.51 231.95 479.45 231.95"></path>
+        <path class="sa0" d="M313.62 53.09 453.1 192.57 453.1 236.35 480.69 263.94"></path>
+        <path class="sa0" d="M482.01 280.25 442.86 241.1 442.86 195.7 342.99 95.83 291.09 44.57"></path>
+        <path class="sa0" d="M489.32 630 558.32 630 614.12 685.79 614.12 702 621.93 709.81 621.93 721.6"></path>
+        <path class="sa0" d="M490.32 637.84 553.72 637.84 604.77 687.89 604.77 736.56 623.53 755.32 628.46 755.32">
+        </path>
+        <path class="sa0" d="M489.32 645.5 550.32 645.5 595.24 690.42 595.24 747.5"></path>
+        <path class="sa0"
+          d="M489.32 653.71 545.28 653.71 583.91 692.33 583.91 766.99 641.11 766.99 662.03 746.07 662.03 697.32"></path>
+        <path class="sa0"
+          d="M490.32 661.84 540.82 661.84 573.57 694.59 573.57 777.5 648.54 777.5 656.58 769.45 672.59 769.45"></path>
+      </svg>
+      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 832 783" width="0" height="0">
+        <path class="sa0"
+          d="M700.58 423.37 690.89 423.37 630.1 423.37 570.29 363.55 570.29 321.17 570.29 281.35 582.19 269.46 582.19 244.19">
+        </path>
+        <path class="sa0"
+          d="M700.58 415.37 690.89 415.37 632.72 415.37 578.78 361.42 578.78 321.17 592.51 307.43 592.51 284.04"></path>
+        <path class="sa0"
+          d="M443.46 623.84 443.46 576.34 443.46 555.09 480.29 517.26 480.29 441.5 468.36 429.57 468.36 321.17 468.36 313.5 411.54 256.69 411.54 205.67 342.54 136.66 243 37.13">
+        </path>
+        <path class="sa0"
+          d="M451.26 623.84 451.26 576.34 451.26 560.09 489.42 521.93 489.42 436.17 478.39 425.14 478.39 321.17 478.39 309.83 421.58 253.02 421.58 202.83 342.81 124.06 260.75 42">
+        </path>
+        <path class="sa0"
+          d="M459.06 623.84 459.06 576.34 459.06 564.34 497.68 525.72 497.68 430.84 487.92 421.08 487.92 321.17 487.92 303.41 431.61 247.1 431.61 199.15 342.39 109.93 277.03 44.57">
+        </path>
+        <path class="sa0" d="M361.99 77.83 483.38 199.22 483.38 213.04"></path>
+        <path class="sa0" d="M353.99 81.46 461.51 188.99 461.51 231.95 479.45 231.95"></path>
+        <path class="sa0" d="M313.62 53.09 453.1 192.57 453.1 236.35 480.69 263.94"></path>
+        <path class="sa0" d="M482.01 280.25 442.86 241.1 442.86 195.7 342.99 95.83 291.09 44.57"></path>
+        <path class="sa0" d="M489.32 630 558.32 630 614.12 685.79 614.12 702 621.93 709.81 621.93 721.6"></path>
+        <path class="sa0" d="M490.32 637.84 553.72 637.84 604.77 687.89 604.77 736.56 623.53 755.32 628.46 755.32">
+        </path>
+        <path class="sa0" d="M489.32 645.5 550.32 645.5 595.24 690.42 595.24 747.5"></path>
+        <path class="sa0"
+          d="M489.32 653.71 545.28 653.71 583.91 692.33 583.91 766.99 641.11 766.99 662.03 746.07 662.03 697.32"></path>
+        <path class="sa0"
+          d="M490.32 661.84 540.82 661.84 573.57 694.59 573.57 777.5 648.54 777.5 656.58 769.45 672.59 769.45"></path>
+      </svg>
+    </div>
+    <section class="page-block page-block--extra-space" id="service-cover">
+      <h1 class="page-block__title">Web development</h1>
+      <p class="page-block__desc page-block--wide">Our mission is to deliver web products from A to Z. We can develop
+        both front- and back ends, which makes us your one-stop software development company.</p><img
+        class="page-block__main-image" src="assets/images/web_development/photo-web-dev.png"
+        alt="codequest Web Developers at work!">
+    </section>
+    <section class="page-block page-block--extra-space" id="technologies-web">
+      <h2 class="page-block__title">Technologies</h2>
+      <p class="page-block__desc page-block--wide">
+        codequest specializes in full stack web app development. Ever since our start in 2009 we have
+        focused on state-of-the-art responsive web applications. Our approach is to use the latest
+        technologies to ensure that the apps we build are robust, performant and up to date with the latest trends.
+      </p>
+      <div class="page-block--wide technology__container">
+        <div class="technology__icon">
+          <svg class="svg-icon svg-icon--scalable" aria-hidden="true">
+            <use xlink:href="#icon-rails"></use>
+          </svg><br><span>Ruby on Rails</span>
+        </div>
+        <div class="technology__icon">
+          <svg class="svg-icon svg-icon--scalable" aria-hidden="true">
+            <use xlink:href="#icon-go"></use>
+          </svg><br><span>Golang</span>
+        </div>
+        <div class="technology__icon">
+          <svg class="svg-icon svg-icon--scalable" aria-hidden="true">
+            <use xlink:href="#icon-elixir"></use>
+          </svg><br><span>Elixir</span>
+        </div>
+        <div class="technology__icon">
+          <svg class="svg-icon svg-icon--scalable" aria-hidden="true">
+            <use xlink:href="#icon-angular"></use>
+          </svg><br><span>Angular</span>
+        </div>
+        <div class="technology__icon">
+          <svg class="svg-icon svg-icon--scalable" aria-hidden="true">
+            <use xlink:href="#icon-react"></use>
+          </svg><br><span>React</span>
+        </div>
+        <div class="technology__icon">
+          <svg class="svg-icon svg-icon--scalable" aria-hidden="true">
+            <use xlink:href="#icon-js"></use>
+          </svg><br><span>JavaScript</span>
+        </div>
+        <div class="technology__icon">
+          <svg class="svg-icon svg-icon--scalable" aria-hidden="true">
+            <use xlink:href="#icon-kotlin"></use>
+          </svg><br><span>Kotlin</span>
+        </div>
+      </div>
+    </section>
+    <section
+      class="page-block page-block--narrow page-block--solid-white-bg page-block--extra-space page-block--double-description"
+      id="react-angular">
+      <div class="page-block__graphic">
+        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="600px" height="254px"
+          viewBox="0 0 600 254" style="enable-background:new 0 0 600 254;" xml:space="preserve" aria-hidden="true">
+          <style>
+            .responsive0 {
+              fill: none;
+              stroke: #DAE5EA;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .responsive1 {
+              fill: none;
+              stroke: #00E5FF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .responsive2 {
+              fill: none;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <g>
+              <path class="responsive0" d="M296.2,198H83.2c-3.6,0-6.6-3-6.6-6.6V23.7c0-3.6,3-6.6,6.6-6.6h212.9c3.6,0,6.6,3,6.6,6.6v167.7
+        C302.8,195.1,299.8,198,296.2,198z" />
+              <path class="responsive0" d="M96.5,17.1h209c4.7,0,8.6,3.9,8.6,8.6v163.7c0,4.7-3.9,8.6-8.6,8.6h-209" />
+              <line class="responsive0" x1="76.6" y1="177.5" x2="302.8" y2="177.5" />
+              <line class="responsive0" x1="76.6" y1="33.5" x2="302.8" y2="33.5" />
+              <circle class="responsive0" cx="189.7" cy="25" r="1.6" />
+              <rect x="92.7" y="52.9" class="responsive1" width="192.4" height="51" />
+              <rect x="92.7" y="113.9" class="responsive0" width="85.2" height="43.7" />
+              <path class="responsive1" d="M188.9,116.6c3.5-0.4,97,0,97,0" />
+              <path class="responsive0" d="M188.9,126.2c3.5-0.4,97,0,97,0" />
+              <path class="responsive0" d="M188.9,135.8c3.5-0.4,97,0,97,0" />
+              <path class="responsive0" d="M188.9,145.5c3.5-0.4,97,0,97,0" />
+              <path class="responsive0" d="M188.9,155.1c3.5-0.4,97,0,97,0" />
+              <polyline class="responsive0" points="165.7,198 157.5,230.2 225.4,230.2 216.3,198       " />
+              <polyline class="responsive0" points="221.1,198 230.6,230.2 225.4,230.2       " />
+              <path class="responsive0" d="M234.9,236.7h-86.5c-1.4,0-2.5-1.1-2.5-2.5v-1.5c0-1.4,1.1-2.5,2.5-2.5h86.5c1.4,0,2.5,1.1,2.5,2.5v1.5
+        C237.4,235.6,236.3,236.7,234.9,236.7z" />
+              <path class="responsive0" d="M156.5,230.2h85.1c1.8,0,3.2,1.5,3.2,3.2l0,0c0,1.8-1.5,3.2-3.2,3.2h-85.1" />
+            </g>
+            <g>
+              <path class="responsive0" d="M428.3,191h-81.7c-3.3,0-6.1-2.7-6.1-6.1V61.3c0-3.3,2.7-6.1,6.1-6.1h81.7c3.3,0,6.1,2.7,6.1,6.1v123.7
+        C434.4,188.3,431.6,191,428.3,191z" />
+              <path class="responsive0" d="M354.6,55.2h77.3c4.5,0,8.3,3.7,8.3,8.3v119.2c0,4.5-3.7,8.3-8.3,8.3h-77.3" />
+              <rect x="346.2" y="67.1" class="responsive0" width="82.4" height="105.5" />
+              <circle class="responsive0" cx="387.5" cy="181.7" r="3.9" />
+              <rect x="354.6" y="74.9" class="responsive1" width="66" height="36.8" />
+              <rect x="354.6" y="117.7" class="responsive0" width="22.5" height="22.5" />
+              <line class="responsive1" x1="383.6" y1="119.9" x2="420.5" y2="119.9" />
+              <line class="responsive0" x1="383.6" y1="125.4" x2="420.5" y2="125.4" />
+              <line class="responsive0" x1="383.6" y1="130.9" x2="420.5" y2="130.9" />
+              <line class="responsive0" x1="383.6" y1="136.4" x2="420.5" y2="136.4" />
+              <line class="responsive0" x1="354.6" y1="150.5" x2="420.5" y2="150.5" />
+              <line class="responsive0" x1="354.6" y1="157.1" x2="420.5" y2="157.1" />
+            </g>
+            <g>
+              <path class="responsive0" d="M511.3,171.1h-40c-3.3,0-6.1-2.7-6.1-6.1V76.5c0-3.3,2.7-6.1,6.1-6.1h40c3.3,0,6.1,2.7,6.1,6.1V165
+        C517.3,168.3,514.6,171.1,511.3,171.1z" />
+              <path class="responsive0" d="M479.1,70.5h36.4c4.3,0,7.8,3.5,7.8,7.8v84.9c0,4.3-3.5,7.8-7.8,7.8h-36.4" />
+              <circle class="responsive0" cx="491.3" cy="161.6" r="3.9" />
+              <rect x="470.9" y="82.2" class="responsive0" width="40.6" height="69.6" />
+              <rect x="475.6" y="87.4" class="responsive1" width="30.7" height="24.6" />
+              <line class="responsive1" x1="475.6" y1="117.9" x2="506.3" y2="117.9" />
+              <line class="responsive0" x1="475.6" y1="124.9" x2="506.3" y2="124.9" />
+              <line class="responsive0" x1="475.6" y1="131.9" x2="506.3" y2="131.9" />
+              <line class="responsive0" x1="475.6" y1="139" x2="506.3" y2="139" />
+              <line class="responsive0" x1="475.6" y1="146" x2="506.3" y2="146" />
+            </g>
+          </g>
+          <rect class="responsive2" width="600" height="254" />
+        </svg>
+
+      </div>
+      <h2 class="page-block__title">Responsive interfaces with React or Angular</h2>
+      <p class="page-block__desc">
+        codequest is your one stop <strong>JavaScript development company</strong>, and one of our expertises is
+        creating
+        state-of-the-art frontends in <strong>React</strong>. React.js is a JavaScript framework that allows for the
+        creation
+        of complex, responsive interfaces for client-side web applications, making the experience of your app
+        at the highest level. It is also one of the most popular JavaScript libraries, which makes it a natural
+        alternative at codequest. <strong>React development</strong> is pleasant and powerful and it has a very powerful
+        support structure thanks to the fact that it is <strong>backed and developed by Facebook</strong>.
+      </p>
+      <p class="page-block__desc">
+        <strong>Angular</strong> is a JavaScript framework widely used in web app development. It is
+        <strong>supported and developed by Google</strong>, making it a solid choice to build frontends
+        that are performant and that will make any app
+        a smooth experience in your browser. Angular works in great harmony with HTML, making the creation of
+        web apps easy and intuitive. Speed and performance are two of the key elements here, which makes
+        Angular the perfect tool to build web pages and apps that run smoothly in different browsers and on
+        different desktop and mobile environments.
+      </p>
+      <div class="page-block__button"><a class="page-block__button-text" href="react-angular-development.html">Read
+          more</a></div>
+    </section>
+    <section
+      class="page-block page-block--narrow page-block--solid-dark-bg page-block--extra-space page-block--double-description"
+      id="rails">
+      <div class="page-block__graphic"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+          y="0px" width="600px" height="357.1px" viewBox="0 0 600 357.1" style="enable-background:new 0 0 600 357.1;"
+          xml:space="preserve" aria-hidden="true">
+          <style>
+            .rapid0 {
+              fill: none;
+              stroke: #DAE5EA;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .rapid1 {
+              fill: none;
+              stroke: #FF5252;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .rapid2 {
+              fill: none;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <g>
+              <g>
+                <path class="rapid0" d="M252.7,197" />
+                <polyline class="rapid0" points="252.7,205.9 252.7,197 252.7,197 231.9,190       " />
+                <line class="rapid0" x1="231.9" y1="236.4" x2="244.1" y2="231.6" />
+                <line class="rapid0" x1="252.7" y1="197" x2="232.1" y2="204.5" />
+                <path class="rapid0" d="M217.8,241.5" />
+              </g>
+              <g>
+                <path class="rapid0" d="M252.7,165.6" />
+                <polyline class="rapid0" points="232.1,204.5 252.7,197.5 252.7,165.6 252.7,165.6 232.1,158.7       " />
+                <line class="rapid0" x1="252.7" y1="165.6" x2="231.9" y2="172.5" />
+              </g>
+              <g>
+                <line class="rapid0" x1="336" y1="192.1" x2="370.9" y2="203.7" />
+                <polyline class="rapid0" points="370.9,180.5 336,192.1 336,192.1 336,195.3       " />
+                <line class="rapid0" x1="370.9" y1="203.7" x2="336" y2="192.1" />
+                <line class="rapid0" x1="370.9" y1="236.7" x2="370.9" y2="203.7" />
+              </g>
+              <g>
+                <line class="rapid0" x1="336" y1="159.2" x2="370.9" y2="170.9" />
+                <polyline class="rapid0" points="370.9,147.6 336,159.2 336,159.2 336,192.3 370.9,203.8       " />
+                <line class="rapid0" x1="370.9" y1="170.9" x2="336" y2="159.2" />
+                <line class="rapid0" x1="370.9" y1="203.8" x2="370.9" y2="170.9" />
+              </g>
+              <g>
+                <line class="rapid0" x1="336" y1="126.3" x2="370.9" y2="137.9" />
+                <polyline class="rapid0" points="370.9,114.7 336,126.3 336,126.3 336,159.4 370.9,170.9       " />
+                <line class="rapid0" x1="370.9" y1="137.9" x2="336" y2="126.3" />
+                <line class="rapid0" x1="370.9" y1="170.9" x2="370.9" y2="137.9" />
+              </g>
+              <g>
+                <polyline class="rapid0"
+                  points="440.6,251.8 440.6,236.6 440.6,50.6 405.8,39 370.9,50.6 370.9,236.6      " />
+                <polyline class="rapid0" points="440.6,50.6 405.8,62.3 370.9,50.6      " />
+                <line class="rapid0" x1="405.8" y1="248.2" x2="405.8" y2="62.3" />
+                <polyline class="rapid0" points="370.9,236.6 405.8,248.2 440.6,236.6       " />
+              </g>
+              <g>
+                <polyline class="rapid0" points="232.3,260.2 301.1,283.2 405.8,248.3 353.7,231.6       " />
+                <line class="rapid0" x1="405.8" y1="248.3" x2="301.1" y2="283.2" />
+                <polyline class="rapid0" points="232.3,260.2 301.1,283.2 301.1,318 383.1,290.7       " />
+                <line class="rapid0" x1="301.1" y1="318" x2="232.1" y2="295" />
+              </g>
+              <g>
+                <polygon class="rapid0" points="161.7,260.2 161.7,292.3 196.5,306.8 231.4,295.1 231.4,260.2 231.4,74.2 196.5,62.6 161.7,74.2
+        " />
+                <polyline class="rapid0" points="231.4,74.2 196.5,85.9 161.7,74.2      " />
+                <line class="rapid0" x1="196.5" y1="306.8" x2="196.5" y2="85.9" />
+                <polyline class="rapid0" points="161.7,260.2 196.5,271.9 231.4,260.2       " />
+              </g>
+              <g>
+                <polyline class="rapid0" points="383.2,255.9 418,267.5 452.9,255.9       " />
+                <polygon class="rapid0" points="383.2,255.9 383.2,290.9 418,302.4 452.9,290.8 452.9,255.9 452.9,255.9 418,244.3 383.2,255.9
+        " />
+                <polyline class="rapid0" points="452.9,255.9 418,267.5 383.2,255.9       " />
+                <line class="rapid0" x1="418" y1="302.4" x2="418" y2="267.5" />
+              </g>
+              <g>
+                <polyline class="rapid0" points="452.9,255.9 487.8,267.5 522.7,255.9       " />
+                <polygon class="rapid0" points="452.9,255.9 452.9,290.9 487.8,301.4 522.7,289.8 522.7,255.9 522.7,255.9 487.8,244.3 452.9,255.9
+              " />
+                <polyline class="rapid0" points="522.7,255.9 487.8,267.5 452.9,255.9       " />
+                <line class="rapid0" x1="487.8" y1="301.4" x2="487.8" y2="267.5" />
+              </g>
+              <g>
+                <polyline class="rapid0" points="452.9,222.8 487.8,234.4 522.7,222.8       " />
+                <polygon class="rapid0" points="452.9,222.8 452.9,255.8 487.8,267.3 522.7,255.7 522.7,222.8 522.7,222.8 487.8,211.2 452.9,222.8
+              " />
+                <polyline class="rapid0" points="522.7,222.8 487.8,234.4 452.9,222.8       " />
+                <line class="rapid0" x1="487.8" y1="267.3" x2="487.8" y2="234.4" />
+              </g>
+              <g>
+                <polyline class="rapid0" points="48.7,254.4 83.5,266 118.4,254.4       " />
+                <polygon class="rapid0" points="48.7,254.4 48.7,289.4 83.5,300.9 118.4,287.3 118.4,254.4 118.4,254.4 83.5,242.8 48.7,254.4
+        " />
+                <polyline class="rapid0" points="118.4,254.4 83.5,266 48.7,254.4       " />
+                <line class="rapid0" x1="83.5" y1="300.9" x2="83.5" y2="266" />
+              </g>
+              <g>
+                <g>
+                  <path class="rapid1" d="M294.6,255c-5.5-0.3-10.2-1.2-10.2-2.7l-1-9" />
+                  <path class="rapid1" d="M313.7,243.6l-1.1,8.6c0,1.6-5,2.5-10.7,2.8" />
+                  <g>
+                    <path class="rapid1" d="M269.6,188.9c-2.7,1.6-28.4,17.7-26.4,61.3c0,0,13.3-6.6,31.3-16.6" />
+                    <path class="rapid1" d="M327.5,188.9c0,0,28.5,16.6,26.4,61.3c0,0-13.3-6.6-31.3-16.6" />
+                  </g>
+                  <path class="rapid1" d="M293.8,243.4c-10-0.3-18.8-1.9-18.8-4.6l-10.2-99c0-29.5,20.9-54.6,29.8-63.9c2.1-2.2,5.7-2.3,7.9,0
+          c8.9,9.2,29.8,34,29.8,63.9l-11.1,99c0,2.7-8.9,4.2-18.8,4.6" />
+                  <circle class="rapid1" cx="298.5" cy="138.2" r="20.7" />
+                  <circle class="rapid1" cx="298.5" cy="137.9" r="16.1" />
+                </g>
+                <path class="rapid1" d="M298.5,195.9c0,0-10.3,31.5-0.4,76.2C298.1,272,308.5,228.5,298.5,195.9z" />
+              </g>
+            </g>
+            <rect class="rapid2" width="600" height="357.1" />
+          </g>
+        </svg>
+
+      </div>
+      <h2 class="page-block__title">Rapid Product Development with Ruby on Rails</h2>
+      <p class="page-block__desc">
+        <strong>Ruby on Rails development</strong> is very fast, making it the perfect choice to develop backends
+        for startups that have a fast time to market strategy. Rails <strong>saves development time by 25 to 50
+        </strong>percent compared to other languages, which has made it the selected technology to launch products
+        such as <strong>Twitter, Basecamp, AirBnB and Dribbble.</strong>
+      </p>
+      <p class="page-block__desc">The advantages of Ruby lay in the fact that it has a huge community of developers and
+        a very wide variety of open source code created, making it easy to learn and very fast to use, expanding the
+        user base even further. It is a powerful language in any type of web backend, no matter how complex.</p>
+      <p class="page-block__desc">To summarize the obvious: teams using Ruby on Rails can bring secure, stable products
+        to market quickly with a lower total cost of ownership than other tools out there.</p>
+      <div class="page-block__button"><a class="page-block__button-text" href="ruby-on-rails.html">Read more</a>
+      </div>
+    </section>
+    <section
+      class="page-block page-block--narrow page-block--solid-white-bg page-block--extra-space page-block--double-description"
+      id="microservices">
+      <div class="page-block__graphic"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+          y="0px" width="600px" height="357.1px" viewBox="0 0 600 357.1" style="enable-background:new 0 0 600 357.1;"
+          xml:space="preserve" aria-hidden="true">
+          <style>
+            .microservices-00 {
+              fill: #FFFFFF;
+              stroke: #DAE5EA;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .microservices-01 {
+              fill: none;
+              stroke: #DAE5EA;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .microservices-02 {
+              fill: #FFFFFF;
+              stroke: #E040FB;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .microservices-03 {
+              fill: none;
+              stroke: #E040FB;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .microservices-04 {
+              fill: none;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <g>
+              <g>
+                <g>
+                  <polygon class="microservices-00"
+                    points="343.5,69.1 343.5,36.5 377.6,18.9 411.8,36.5 411.8,69.1 377.6,86.6        " />
+                  <polyline class="microservices-01" points="343.5,36.5 377.6,52.8 411.8,36.5        " />
+                </g>
+                <g>
+                  <polygon class="microservices-00"
+                    points="363,35.7 363,22.8 377.6,15.5 392.2,22.8 392.2,35.7 377.6,43        " />
+                  <polyline class="microservices-01" points="363,22.8 377.6,29.2 392.2,22.8        " />
+                </g>
+                <line class="microservices-00" x1="377.6" y1="52.8" x2="377.6" y2="86.6" />
+              </g>
+              <polygon class="microservices-00" points="298.2,341.5 437.6,271.8 437.6,97.5 298.2,167.2     " />
+              <polygon class="microservices-00" points="298.2,341.5 158.7,271.8 158.7,97.5 298.2,167.2     " />
+              <polygon class="microservices-00" points="437.6,97.5 298.2,27.7 158.7,97.5 298.2,167.2     " />
+              <polyline class="microservices-01" points="298.2,202.1 437.6,132.3 437.6,167.2 298.2,236.9 298.2,271.8 437.6,202.1 437.6,236.9 298.2,306.7
+      158.7,236.9 158.7,202.1 298.2,271.8     " />
+              <polyline class="microservices-01" points="158.7,167.2 298.2,236.9 298.2,202.1 158.7,132.3     " />
+              <polyline class="microservices-01" points="333,45.1 193.5,114.9 228.4,132.3 367.9,62.6 402.8,80 263.3,149.8 263.3,324.1 228.4,306.7
+      228.4,132.3 193.5,114.9 193.5,289.2     " />
+              <polyline class="microservices-01" points="263.3,45.1 402.8,114.9 367.9,132.3 228.4,62.6 193.5,80 333,149.8 333,324.1 367.9,306.7
+      367.9,132.5 402.8,115.2 402.8,289.2     " />
+              <g>
+                <polygon class="microservices-00"
+                  points="178.9,97.5 178.9,84.6 193.5,77.3 208.2,84.6 208.2,97.5 193.5,104.8       " />
+                <polyline class="microservices-00" points="178.9,84.6 193.5,91 208.2,84.6      " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="213.8,115 213.8,102.1 228.4,94.8 243,102.1 243,115 228.4,122.3       " />
+                <polyline class="microservices-00" points="213.8,102.1 228.4,108.5 243,102.1       " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="248.7,133.2 248.7,120.4 263.3,113.1 277.9,120.4 277.9,133.2 263.3,140.5      " />
+                <polyline class="microservices-00" points="248.7,120.4 263.3,126.8 277.9,120.4       " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="283.5,150.7 283.5,137.9 298.2,130.6 312.8,137.9 312.8,150.7 298.2,158      " />
+                <polyline class="microservices-00" points="283.5,137.9 298.2,144.3 312.8,137.9       " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="213.8,79 213.8,66.1 228.4,58.8 243,66.1 243,79 228.4,86.3      " />
+                <polyline class="microservices-00" points="213.8,66.1 228.4,72.5 243,66.1      " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="318.4,132.2 318.4,119.4 333,112.1 347.7,119.4 347.7,132.2 333,139.5      " />
+                <polyline class="microservices-00" points="318.4,119.4 333,125.8 347.7,119.4       " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="248.7,61.5 248.7,48.6 263.3,41.3 277.9,48.6 277.9,61.5 263.3,68.8      " />
+                <polyline class="microservices-00" points="248.7,48.6 263.3,55 277.9,48.6      " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="353.3,114.7 353.3,101.9 367.9,94.6 382.5,101.9 382.5,114.7 367.9,122       " />
+                <polyline class="microservices-00" points="353.3,101.9 367.9,108.3 382.5,101.9       " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="283.5,43.2 283.5,30.4 298.2,23.1 312.8,30.4 312.8,43.2 298.2,50.5      " />
+                <polyline class="microservices-00" points="283.5,30.4 298.2,36.8 312.8,30.4      " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="318.4,60.7 318.4,47.9 333,40.6 347.7,47.9 347.7,60.7 333,68      " />
+                <polyline class="microservices-00" points="318.4,47.9 333,54.3 347.7,47.9      " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="353.3,79 353.3,66.1 367.9,58.8 382.5,66.1 382.5,79 367.9,86.3      " />
+                <polyline class="microservices-00" points="353.3,66.1 367.9,72.5 382.5,66.1      " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="388.1,96.5 388.1,83.6 402.8,76.3 417.4,83.6 417.4,96.5 402.8,103.8       " />
+                <polyline class="microservices-00" points="388.1,83.6 402.8,90 417.4,83.6      " />
+              </g>
+              <g>
+                <g>
+                  <polygon class="microservices-02"
+                    points="190.1,209.7 190.1,177.1 224.3,159.5 258.4,177.1 258.4,209.7 224.3,227.3        " />
+                  <polyline class="microservices-03" points="190.1,177.1 224.3,193.4 258.4,177.1         " />
+                </g>
+                <g>
+                  <polygon class="microservices-02"
+                    points="209.6,176.3 209.6,163.4 224.3,156.1 238.9,163.4 238.9,176.3 224.3,183.6        " />
+                  <polyline class="microservices-03" points="209.6,163.4 224.3,169.9 238.9,163.4         " />
+                </g>
+                <line class="microservices-02" x1="224.3" y1="193.4" x2="224.3" y2="227.3" />
+              </g>
+              <g>
+                <g>
+                  <polygon class="microservices-00"
+                    points="99.6,300.6 99.6,268 133.8,250.4 167.9,268 167.9,300.6 133.8,318.2        " />
+                  <polyline class="microservices-01" points="99.6,268 133.8,284.3 167.9,268        " />
+                </g>
+                <g>
+                  <polygon class="microservices-00"
+                    points="119.1,267.2 119.1,254.3 133.8,247 148.4,254.3 148.4,267.2 133.8,274.5        " />
+                  <polyline class="microservices-01" points="119.1,254.3 133.8,260.8 148.4,254.3         " />
+                </g>
+                <line class="microservices-00" x1="133.8" y1="284.3" x2="133.8" y2="318.2" />
+              </g>
+              <g>
+                <g>
+                  <polygon class="microservices-00"
+                    points="54.8,165.6 54.8,133 88.9,115.4 123.1,133 123.1,165.6 88.9,183.2        " />
+                  <polyline class="microservices-01" points="54.8,133 88.9,149.3 123.1,133         " />
+                </g>
+                <g>
+                  <polygon class="microservices-00"
+                    points="74.3,132.2 74.3,119.4 88.9,112.1 103.6,119.4 103.6,132.2 88.9,139.5        " />
+                  <polyline class="microservices-01" points="74.3,119.4 88.9,125.8 103.6,119.4         " />
+                </g>
+                <line class="microservices-00" x1="88.9" y1="149.3" x2="88.9" y2="183.2" />
+              </g>
+              <g>
+                <g>
+                  <polygon class="microservices-02"
+                    points="420.9,155.9 420.9,123.3 455.1,105.7 489.2,123.3 489.2,155.9 455.1,173.4        " />
+                  <polyline class="microservices-02" points="420.9,123.3 455.1,139.6 489.2,123.3         " />
+                </g>
+                <g>
+                  <polygon class="microservices-02"
+                    points="440.4,122.5 440.4,109.6 455.1,102.3 469.7,109.6 469.7,122.5 455.1,129.8        " />
+                  <polyline class="microservices-02" points="440.4,109.6 455.1,116 469.7,109.6         " />
+                </g>
+                <line class="microservices-02" x1="455.1" y1="139.6" x2="455.1" y2="173.4" />
+              </g>
+              <g>
+                <g>
+                  <polygon class="microservices-00"
+                    points="402.8,315.2 402.8,282.6 436.9,265 471.1,282.6 471.1,315.2 436.9,332.8        " />
+                  <polyline class="microservices-01" points="402.8,282.6 436.9,298.9 471.1,282.6         " />
+                </g>
+                <g>
+                  <polygon class="microservices-00"
+                    points="422.3,281.8 422.3,268.9 436.9,261.6 451.6,268.9 451.6,281.8 436.9,289.1        " />
+                  <polyline class="microservices-01" points="422.3,268.9 436.9,275.4 451.6,268.9         " />
+                </g>
+                <line class="microservices-00" x1="436.9" y1="298.9" x2="436.9" y2="332.8" />
+              </g>
+              <g>
+                <polyline class="microservices-01" points="108,292.8 115.7,292.8 69.6,315.8      " />
+                <line class="microservices-01" x1="115.7" y1="292.8" x2="114.2" y2="297.8" />
+              </g>
+              <g>
+                <polyline class="microservices-01" points="64.3,158.3 72,158.3 25.9,181.4      " />
+                <line class="microservices-01" x1="72" y1="158.3" x2="70.5" y2="163.4" />
+              </g>
+              <g>
+                <polyline class="microservices-03" points="201.9,201.1 209.6,201.1 163.5,224.1       " />
+                <line class="microservices-03" x1="209.6" y1="201.1" x2="208.1" y2="206.1" />
+              </g>
+              <g>
+                <polyline class="microservices-01" points="208.9,320.7 201.2,320.7 247.3,297.6       " />
+                <line class="microservices-01" x1="201.2" y1="320.7" x2="202.7" y2="315.6" />
+              </g>
+              <g>
+                <polyline class="microservices-01" points="459.3,306.6 451.6,306.6 497.7,329.7       " />
+                <line class="microservices-01" x1="451.6" y1="306.6" x2="453" y2="311.7" />
+              </g>
+              <g>
+                <polyline class="microservices-03" points="478.8,149.3 471.1,149.3 517.2,172.4       " />
+                <line class="microservices-03" x1="471.1" y1="149.3" x2="472.6" y2="154.4" />
+              </g>
+              <g>
+                <polyline class="microservices-01" points="351.2,338.9 358.9,338.9 312.8,315.8       " />
+                <line class="microservices-01" x1="358.9" y1="338.9" x2="357.4" y2="333.8" />
+              </g>
+              <g>
+                <polyline class="microservices-01" points="455.8,251.6 463.5,251.6 417.4,228.5       " />
+                <line class="microservices-01" x1="463.5" y1="251.6" x2="462" y2="246.5" />
+              </g>
+              <polygon class="microservices-03" points="402.2,219.8 402.8,254.4 367.9,272.2 367.9,236.9    " />
+              <g>
+                <polyline class="microservices-01" points="355.4,230.2 347.7,230.2 393.8,253.3       " />
+                <line class="microservices-01" x1="347.7" y1="230.2" x2="349.2" y2="235.3" />
+              </g>
+              <polygon class="microservices-02" points="298.2,62.6 263.3,80 298.2,97.5 333,80    " />
+              <g>
+                <polygon class="microservices-02"
+                  points="283.5,79 283.5,66.1 298.2,58.8 312.8,66.1 312.8,79 298.2,86.3      " />
+                <polyline class="microservices-02" points="283.5,66.1 298.2,72.5 312.8,66.1      " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="248.7,96.5 248.7,83.6 263.3,76.3 277.9,83.6 277.9,96.5 263.3,103.8       " />
+                <polyline class="microservices-00" points="248.7,83.6 263.3,90 277.9,83.6      " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="283.5,114.7 283.5,101.9 298.2,94.6 312.8,101.9 312.8,114.7 298.2,122       " />
+                <polyline class="microservices-00" points="283.5,101.9 298.2,108.3 312.8,101.9       " />
+              </g>
+              <g>
+                <polygon class="microservices-00"
+                  points="318.4,97.2 318.4,84.4 333,77.1 347.7,84.4 347.7,97.2 333,104.5       " />
+                <polyline class="microservices-00" points="318.4,84.4 333,90.8 347.7,84.4      " />
+              </g>
+              <line class="microservices-02" x1="298.2" y1="72.5" x2="298.2" y2="86.3" />
+              <line class="microservices-02" x1="224.3" y1="170.2" x2="224.3" y2="182" />
+              <line class="microservices-02" x1="455.1" y1="116.7" x2="455.1" y2="128.4" />
+              <line class="microservices-00" x1="333" y1="54.3" x2="333" y2="68" />
+              <line class="microservices-00" x1="367.9" y1="73.2" x2="367.9" y2="84.9" />
+              <line class="microservices-00" x1="402.8" y1="90" x2="402.8" y2="101.8" />
+              <line class="microservices-00" x1="88.9" y1="126.5" x2="88.9" y2="138.2" />
+              <line class="microservices-00" x1="133.8" y1="262.1" x2="133.8" y2="273.9" />
+              <line class="microservices-00" x1="436.9" y1="276.7" x2="436.9" y2="288.5" />
+              <line class="microservices-00" x1="298.2" y1="37.1" x2="298.2" y2="48.8" />
+              <line class="microservices-00" x1="333" y1="91.6" x2="333" y2="103.3" />
+              <line class="microservices-00" x1="263.3" y1="90.6" x2="263.3" y2="102.3" />
+              <line class="microservices-00" x1="228.4" y1="109.6" x2="228.4" y2="121.3" />
+              <line class="microservices-00" x1="193.5" y1="91.6" x2="193.5" y2="103.3" />
+              <line class="microservices-00" x1="228.4" y1="73" x2="228.4" y2="84.7" />
+              <line class="microservices-00" x1="298.2" y1="109.6" x2="298.2" y2="121.3" />
+              <line class="microservices-00" x1="298.2" y1="144.3" x2="298.2" y2="156" />
+              <line class="microservices-00" x1="263.3" y1="127.2" x2="263.3" y2="138.9" />
+              <line class="microservices-00" x1="333" y1="127.2" x2="333" y2="138.9" />
+              <line class="microservices-00" x1="367.9" y1="109.6" x2="367.9" y2="121.3" />
+              <line class="microservices-00" x1="377.6" y1="30.4" x2="377.6" y2="42.1" />
+              <line class="microservices-00" x1="263.3" y1="55.3" x2="263.3" y2="67" />
+            </g>
+            <rect class="microservices-04" width="600" height="357.1" />
+          </g>
+        </svg>
+
+      </div>
+      <h2 class="page-block__title">Scalable Microservices with Go or Elixir</h2>
+      <p class="page-block__desc">
+        codequest is one of few Polish software development companies that master development in <strong>Go</strong>
+        (also called Golang). <strong>Go development</strong> allows for the creation of <strong>powerful
+          microservices</strong> that are scalable and reliable by design. It integrates easily with other languages,
+        services and geographical locations making it the ultimate choice for building out applications. The obvious
+        benefit of a product constructed with the use of microservices rather than one big block is speed
+        and performance.
+      </p>
+      <p class="page-block__desc">
+        Another great choice in terms of <strong>functional programming</strong> is <strong>Elixir</strong>.
+        It runs on the <strong>Erlang VM</strong> and is used by companies such as WhatsApp and Heroku to build
+        scalable and fault-tolerant apps.
+      </p>
+      <div class="page-block__button"><a class="page-block__button-text" href="microservices.html">Read more</a>
+      </div>
+    </section>
+    <section
+      class="page-block page-block--narrow page-block--solid-dark-bg page-block--extra-space page-block--double-description"
+      id="kotlin">
+      <div class="page-block__graphic"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+          y="0px" width="484px" height="316.3px" viewBox="0 0 484 316.3" style="enable-background:new 0 0 484 316.3;"
+          xml:space="preserve">
+          <style>
+            .graphic-kotlin-00 {
+              fill: none;
+              stroke: #DAE5EA;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .graphic-kotlin-01 {
+              fill: none;
+              stroke: #E9EFF2;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .graphic-kotlin-02 {
+              fill: none;
+              stroke: #B388FF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .graphic-kotlin-03 {
+              fill: none;
+              stroke: #DAE5EA;
+              stroke-width: 2px;
+              stroke-miterlimit: 10;
+            }
+
+            .graphic-kotlin-04 {
+              fill: none;
+              stroke: #7C4DFF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <g>
+              <circle class="graphic-kotlin-00" cx="394.7" cy="167.6" r="7.2" />
+              <circle class="graphic-kotlin-00" cx="423.2" cy="106" r="7.2" />
+              <circle class="graphic-kotlin-00" cx="447.9" cy="112.7" r="4.2" />
+              <circle class="graphic-kotlin-00" cx="413.6" cy="54.7" r="3" />
+              <circle class="graphic-kotlin-00" cx="407.1" cy="203.7" r="3" />
+              <circle class="graphic-kotlin-00" cx="441.6" cy="179.1" r="3" />
+              <circle class="graphic-kotlin-00" cx="465.9" cy="206.7" r="3" />
+              <circle class="graphic-kotlin-00" cx="480" cy="170.6" r="3" />
+              <circle class="graphic-kotlin-00" cx="465.3" cy="155" r="3" />
+              <circle class="graphic-kotlin-00" cx="382" cy="146.6" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="426.8" cy="69.1" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="462.9" cy="21.3" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="389.8" cy="58.6" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="418.4" cy="167.6" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="480" cy="135.8" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="434.9" cy="156.1" r="3.6" />
+              <circle class="graphic-kotlin-00" cx="392.3" cy="198.2" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="416" cy="215.1" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="377.2" cy="231.5" r="2.4" />
+              <circle class="graphic-kotlin-00" cx="413.6" cy="70.3" r="4.8" />
+              <circle class="graphic-kotlin-00" cx="450.8" cy="84.9" r="4.2" />
+              <circle class="graphic-kotlin-00" cx="407.1" cy="90.4" r="4.2" />
+              <circle class="graphic-kotlin-00" cx="443.7" cy="41.4" r="4.2" />
+              <circle class="graphic-kotlin-00" cx="410.1" cy="128.1" r="4.2" />
+              <circle class="graphic-kotlin-00" cx="458.6" cy="171.8" r="4.2" />
+              <line class="graphic-kotlin-00" x1="379.6" y1="173.1" x2="387.4" y2="170.6" />
+              <line class="graphic-kotlin-00" x1="397.1" y1="174.9" x2="405.9" y2="200.7" />
+              <line class="graphic-kotlin-00" x1="394.7" y1="199.5" x2="402.9" y2="202.6" />
+              <line class="graphic-kotlin-00" x1="404.1" y1="206.7" x2="379.6" y2="230" />
+              <line class="graphic-kotlin-00" x1="408.9" y1="206.7" x2="413.6" y2="212.7" />
+              <line class="graphic-kotlin-00" x1="397.1" y1="160.9" x2="408.7" y2="133.4" />
+              <line class="graphic-kotlin-00" x1="389.8" y1="160.4" x2="383.5" y2="149" />
+              <line class="graphic-kotlin-00" x1="402.9" y1="167.6" x2="415" y2="167.6" />
+              <line class="graphic-kotlin-00" x1="418.4" y1="112.7" x2="412.6" y2="123.9" />
+              <line class="graphic-kotlin-00" x1="425.8" y1="113.3" x2="434" y2="152" />
+              <line class="graphic-kotlin-00" x1="430.3" y1="107.2" x2="443.7" y2="111.2" />
+              <line class="graphic-kotlin-00" x1="438.6" y1="158" x2="454.4" y2="168.9" />
+              <line class="graphic-kotlin-00" x1="460.5" y1="167.6" x2="464.3" y2="158" />
+              <line class="graphic-kotlin-00" x1="468.3" y1="152" x2="478.3" y2="138.2" />
+              <line class="graphic-kotlin-00" x1="464.3" y1="171.8" x2="477" y2="170.6" />
+              <line class="graphic-kotlin-00" x1="460.5" y1="177.1" x2="465.3" y2="202.6" />
+              <line class="graphic-kotlin-00" x1="454.4" y1="173.7" x2="444.6" y2="177.1" />
+              <line class="graphic-kotlin-00" x1="429.2" y1="100.7" x2="446.6" y2="87.9" />
+              <line class="graphic-kotlin-00" x1="418.4" y1="99.7" x2="411.2" y2="94.3" />
+              <line class="graphic-kotlin-00" x1="411.9" y1="74.8" x2="408.9" y2="84.9" />
+              <line class="graphic-kotlin-00" x1="418.4" y1="69.1" x2="423.2" y2="69.1" />
+              <line class="graphic-kotlin-00" x1="413.6" y1="65.5" x2="413.6" y2="57.7" />
+              <line class="graphic-kotlin-00" x1="408.7" y1="67.9" x2="392.3" y2="59.8" />
+              <line class="graphic-kotlin-00" x1="416.6" y1="52.4" x2="440" y2="43.5" />
+              <line class="graphic-kotlin-00" x1="446.5" y1="38.3" x2="461.3" y2="23.1" />
+              <g>
+                <circle class="graphic-kotlin-00" cx="348.8" cy="167.6" r="4.2" />
+                <circle class="graphic-kotlin-00" cx="339.5" cy="227" r="3" />
+                <circle class="graphic-kotlin-00" cx="312.2" cy="182.7" r="3.6" />
+                <circle class="graphic-kotlin-00" cx="363" cy="203.7" r="3" />
+                <circle class="graphic-kotlin-00" cx="348.8" cy="188.7" r="4.8" />
+                <line class="graphic-kotlin-00" x1="339.5" y1="224" x2="347.4" y2="193.5" />
+                <line class="graphic-kotlin-00" x1="353" y1="192.9" x2="360" y2="200.7" />
+                <line class="graphic-kotlin-00" x1="370.6" y1="177.1" x2="353" y2="186.3" />
+                <line class="graphic-kotlin-00" x1="348.8" y1="171.8" x2="348.8" y2="182.7" />
+                <line class="graphic-kotlin-00" x1="315.8" y1="183.9" x2="342.5" y2="187.5" />
+                <circle class="graphic-kotlin-00" cx="374.8" cy="174.9" r="4.2" />
+              </g>
+            </g>
+            <g>
+              <circle class="graphic-kotlin-01" cx="201.1" cy="106.1" r="9.4" />
+              <circle class="graphic-kotlin-01" cx="118.4" cy="136.5" r="9.4" />
+              <circle class="graphic-kotlin-01" cx="243.2" cy="148.2" r="5.5" />
+              <circle class="graphic-kotlin-01" cx="101.8" cy="107.7" r="5.5" />
+              <circle class="graphic-kotlin-01" cx="306.2" cy="102.2" r="3.9" />
+              <circle class="graphic-kotlin-01" cx="263.3" cy="102.1" r="3.9" />
+              <circle class="graphic-kotlin-01" cx="80" cy="192.5" r="3.9" />
+              <circle class="graphic-kotlin-01" cx="222.8" cy="61.6" r="3.9" />
+              <circle class="graphic-kotlin-02" cx="168.6" cy="52.5" r="3.9" />
+              <circle class="graphic-kotlin-02" cx="171.6" cy="4.9" r="3.9" />
+              <circle class="graphic-kotlin-02" cx="125.5" cy="25" r="3.9" />
+              <circle class="graphic-kotlin-02" cx="124.7" cy="52.9" r="3.9" />
+              <circle class="graphic-kotlin-01" cx="193.4" cy="137" r="3.1" />
+              <circle class="graphic-kotlin-01" cx="81.1" cy="167.1" r="3.1" />
+              <circle class="graphic-kotlin-01" cx="4.1" cy="177.9" r="3.1" />
+              <circle class="graphic-kotlin-01" cx="105.4" cy="210.7" r="3.1" />
+              <circle class="graphic-kotlin-01" cx="179.3" cy="84.3" r="3.1" />
+              <circle class="graphic-kotlin-02" cx="93.5" cy="57" r="3.1" />
+              <circle class="graphic-kotlin-01" cx="231.4" cy="80.2" r="3.1" />
+              <circle class="graphic-kotlin-01" cx="225.1" cy="43" r="3.1" />
+              <circle class="graphic-kotlin-01" cx="275.8" cy="63.5" r="3.1" />
+              <circle class="graphic-kotlin-01" cx="262.6" cy="128.9" r="6.2" />
+              <circle class="graphic-kotlin-01" cx="94.4" cy="178.1" r="6.2" />
+              <circle class="graphic-kotlin-01" cx="226" cy="117.7" r="5.5" />
+              <circle class="graphic-kotlin-01" cx="73.6" cy="130.6" r="5.5" />
+              <circle class="graphic-kotlin-01" cx="118.8" cy="165.6" r="5.5" />
+              <circle class="graphic-kotlin-01" cx="40.2" cy="177" r="5.5" />
+              <circle class="graphic-kotlin-01" cx="150.7" cy="128.2" r="5.5" />
+              <circle class="graphic-kotlin-02" cx="146.2" cy="43.5" r="5.5" />
+              <line class="graphic-kotlin-01" x1="303.4" y1="105" x2="268.2" y2="125.7" />
+              <line class="graphic-kotlin-01" x1="262.6" y1="121.1" x2="263.3" y2="107.6" />
+              <line class="graphic-kotlin-01" x1="231.9" y1="119.5" x2="256.5" y2="127.2" />
+              <line class="graphic-kotlin-01" x1="247.1" y1="144.4" x2="257.1" y2="134.4" />
+              <line class="graphic-kotlin-01" x1="219.9" y1="115" x2="210.5" y2="110" />
+              <line class="graphic-kotlin-01" x1="205.5" y1="97.2" x2="221.1" y2="65.5" />
+              <line class="graphic-kotlin-01" x1="230.4" y1="76.8" x2="225.6" y2="66.5" />
+              <line class="graphic-kotlin-01" x1="228.3" y1="61.6" x2="272.2" y2="62.7" />
+              <line class="graphic-kotlin-01" x1="223.9" y1="57.2" x2="225.1" y2="47.4" />
+              <line class="graphic-kotlin-01" x1="192.6" y1="110.1" x2="156.7" y2="124.6" />
+              <line class="graphic-kotlin-01" x1="198.9" y1="117.1" x2="194.2" y2="133.4" />
+              <line class="graphic-kotlin-01" x1="193.5" y1="98.5" x2="182.5" y2="87.5" />
+              <line class="graphic-kotlin-01" x1="128.9" y1="134.8" x2="144.5" y2="129.8" />
+              <line class="graphic-kotlin-01" x1="122.6" y1="127.5" x2="150.6" y2="84.3" />
+              <line class="graphic-kotlin-01" x1="112.9" y1="128.9" x2="104.3" y2="113" />
+              <line class="graphic-kotlin-02" x1="152" y1="74.6" x2="147.4" y2="50.1" />
+              <line class="graphic-kotlin-02" x1="140.7" y1="45.7" x2="128.4" y2="51" />
+              <line class="graphic-kotlin-02" x1="119.2" y1="52.9" x2="97.3" y2="56.4" />
+              <line class="graphic-kotlin-02" x1="142.1" y1="39.3" x2="128.3" y2="27.8" />
+              <line class="graphic-kotlin-02" x1="148.4" y1="38" x2="168.3" y2="9.2" />
+              <line class="graphic-kotlin-02" x1="151.7" y1="45.7" x2="164" y2="51.6" />
+              <line class="graphic-kotlin-01" x1="108" y1="135.8" x2="80.2" y2="131.6" />
+              <line class="graphic-kotlin-01" x1="117" y1="146.7" x2="118.6" y2="158.2" />
+              <line class="graphic-kotlin-01" x1="100" y1="175.5" x2="112" y2="169" />
+              <line class="graphic-kotlin-01" x1="88.9" y1="174.8" x2="84.4" y2="170.4" />
+              <line class="graphic-kotlin-01" x1="90" y1="182.5" x2="82.8" y2="189.7" />
+              <line class="graphic-kotlin-01" x1="96.6" y1="184.8" x2="104.3" y2="207.3" />
+              <line class="graphic-kotlin-01" x1="75.2" y1="191.7" x2="45.5" y2="178.4" />
+              <line class="graphic-kotlin-01" x1="34.8" y1="177.2" x2="7.2" y2="177.6" />
+              <circle class="graphic-kotlin-02" cx="153.5" cy="79.7" r="4.7" />
+              <circle class="graphic-kotlin-03" cx="340.5" cy="282" r="6.4" />
+            </g>
+            <g>
+              <circle class="graphic-kotlin-03" cx="291" cy="289.5" r="8.3" />
+              <circle class="graphic-kotlin-03" cx="317" cy="164.6" r="8.3" />
+              <circle class="graphic-kotlin-03" cx="336.8" cy="103.7" r="6.5" />
+              <circle class="graphic-kotlin-03" cx="348.2" cy="124.6" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="315.8" cy="97.9" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="349.2" cy="146.3" r="3" />
+              <circle class="graphic-kotlin-03" cx="321.5" cy="72.4" r="3" />
+              <circle class="graphic-kotlin-03" cx="309.5" cy="270.5" r="4.7" />
+              <circle class="graphic-kotlin-03" cx="297.3" cy="312.4" r="3" />
+              <line class="graphic-kotlin-03" x1="284.7" y1="258.6" x2="288.7" y2="281.2" />
+              <line class="graphic-kotlin-03" x1="306.3" y1="274.1" x2="297.3" y2="284" />
+              <line class="graphic-kotlin-03" x1="334.6" y1="284" x2="299.3" y2="289.5" />
+              <line class="graphic-kotlin-03" x1="293" y1="297.8" x2="295.6" y2="308.6" />
+              <line class="graphic-kotlin-03" x1="248.2" y1="300.6" x2="282.7" y2="292.9" />
+              <line class="graphic-kotlin-03" x1="286.7" y1="248.2" x2="309.5" y2="228.6" />
+              <circle class="graphic-kotlin-03" cx="282.7" cy="252.7" r="5.9" />
+              <circle class="graphic-kotlin-03" cx="314.2" cy="223.7" r="5.9" />
+              <circle class="graphic-kotlin-03" cx="226.4" cy="281.2" r="5.9" />
+              <circle class="graphic-kotlin-03" cx="149.6" cy="252.7" r="5.9" />
+              <circle class="graphic-kotlin-03" cx="80.9" cy="234.5" r="5.9" />
+              <circle class="graphic-kotlin-03" cx="8" cy="109.6" r="5.3" />
+              <circle class="graphic-kotlin-03" cx="246.9" cy="206.1" r="5.9" />
+              <circle class="graphic-kotlin-03" cx="204.9" cy="218.9" r="5.9" />
+              <circle class="graphic-kotlin-03" cx="225.5" cy="203.7" r="7.1" />
+              <circle class="graphic-kotlin-03" cx="282.7" cy="182.9" r="5.9" />
+              <circle class="graphic-kotlin-03" cx="279.9" cy="135.2" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="241" cy="177" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="202.2" cy="308.6" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="213.6" cy="254.4" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="269.6" cy="220.8" r="3" />
+              <circle class="graphic-kotlin-03" cx="215.9" cy="169.9" r="3" />
+              <circle class="graphic-kotlin-03" cx="180.9" cy="176.4" r="3.6" />
+              <circle class="graphic-kotlin-03" cx="183.9" cy="208.4" r="3.6" />
+              <circle class="graphic-kotlin-03" cx="152" cy="139.4" r="2.4" />
+              <circle class="graphic-kotlin-03" cx="155.5" cy="279.1" r="3" />
+              <circle class="graphic-kotlin-03" cx="154.4" cy="204.9" r="3.6" />
+              <circle class="graphic-kotlin-03" cx="64.6" cy="166.9" r="3.6" />
+              <circle class="graphic-kotlin-03" cx="15.8" cy="92.4" r="3.6" />
+              <circle class="graphic-kotlin-03" cx="105" cy="269.3" r="3.6" />
+              <circle class="graphic-kotlin-03" cx="80.9" cy="168.2" r="3" />
+              <circle class="graphic-kotlin-03" cx="51.7" cy="216.6" r="3" />
+              <circle class="graphic-kotlin-03" cx="86.9" cy="121.6" r="3" />
+              <circle class="graphic-kotlin-03" cx="5" cy="72.4" r="2.4" />
+              <circle class="graphic-kotlin-03" cx="10.9" cy="131.1" r="3" />
+              <circle class="graphic-kotlin-03" cx="166.5" cy="185.3" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="166.5" cy="228.6" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="88.2" cy="284" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="89.4" cy="218.9" r="4.1" />
+              <circle class="graphic-kotlin-03" cx="190.5" cy="279.1" r="4.1" />
+              <line class="graphic-kotlin-03" x1="310.8" y1="218.9" x2="285.5" y2="188.5" />
+              <line class="graphic-kotlin-03" x1="281.6" y1="177" x2="279.9" y2="139.4" />
+              <line class="graphic-kotlin-03" x1="309.5" y1="168.2" x2="288.7" y2="179.7" />
+              <line class="graphic-kotlin-03" x1="320.2" y1="156.3" x2="334.6" y2="110.2" />
+              <line class="graphic-kotlin-03" x1="349.4" y1="128.7" x2="349.2" y2="143.4" />
+              <line class="graphic-kotlin-03" x1="340.5" y1="109.1" x2="346.2" y2="120.4" />
+              <line class="graphic-kotlin-03" x1="330.3" y1="101.5" x2="320.2" y2="99.7" />
+              <line class="graphic-kotlin-03" x1="320.2" y1="75.4" x2="317" y2="93.8" />
+              <line class="graphic-kotlin-03" x1="230.7" y1="286.7" x2="238.4" y2="296.7" />
+              <circle class="graphic-kotlin-03" cx="242.3" cy="302.7" r="5.9" />
+              <line class="graphic-kotlin-03" x1="224.3" y1="275.1" x2="215.9" y2="258.6" />
+              <line class="graphic-kotlin-03" x1="222.1" y1="286.7" x2="204.9" y2="305.4" />
+              <line class="graphic-kotlin-03" x1="220.5" y1="280" x2="195.8" y2="280" />
+              <line class="graphic-kotlin-03" x1="186.3" y1="277.3" x2="154.4" y2="256.2" />
+              <line class="graphic-kotlin-03" x1="163.8" y1="231.8" x2="153.4" y2="247.7" />
+              <line class="graphic-kotlin-03" x1="154.4" y1="275.3" x2="150.8" y2="258.6" />
+              <line class="graphic-kotlin-03" x1="143" y1="250.3" x2="86.9" y2="236.5" />
+              <line class="graphic-kotlin-03" x1="86.9" y1="223.1" x2="83.9" y2="228.6" />
+              <line class="graphic-kotlin-03" x1="82.1" y1="240.4" x2="86.9" y2="279.1" />
+              <line class="graphic-kotlin-03" x1="101.5" y1="272.2" x2="92.3" y2="281.2" />
+              <line class="graphic-kotlin-03" x1="65.8" y1="170.5" x2="79" y2="227.8" />
+              <line class="graphic-kotlin-03" x1="156.4" y1="208.4" x2="163.8" y2="224.4" />
+              <line class="graphic-kotlin-03" x1="187.4" y1="210.2" x2="199" y2="215.5" />
+              <line class="graphic-kotlin-03" x1="209.8" y1="215.8" x2="219.6" y2="208.4" />
+              <line class="graphic-kotlin-03" x1="266.7" y1="218.9" x2="252.9" y2="210.2" />
+              <line class="graphic-kotlin-03" x1="242.3" y1="181.1" x2="245.2" y2="200.1" />
+              <line class="graphic-kotlin-03" x1="219.6" y1="171.1" x2="236.4" y2="175.2" />
+              <line class="graphic-kotlin-03" x1="177" y1="178.7" x2="170.4" y2="183.8" />
+              <line class="graphic-kotlin-03" x1="153.2" y1="141.7" x2="163.7" y2="181" />
+              <line class="graphic-kotlin-03" x1="68.3" y1="166.9" x2="77" y2="168.1" />
+              <line class="graphic-kotlin-03" x1="85.2" y1="124.6" x2="65.8" y2="163.4" />
+              <line class="graphic-kotlin-03" x1="62.8" y1="171.1" x2="52.5" y2="213" />
+              <line class="graphic-kotlin-03" x1="62.1" y1="164.4" x2="12.2" y2="113.9" />
+              <line class="graphic-kotlin-03" x1="10.3" y1="104.3" x2="14.5" y2="96" />
+              <line class="graphic-kotlin-03" x1="6.5" y1="74.8" x2="13.9" y2="88.9" />
+              <line class="graphic-kotlin-03" x1="8" y1="114.9" x2="9.8" y2="128.1" />
+            </g>
+            <g>
+              <circle class="graphic-kotlin-04" cx="335.4" cy="162.8" r="8.2" />
+              <circle class="graphic-kotlin-04" cx="248.9" cy="242.3" r="5.9" />
+              <circle class="graphic-kotlin-04" cx="261.1" cy="141.2" r="7.1" />
+              <circle class="graphic-kotlin-04" cx="313.2" cy="235.2" r="5.9" />
+              <circle class="graphic-kotlin-04" cx="309.7" cy="195" r="9.4" />
+              <line class="graphic-kotlin-04" x1="252.5" y1="237.7" x2="301.8" y2="200.8" />
+              <line class="graphic-kotlin-04" x1="311" y1="204.4" x2="312.3" y2="229.2" />
+              <line class="graphic-kotlin-04" x1="357.2" y1="203.9" x2="319.1" y2="196.5" />
+              <line class="graphic-kotlin-04" x1="330.3" y1="169.2" x2="315.3" y2="187.2" />
+              <line class="graphic-kotlin-04" x1="265.2" y1="147.5" x2="303" y2="187.4" />
+              <circle class="graphic-kotlin-04" cx="366.4" cy="205.6" r="8.2" />
+            </g>
+          </g>
+        </svg>
+
+      </div>
+      <h2 class="page-block__title">Enterprise applications written in Kotlin</h2>
+      <p class="page-block__desc">
+        <strong>Development in Kotlin</strong> is a relatively new phenomenon but it has already gained a lot of
+        traction among the development community.
+        Today this language, based on <strong>JVM</strong> is becoming a great alternative or complement to backends
+        written in the <strong>Java environment</strong>.
+      </p>
+      <p class="page-block__desc">
+        <strong>Kotlin</strong> is modern, easy to use and marries very well with projects already written in
+        <strong>Java</strong>,
+        which makes it a highly interesting option for applications that handle big amounts of data or where scalability
+        is of utmost importance.
+      </p>
+      <p class="page-block__desc">We at codequest have identified the potential of developing applications in Kotlin and
+        offer this technology as one of our core services.</p>
+    </section>
+    <section class="page-block page-block--solid-white-bg page-block--extra-space" id="approach">
+      <h2 class="page-block__title">Approach</h2>
+      <p class="page-block__desc page-block--wide">
+        While new technologies and languages are essential to create great apps, a product would not be robust
+        without a system to verify the quality of the work, and an approach that allows us to build exactly
+        what the client wants. Here are some of the most important solutions that help us deliver what we promise.
+      </p>
+      <div class="tiles four-tiles web-dev-practises">
+        <section class="tile four-tiles__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-labelledby="codeReviewTitle codeReviewDesc" role="img">
+              <title id="codeReviewTitle">code review icon</title>
+              <desc id="codeReviewDesc">an icon with a computer screen examined through a magnifying glass</desc>
+              <use xlink:href="#icon-icon-code-review"></use>
+            </svg>
+            <h3 class="tile__title">Code Review</h3>
+          </header>
+          <p class="four-tiles__tile-content">
+            We think that every change in the code of an application requires a second opinion
+            from a person not responsible for the implementation. Code review together with automated
+            code checks lets us remove the majority of flaws and make the structure of the code better.
+          </p>
+        </section>
+        <section class="tile four-tiles__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-delivery"></use>
+            </svg>
+            <h3 class="tile__title">Continuous Delivery</h3>
+          </header>
+          <p class="four-tiles__tile-content">
+            We use tools such as Jenkins and Docker to ensure continuous delivery of our projects.
+            We build, test and release software in short time cycles which reduces time to market and
+            increases the quality of your app.
+          </p>
+        </section>
+        <section class="tile four-tiles__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-pair-programming"></use>
+            </svg>
+            <h3 class="tile__title">Pair Programming</h3>
+          </header>
+          <p class="four-tiles__tile-content">
+            While we don't pair program 100% of the time, we recognize the difficulty in acting as a team
+            when we work at a distance from each other. There is no better collaboration between developers
+            or designers than at the keyboard.
+          </p>
+        </section>
+        <section class="tile four-tiles__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-agile"></use>
+            </svg>
+            <h3 class="tile__title">Agile Delivery</h3>
+          </header>
+          <p class="four-tiles__tile-content">
+            Being Agile means that we can react to necessary changes during software development.
+            It means that we are fully flexible, using feedback from our clients and environment to
+            create robust software with the best possible market fit.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section class="page-block page-block--call-to-action page-block--solid-blue-bg" id="call-to-action">
+      <h2 class="page-block__title">Start your next web project with us!</h2>
+      <p class="page-block__desc">Write us today to discuss scope, timeframe and budget for your application!</p>
+      <div class="page-block__button">
+        <button class="color-blue hover-blue page-block__button-link" onclick="goToContactPage()">Contact us
+          now!</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer" id="footer">
+    <h2 class="visuallyhidden">Footer</h2>
+    <div class="page-footer__logo">
+      <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+        <use xlink:href="#icon-codequest-white"></use>
+      </svg>
+    </div>
+    <nav class="page-footer__nav">
+      <ul class="page-footer__list">
+        <li class="page-footer__list-item"><a class="page-footer__link" href="index.html">Home</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="services.html">Services</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="careers.html">Careers</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="faq.html">FAQ</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="https://medium.com/codequest">Blog
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-external-link"></use>
+            </svg></a></li>
+        <li class="page-footer__list-item">
+          <button class="page-footer__link" onclick="goToContactPage()">Hire us!</button>
+        </li>
+        <li class="page-footer__list-item page-footer__list-item--privacy-policy"><a class="page-footer__link"
+            href="privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+    <div class="page-footer__address">
+      <address itemscope itemtype="http://schema.org/Organization"></address>
+      <link itemprop="url" href="index.html">
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">E-mail and phone number</h3>
+        <ul class="page-footer__list page-footer__instant-contact">
+          <li class="page-footer__list-item">
+            <div class="instant-contact__wrapper">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-email"></use>
+              </svg><span class="docvga instant-contact__contact" role="link" tabindex="0" aria-label="Message us"
+                data-fek9t8b-hedgehog="olleh" data-fek9t8b-bagithi="moc" data-fek9t8b-siyo="tseuqedoc"
+                data-fek9t8b-enamabla="">
+                <!--[if IE]>
+                  <style>.docvga{unicode-bidi:bidi-override;direction:rtl;}</style><![endif]-->
+                <style>
+                  .docvga:after {
+                    content: attr(data-fek9t8b-bagithi)'.'attr(data-fek9t8b-siyo)'@'attr(data-fek9t8b-hedgehog);
+                    unicode-bidi: bidi-override;
+                    direction: rtl;
+                  }
+
+                  @supports (-ms-ime-align:auto) {
+                    .docvga {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .docvga:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+
+                  @media all and (-ms-high-contrast:none),
+                  (-ms-high-contrast:active) {
+                    .docvga {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .docvga:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+                </style>
+              </span>
+            </div>
+          </li>
+          <li class="page-footer__list-item"><a class="page-footer__link" href="tel:+48531861864" itemprop="telephone">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-phone"></use>
+              </svg>+48 531 861 864</a></li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--footer facebookIconDesc--footer" role="img">
+                <title id="facebookIcon--footer">Like us on Facebook</title>
+                <desc id="facebookIconDesc--footer">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--footer linkedinIconDesc--footer" role="img">
+                <title id="linkedinIcon--footer">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--footer">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--footer twitterIconDesc--footer" role="img">
+                <title id="twitterIcon--footer">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--footer">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--footer githubIconDesc--footer"
+                role="img">
+                <title id="githubIcon--footer">Fork us on GitHub</title>
+                <desc id="githubIconDesc--footer">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">Office address and Invoice details</h3><span
+          class="page-footer__office-address-title" itemprop="name">Office address:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Plac Dąbrowskiego 1</span><br><span
+            itemprop="postalCode">00-057</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p><span class="page-footer__invoice-address-title" itemprop="name">Invoice details:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Zamiany 8 LU 202</span><br><span
+            itemprop="postalCode">02-786</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">REGON, VAT UE and KRS</h3>
+        <dl class="page-footer__finances">
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">REGON</dt>
+            <dd class="page-footer__finances-desc">146176183</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">VAT UE</dt>
+            <dd class="page-footer__finances-desc" itemprop="taxID">9512357282</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">KRS</dt>
+            <dd class="page-footer__finances-desc">0000424452</dd>
+          </div>
+        </dl>
+        <ul class="page-footer__list page-footer__subsidies">
+          <li class="page-footer__list-item page-footer__subsidies-ue-funds"><a class="page-footer__link"
+              href="https://www.poir.gov.pl/en/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="EFIcon UEPOIRLink" role="img">
+                <title id="EFIcon">European Funds Smart Growth</title>
+                <desc id="UEPOIRLink">Go to European Operational Programme Smart Growth website</desc>
+                <use xlink:href="#icon-funds-uf"></use>
+              </svg></a></li>
+          <li class="page-footer__list-item page-footer__subsidies-er-funds"><a class="page-footer__link"
+              href="http://ec.europa.eu/regional_policy/en/funding/erdf/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="ERDFIcon UEERDFLink" role="img">
+                <title id="ERDFIcon">European Regional Development Fund</title>
+                <desc id="UEERDFLink">Go to European Regional Development Fund website</desc>
+                <use xlink:href="#icon-funds-eu"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+  <footer class="cookies-footer" id="cookies-footer">
+    <div class="cookies-footer__content">
+      <svg class="svg-icon" width="32px" height="32px" aria-hidden="true">
+        <use xlink:href="#icon-cookie-small-icon"></use>
+      </svg>
+      <p class="cookies-footer__desc">I am aware, that information about the administrator and my rights related to my
+        personal data, as well as the <a href="privacy-policy.html">cookies policy</a>, can be found in the Rules
+        for the Processing and Protection of Personal Data in codequest sp. z o.o.</p>
+    </div>
+    <button class="cookies-footer__button" id="understand-button">Thanks!
+      <svg class="svg-icon" width="12px" height="12px" aria-hidden="true">
+        <use xlink:href="#icon-thumbs-up-solid"></use>
+      </svg>
+    </button>
+  </footer>
+  <script>
+    WebFontConfig = {
+      google: {
+        families: [
+          'Lato:400,700,900',
+          'PT Serif:400,400i,700,700i'
+        ],
+      },
+      timeout: 2000
+    };
+  </script>
+  <script src="../ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
+  <script>
+    const goToContactPage = function () {
+      fbq('track', 'goToContactPage', {
+        content_name: 'Go to contact page',
+        content_ids: ['contact'],
+        content_type: 'product',
+      });
+      window.location.pathname = '/contact';
+    }
+  </script>
+  <script type="text/javascript">
+    _linkedin_partner_id = "2597492";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function () {
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })();
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=2597492&amp;fmt=gif" />
+  </noscript>  <script type="text/javascript" src="assets/main.js"></script>
+</body>
+
+
+<!-- Mirrored from codequest.com/web-development by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:14:10 GMT -->
+</html>

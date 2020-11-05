@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from codequest.com/react-native-development by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:14:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>codequest - React Native Development</title>
+  <meta name="description"
+    content="codequest is a software development company from Poland that does React Native development. Contact us to get an offer on your iOS and Android app now!">
+  <meta property="og:title" content="codequest is a software development studio.">
+  <meta property="og:description"
+    content="We are a collective of engineers, product designers, and creatives who take products from zero to one. Hire us to build you a world-class iOS, Android, or Web app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="assets/images/static/logo-fb.png">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="341">
+  <meta property="fb:app_id" content="1028261210595998">
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB3VBMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///9JtlwCAAAAnXRSTlMAACqt87AsF7zAGWD9/maHjBVn1ddqFgFCw/zGRVvn9elfAk3qnVw/Ppzm7FEh0Lc1AzO01CSErxiriQ7d2Sgl1t9hDyezfHa2Cu82Mu2xDDHaGjQ89BId4iMf2yBo8vlPS/dtBVCo9qcHBqLHqVMTuVi+VONS4VkILgmgG+ifux76+2vktbINHEaX2HKPdwRzk0xH8Y5pY5KZzckQO+TsXgAAAAFiS0dEnp+yowsAAAAHdElNRQfhARIVMAuExVrDAAAB/0lEQVQ4y3WT/UOLURTH962paKNNVjbtYVRbEU/yVmgpWkjewrxkasKEvETEZGRJ3oni/K/Ovbd57vOo88vO8z2fe86559y5XJYBRcVu94oSwLW0obSM2FauWgYAyj0C8K5eJgWwhqRVLAkAPv9aBVSuC/yPoKp6fZAWLRjaUAVnvCYsQh7DkH1s3BSBPf/mLSyHa+vqozWxBnYbt9qqYFsTd799h8kizOadXqKWXdAT7OZDe/aqQ0BgH3+2FlIAbdHy/UQHDlpKe5yo41B9p1CArsOysSNWUaBbNpwoYg09xfJqR4/pNY/3SvFEHwMnlX/qtA6UxtWpMwyc7Zd+i08HzjVJ0YgycL5S+heSOnCxQ4qXLjOAKwPCv5rSm7w2KLT+IXmN9PXh0A2im7csIHObaHDkzt3M4mDMe6OM11lzuM9JH/jMfzmBhwbRozFTHYikHnOCJ/oyMB7jkr0VT58B4yWtjfwx0WNbFp4nxGN7UZbNvgzzqmh0Eo59+1+RZrnXznjqDSfwqqj4bRiztSDjNOXPhuLxkQn/W7ITQLWIJyYRyQcC+QimJfFOu+UMC++7rDkkxfuOacBQjgfVnSkA6Vk3P+1ZrUbfByaMj2k1qE+fecG5L3m9S0m4vyrg23dnXBA/eA5zCvjJ8V955z+nbT640K6A5G9P7Z9C/C/xA8QH+Fot/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMS0xOFQyMTo0ODoxMSswMTowMHFg98oAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDEtMThUMjE6NDg6MTErMDE6MDAAPU92AAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    sizes="32x32">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABL1BMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///+4qfXxAAAAY3RSTlMAAFDn6FIGrrEHHIzv8I4dIL3+1Z7UviEEl5sbmUKh8soXFsjzokMf0oeEKOB9e+Eqa9D8tAoJ/dFsAbb5BWr4uRg69KNg4jwizM4jnE5xcpq7RfbtPz7s90eG+saIC+kyMAy2BLHkAAAAAWJLR0Rkwtq4CQAAAAd0SU1FB+EBEhUwCvPCalUAAADZSURBVBjTNc9pXwFRFAbw+0TFJLsMJkK2bDEhW0ZSZGkVZYnO9/8O3Zn78/zum/O/z4tzGOMBDkzmQ4Dtg6NjIot1D4B0YiM6tTtEB3C63B6v1+c+8+sCyAEKSkBIIUXmgvNw5CKq/8Til4kkWCpNlBHVKyKfn2VzRHkBBaLiNZNLZfWmokPVUrutywyNaLNVbwPtu47WbRjV+2Lvod9P9B6fjEWAwZBU4u95JCCk1caT6cvkVX2TDHj/+JyB52u++Dag+rOMpwDHarmuiGM2gd8tsDMrf3z+Byi4H3ZKAKd+AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTAxLTE4VDIxOjQ4OjEwKzAxOjAw1xf8fgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wMS0xOFQyMTo0ODoxMCswMTowMKZKRMIAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
+    sizes="16x16">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WR3GZLJ');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3315161-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-3315161-2', { 'optimize_id': 'GTM-NGDNXF2' });
+  </script>
+  <!-- End Global site tag (gtag.js) -->
+  <!-- Add display:none until DOM Content is loaded to avoid Flash of Unstyled Content-->
+  <style>
+    .no-unstyled-content {
+      display: none;
+    }
+  </style>
+  <script>document.documentElement.className = 'no-unstyled-content';</script>
+  <!-- Facebook Pixel Code-->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      '../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1506046949701910');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1506046949701910&amp;ev=PageView&amp;noscript=1"></noscript>
+  <!-- End Facebook Pixel Code-->
+  <!-- Hotjar Tracking Code for https://codequest.com/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1696973, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body class="on-top" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager (noscript)-->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR3GZLJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript)-->
+  <header class="page-header">
+    <div class="page-header__top"><a class="page-header__logo" href="index.html">
+        <svg class="svg-icon" width="1em" height="1em" aria-labelledby="codequestLogo codequestMainPage" role="img">
+          <title id="codequestLogo">codequest - Go to the main page</title>
+          <desc id="codequestMainPage">Go to the main page</desc>
+          <use xlink:href="#icon-codequest"></use>
+        </svg></a>
+      <div class="page-header__menu" role="navigation">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__menu-list-item">
+            <button class="page-header__menu-link page-header__menu-link--case-studies" data-js-case-studies-toggle
+              tabindex="0">Case studies</button>
+            <div class="page-header__case-studies-dropdown-wrapper" data-js-case-studies-dropdown>
+              <div class="case-studies-dropdown__triangle"></div>
+              <div class="page-header__case-studies-dropdown">
+                <ul class="case-studies-dropdown__list">
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/wellme.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Wellme</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/foundersuite.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Foundersuite</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/nvent.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Install Pro 360</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/booli.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Booli</strong> / iOS app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/selecthub.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>SelectHub</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/kredytmarket.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>kredytmarket</strong> / Web app
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="careers.html">Careers</a>
+          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="faq.html">FAQ</a></li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="https://medium.com/codequest"
+              target="_blank">Blog
+              <svg class="svg-icon" width="0.8em" height="0.8em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__menu-list-item" id="call-to-action-link">
+            <button class="page-header__menu-link" onclick="goToContactPage()">Start project with us</button>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header--background"></div>
+      <div class="page-header__hamburger"><a class="navigation-trigger" href="#"><span
+            class="navigation-helper"></span><span class="navigation-helper"></span><span
+            class="navigation-helper"></span></a></div>
+      <nav class="page-header__nav">
+        <ul class="page-header__dropdown-menu">
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="index.html">Home</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link page-header__dropdown-menu-link--case-studies"
+              data-js-mobile-case-studies-toggle>Case studies</button>
+            <ul class="page-header__dropdown-menu-case-studies-list" data-js-mobile-case-studies-dropdown>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/wellme.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Wellme</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/foundersuite.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Foundersuite</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/nvent.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Install Pro 360</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/booli.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Booli</strong> / <span class="case-studies-link__app-type">iOS app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/selecthub.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>SelectHub</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/kredytmarket.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>kredytmarket</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+            </ul>          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="careers.html">Careers</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="faq.html">FAQ</a>
+          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="https://medium.com/codequest" target="_blank">Blog
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link" onclick="goToContactPage()">Hire us!</button>
+          </li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--header facebookIconDesc--header" role="img">
+                <title id="facebookIcon--header">Like us on Facebook</title>
+                <desc id="facebookIconDesc--header">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--header linkedinIconDesc--header" role="img">
+                <title id="linkedinIcon--header">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--header">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--header twitterIconDesc--header" role="img">
+                <title id="twitterIcon--header">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--header">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--header githubIconDesc--header"
+                role="img">
+                <title id="githubIcon--header">Fork us on GitHub</title>
+                <desc id="githubIconDesc--header">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section
+      class="page-block page-block--selectable-narrow page-block--solid-azure-bg page-block--extra-space page-block--double-description page-block--white-text"
+      id="react-native-main">
+      <h1 class="page-block__title title-center-box">Multi platform development in React Native</h1>
+      <p class="page-block__desc page-block--wide">Build your Proof of Concept, MVP or simple app using one code</p>
+      <div class="page-block__graphic-desktop">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 528.4 310.6" width="528.4px" height="310.6px"
+          style="enable-background:new 0 0 528.4 310.6;" xml:space="preserve">
+          <style>
+            .graf-native-react-00 {
+              fill: none;
+            }
+
+            .graf-native-react-01 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-miterlimit: 10;
+            }
+
+            .graf-native-react-02 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+            }
+
+            .graf-native-react-03 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+
+            .graf-native-react-04 {
+              fill: #FFFFFF;
+            }
+          </style>
+          <g>
+            <rect class="graf-native-react-00" width="528.4" height="310.6" />
+            <g>
+              <g>
+                <g>
+                  <path class="graf-native-react-01" d="M30.1,166.4l-1.6,0.9h-3.7c0,0-3.2,1.2-5.6,0.9s-4.8-1.3-5.4-2.5s-2.1-1.9-2.3-2.8s0-1.8,0-1.8l-1.5-1.6
+					c0,0-0.1-4.1,0.9-5.7c1-1.6,0.9-4,0.9-4s1.3-2.5,4.2-5.3s5.6-6,6.4-9.1c0.9-3.1,2.8-3.7,2.8-3.7s2.8-0.9,7.2,0.7
+					c4.4,1.6,7.8,1.6,9.8,0.7s5.6-0.6,6.9,0.6c1.3,1.2,3.4,2.3,3.1,4.7s-3.7,4.8-6.7,6.2c-3.1,1.3-4,3.3-5.6,5.2s-4.7,4.3-4.7,8
+					C35.2,161.6,30.1,166.4,30.1,166.4z" />
+                  <path class="graf-native-react-02" d="M11.4,161.2h2.9c0,0,4,2.2,8.2,1.8s5.6-2.5,5.6-2.5" />
+                  <path class="graf-native-react-02" d="M14.4,161.2c0,0-0.1-4.5,0.7-7" />
+                  <path class="graf-native-react-02" d="M17.2,155.1c0,0,1.5-1,5.3-1" />
+                  <line class="graf-native-react-02" x1="12.6" y1="154.1" x2="11.6" y2="151.9" />
+                  <ellipse class="graf-native-react-02" cx="45.3" cy="138.9" rx="1.7" ry="1.2" />
+                  <path class="graf-native-react-02" d="M39.9,141.2c0,0,0.9-5.1,6-5.4" />
+                  <path class="graf-native-react-02"
+                    d="M20.8,128.9c0,0-5.9,0.1-10.8,3.8s-8.5,4.1-8.5,4.1s3.5,7.6,14.5,7.8" />
+                  <path class="graf-native-react-02" d="M20.8,131.6c0,0-5.4,0.8-8.2,3s-5.1,3.1-5.1,3.1" />
+                  <path class="graf-native-react-02" d="M64,135.8c0,0,0-4.4-4-5.9s-5.1-3.5-5.1-3.5s2.5-1.8,5.7,0s5.1,4.7,5.6,7.6c0.4,2.9-1.5,7-7.5,6.1
+					c0,0,2.1-3.9-1.3-7.2c-3.4-3.3-2.8-6.1-2.8-6.1" />
+                  <path class="graf-native-react-02" d="M23.2,133.6c0,0-4.6-1-1.8-8s8.5-6,8.5-6s0.6-3.5,8.1-3.2c0,0,7.5-0.9,12.7,0.7c0,0,2.1-0.7,6,1
+					s5.6,4.4,5.6,4.4s2.5,1.3,4.8,4.4c2.3,3.1,3.5,6.6,3.5,6.6s1.3,0.8,2.8,2.2c1.5,1.3,2.1,3.1,2.1,3.1s2.1-1.4,5.6,0
+					s3.7,2.3,3.7,2.3s2.6-1,9.7,0c7,1,8.6,1.8,8.6,1.8s6.2-2.4,17.6-2.8s20.1,1,20.1,1s7.3-3.7,16.3-4.5c8.9-0.8,19,0,19,0
+					s6.3-2.5,17.4-2.1s17.4,5.5,17.4,5.5s9.9,3,14,9.2s6.9,9.1,5.8,18.2s4.2,15.7,3.4,26.2s-2.7,18.9-2.7,18.9s1.9,3.2,0.8,8.9
+					s0.8,6.8,0,11.8s2.1,8.1-1.8,12.8c0,0,2.5,6.4,1.8,9.5s-3.8,0.8-3.8,0.8s0.7-3.7-1.1-4.3c0,0-2.7,4.4-7.4,2.8
+					c0,0,0.3,4.1-5.1,4.2c0,0-4,0.5-4.8-4.1c0,0-1.4-3.3-4.6-4c-3.2-0.6-3.9-3.1-4.4-6.2c-0.4-3.1-0.5-3.2-3.6-5.3
+					c-3.1-2-0.6-4.2-1.9-6.7c-1.3-2.5-5,0.6-8.6-2.9c0,0,0.7-2.5,6.4-4" />
+                  <path class="graf-native-react-02"
+                    d="M186.8,230.2c0,0-2.5,3.2-6.3,3.7c-3.8,0.4-7.3,2.3-10.1,4.2s-5.4,5.1-12.7,4.5c0,0-3.8,2.1-12.2,2.6
+					s-12.7-1.6-12.7-1.6s-4.2,1.9-10.7-1c0,0-7.9,2.9-11.9,1.4c0,0,0.7-2.6-1.3-4.1s0.7-5.4,0.9-9.7c0.1-4.2,2.3-6.4,0-9.7" />
+                  <path class="graf-native-react-02"
+                    d="M177.3,234.6c0,0,2.7,1.2,3.8,3.1s1.2,4.2,4.5,5.1c3.4,0.9,1.8,2.6,6.7,3.8c5,1.2,3.3,2.4,9.2,1" />
+                  <path class="graf-native-react-02" d="M110.2,243.9c0,0,0.7,4-2.1,5.3c-2.8,1.3-4.1,3.2-3.6,4.8c0,0-1.9,0.1-2.9-1c0,0-0.7,2.1,0,3.8
+					c0,0-1.8,1.9-3.2,0c0,0,0.1,1.4-1.6,2.5c-1.8,1.2-3.5,1.3-5.6,1.5s-7.5-3-7.6-5.3s-2.9-1.2-5-2.5s-2.8-4-1.8-5.4
+					s0.4-4.8-0.5-6.7s2.7-7.6,2.8-10.1" />
+                  <path class="graf-native-react-02" d="M76.3,249.4c0,0-3.1-0.9-5,0c0,0-0.6-3.1-2.1-3.6c0,0,0,2.3-3,2.4c-3,0.1-4.5-0.1-5.2-3
+					c-0.7-3-2.3-2.2-2.8-3.8s1.3-2.6-1.8-6.8s-5.3-2.9-5.6-7s-4.1-4.2-5.1-7.1s-2.2-4.4-4.1-5.8c-1.9-1.5-4.5-6.7-4.2-9.5
+					s-0.3-5.7-1-8.1s0.6-4.7-1.2-6.9s-6-2.8-6.4-7.3s-1.3-6.2-3.4-7.5s-4.8-3.7-4.7-7.1" />
+                  <path class="graf-native-react-02" d="M28.4,167.3c0,0,2.9,2.3,7.8,1.6c4.8-0.7,10.7-3.3,12.4-5.9" />
+                  <path class="graf-native-react-03" d="M215.7,259.3c0,0,5.7,10.4,5.9,16.8s-2.2,6.4-1.7,10.3c0.5,3.8-5.9,15.8-5.9,15.8s1.5,2.2,3.8,2.6l1.4-3.1
+					l-0.1,4.2c0,0,3,1,5.8,0s5.2-3.7,6.4-5.7c1.2-2.1,1.6-3.3,4-4.9c2.5-1.6-0.7-7-0.9-9.7s0.8-10.9-0.4-15.1
+					c-1.2-4.3,0.5-11.1-1.9-14" />
+                  <path class="graf-native-react-03" d="M81,254.2c0,0,1.8,12.9,2,19.3c0.1,6.4-2.4,13.6-2,17.4c0.5,3.8-5.7,14.4-5.7,14.4s-0.3,2.2,2,2.6l1.4-3.1
+					l-0.1,4.2c0,0,3,1,5.8,0s5.2-4.2,6.4-6.3c1.2-2.1-1.3-2.9,2.9-4.3c2.8-0.9,0.4-7,0.3-9.7s0.3-10.7,0.4-15.1
+					c0.1-5.7,6.4-13.9,4-16.9" />
+                  <path class="graf-native-react-03" d="M63.9,248.6c0,0,1.7,11.7,1.8,17.5c0.1,5.8-2.2,12.3-1.8,15.7c0.4,3.4-5.1,13-5.1,13s-0.2,2,1.8,2.4
+					l1.3-2.8l-0.1,3.8c0,0,2.7,0.9,5.3,0s4.7-3.8,5.8-5.7c1.1-1.9-1.2-2.7,2.6-3.9c2.5-0.8,0.4-6.3,0.2-8.8s0.3-9.7,0.3-13.7
+					c0.1-5.1,2.3-9.8,2.5-13.3" />
+                  <path class="graf-native-react-03" d="M193.3,246.8c0,0,8.2,16.8,8.6,22.3s-1.5,5.6-0.9,8.8c0.6,3.2-4.2,13.8-4.2,13.8s1.4,1.8,3.4,2.1l1-2.7
+					l0.1,3.6c0,0,2.6,0.7,5-0.3s4.3-3.4,5.2-5.2c0.9-1.8,1.2-2.9,3.2-4.4s-0.8-7.4-1.1-9.7c-0.3-2.3-1.9-11.7-1.8-16.6" />
+                  <path class="graf-native-react-03" d="M215.7,298.8c0,0,4.5,3.2,9.8,2.7" />
+                  <path class="graf-native-react-03" d="M198.5,287.8c0,0,2.6,2.1,5.9,2.3" />
+                  <path class="graf-native-react-03" d="M77.3,301.6c0,0,2.3,5.5,12.4,3" />
+                  <path class="graf-native-react-03" d="M60.7,291.5c0,0,1.4,4.3,10.6,3.5" />
+                </g>
+                <g>
+                  <path class="graf-native-react-01" d="M498.4,166.4l1.6,0.9h3.7c0,0,3.2,1.2,5.6,0.9s4.8-1.3,5.4-2.5s2.1-1.9,2.3-2.8c0.3-0.9,0-1.8,0-1.8
+					l1.5-1.6c0,0,0.1-4.1-0.9-5.7c-1-1.6-0.9-4-0.9-4s-1.3-2.5-4.2-5.3c-2.9-2.8-5.6-6-6.4-9.1c-0.9-3.1-2.8-3.7-2.8-3.7
+					s-2.8-0.9-7.2,0.7c-4.4,1.6-7.8,1.6-9.8,0.7c-2.1-0.9-5.6-0.6-6.9,0.6s-3.4,2.3-3.1,4.7c0.3,2.3,3.7,4.8,6.7,6.2
+					c3.1,1.3,4,3.3,5.6,5.2s4.7,4.3,4.7,8C493.3,161.6,498.4,166.4,498.4,166.4z" />
+                  <path class="graf-native-react-02" d="M517,161.2h-2.9c0,0-4,2.2-8.2,1.8s-5.6-2.5-5.6-2.5" />
+                  <path class="graf-native-react-02" d="M514.1,161.2c0,0,0.1-4.5-0.7-7" />
+                  <path class="graf-native-react-02" d="M511.3,155.1c0,0-1.5-1-5.3-1" />
+                  <line class="graf-native-react-02" x1="515.8" y1="154.1" x2="516.9" y2="151.9" />
+                  <ellipse class="graf-native-react-02" cx="483.2" cy="138.9" rx="1.7" ry="1.2" />
+                  <path class="graf-native-react-02" d="M488.6,141.2c0,0-0.9-5.1-6-5.4" />
+                  <path class="graf-native-react-02"
+                    d="M507.6,128.9c0,0,5.9,0.1,10.8,3.8c5,3.7,8.5,4.1,8.5,4.1s-3.5,7.6-14.5,7.8" />
+                  <path class="graf-native-react-02" d="M507.6,131.6c0,0,5.4,0.8,8.2,3s5.1,3.1,5.1,3.1" />
+                  <path class="graf-native-react-02" d="M464.4,135.8c0,0,0-4.4,4-5.9s5.1-3.5,5.1-3.5s-2.5-1.8-5.7,0s-5.1,4.7-5.6,7.6c-0.4,2.9,1.5,7,7.5,6.1
+					c0,0-2.1-3.9,1.3-7.2s2.8-6.1,2.8-6.1" />
+                  <path class="graf-native-react-02"
+                    d="M505.2,133.6c0,0,4.6-1,1.8-8c-2.8-7-8.5-6-8.5-6s-0.3-1.6-2.6-2.5c-1.2-0.5-2.9-0.8-5.4-0.7
+					c0,0-3.4-0.4-7.3-0.2c-1.8,0.1-3.8,0.4-5.5,0.9c0,0-2.1-0.7-6,1c-4,1.8-5.6,4.4-5.6,4.4s-2.5,1.3-4.8,4.4s-3.5,6.6-3.5,6.6
+					s-1.3,0.8-2.8,2.2c-1.5,1.3-2.1,3.1-2.1,3.1s-2.1-1.4-5.6,0s-3.7,2.3-3.7,2.3s-2.6-1-9.7,0c-7,1-8.6,1.8-8.6,1.8
+					s-6.2-2.4-17.6-2.8s-20.1,1-20.1,1s-7.3-3.7-16.3-4.5c-8.9-0.8-19,0-19,0s-6.3-2.5-17.4-2.1s-17.4,5.5-17.4,5.5s-9.9,3-14,9.2
+					s-6.9,9.1-5.8,18.2s-4.2,15.7-3.4,26.2c0.8,10.5,2.7,18.9,2.7,18.9s-1.9,3.2-0.8,8.9s-0.8,6.8,0,11.8s-2.1,8.1,1.8,12.8
+					c0,0-2.5,6.4-1.8,9.5s3.8,0.8,3.8,0.8s-0.7-3.7,1.1-4.3c0,0,2.7,4.4,7.4,2.8c0,0-0.3,4.1,5.1,4.2c0,0,4,0.5,4.8-4.1
+					c0,0,1.4-3.3,4.6-4c3.2-0.6,3.9-3.1,4.4-6.2c0.4-3.1,0.5-3.2,3.6-5.3c3.1-2,0.6-4.2,1.9-6.7s5,0.6,8.6-2.9c0,0-0.7-2.5-6.4-4" />
+                  <path class="graf-native-react-02" d="M341.6,230.2c0,0,2.5,3.2,6.3,3.7c3.8,0.4,7.3,2.3,10.1,4.2c2.8,1.9,5.4,5.1,12.7,4.5c0,0,3.8,2.1,12.2,2.6
+					c8.4,0.5,12.7-1.6,12.7-1.6s4.2,1.9,10.7-1c0,0,7.9,2.9,11.9,1.4c0,0-0.7-2.6,1.3-4.1c2.1-1.5-0.7-5.4-0.9-9.7
+					c-0.1-4.2-2.3-6.4,0-9.7" />
+                  <path class="graf-native-react-02"
+                    d="M351.2,234.6c0,0-2.7,1.2-3.8,3.1s-1.2,4.2-4.5,5.1s-1.8,2.6-6.7,3.8c-5,1.2-3.3,2.4-9.2,1" />
+                  <path class="graf-native-react-02" d="M418.2,243.9c0,0-0.7,4,2.1,5.3c2.8,1.3,4.1,3.2,3.6,4.8c0,0,1.9,0.1,2.9-1c0,0,0.7,2.1,0,3.8
+					c0,0,1.8,1.9,3.2,0c0,0-0.1,1.4,1.6,2.5c1.8,1.2,3.5,1.3,5.6,1.5s7.5-3,7.6-5.3s2.9-1.2,5-2.5s2.8-4,1.8-5.4
+					c-1-1.5-0.4-4.8,0.5-6.7s-2.7-7.6-2.8-10.1" />
+                  <path class="graf-native-react-02"
+                    d="M452.1,249.4c0,0,3.1-0.9,5,0c0,0,0.6-3.1,2.1-3.6c0,0,0,2.3,3,2.4c3,0.1,4.5-0.1,5.2-3
+					c0.7-3,2.3-2.2,2.8-3.8c0.4-1.5-1.3-2.6,1.8-6.8c3.1-4.2,5.3-2.9,5.6-7c0.3-4.1,4.1-4.2,5.1-7.1c1-2.9,2.2-4.4,4.1-5.8
+					c1.9-1.5,4.5-6.7,4.2-9.5s0.3-5.7,1-8.1c0.7-2.3-0.6-4.7,1.2-6.9c1.8-2.2,6-2.8,6.4-7.3s1.3-6.2,3.4-7.5s4.8-3.7,4.7-7.1" />
+                  <path class="graf-native-react-02" d="M500,167.3c0,0-2.9,2.3-7.8,1.6c-4.8-0.7-10.7-3.3-12.4-5.9" />
+                  <path class="graf-native-react-03" d="M312.7,259.3c0,0-5.7,10.4-5.9,16.8s2.2,6.4,1.7,10.3c-0.5,3.8,5.9,15.8,5.9,15.8s-1.5,2.2-3.8,2.6
+					l-1.4-3.1l0.1,4.2c0,0-3,1-5.8,0s-5.2-3.7-6.4-5.7c-1.2-2.1-1.6-3.3-4-4.9c-2.5-1.6,0.7-7,0.9-9.7s-0.8-10.9,0.4-15.1
+					s-0.5-11.1,1.9-14" />
+                  <path class="graf-native-react-03" d="M447.4,254.2c0,0-1.8,12.9-2,19.3s2.4,13.6,2,17.4c-0.5,3.8,5.7,14.4,5.7,14.4s0.3,2.2-2,2.6l-1.4-3.1
+					l0.1,4.2c0,0-3,1-5.8,0s-5.2-4.2-6.4-6.3c-1.2-2.1,1.3-2.9-2.9-4.3c-2.8-0.9-0.4-7-0.3-9.7c0.2-2.7-0.3-10.7-0.4-15.1
+					c-0.1-5.7-6.4-13.9-4-16.9" />
+                  <path class="graf-native-react-03" d="M464.5,248.6c0,0-1.7,11.7-1.8,17.5c-0.1,5.8,2.2,12.3,1.8,15.7c-0.4,3.4,5.1,13,5.1,13s0.2,2-1.8,2.4
+					l-1.3-2.8l0.1,3.8c0,0-2.7,0.9-5.3,0c-2.6-0.9-4.7-3.8-5.8-5.7c-1.1-1.9,1.2-2.7-2.6-3.9c-2.5-0.8-0.4-6.3-0.2-8.8
+					c0.1-2.4-0.3-9.7-0.3-13.7c-0.1-5.1-2.3-9.8-2.5-13.3" />
+                  <path class="graf-native-react-03" d="M335.1,246.8c0,0-8.2,16.8-8.6,22.3s1.5,5.6,0.9,8.8s4.2,13.8,4.2,13.8s-1.4,1.8-3.4,2.1l-1-2.7l-0.1,3.6
+					c0,0-2.6,0.7-5-0.3s-4.3-3.4-5.2-5.2c-0.9-1.8-1.2-2.9-3.2-4.4s0.8-7.4,1.1-9.7c0.3-2.3,1.9-11.7,1.8-16.6" />
+                  <path class="graf-native-react-03" d="M312.7,298.8c0,0-4.5,3.2-9.8,2.7" />
+                  <path class="graf-native-react-03" d="M329.9,287.8c0,0-2.6,2.1-5.9,2.3" />
+                  <path class="graf-native-react-03" d="M451.1,301.6c0,0-2.3,5.5-12.4,3" />
+                  <path class="graf-native-react-03" d="M467.8,291.5c0,0-1.4,4.3-10.6,3.5" />
+                </g>
+              </g>
+              <polyline class="graf-native-react-02" points="483.3,115.3 483.3,100.9 495.9,100.9 495.9,116.2 		" />
+              <circle class="graf-native-react-02" cx="264.3" cy="8.1" r="7.1" />
+              <path class="graf-native-react-02 react-native-line" d="M271.4,8.1h207.9c6.2,0,11.2,5,11.2,11.2v81.1" />
+              <path class="graf-native-react-02 react-native-line" d="M257.1,8.1h-207c-6.2,0-11.2,5-11.2,11.2v81.1" />
+              <path class="graf-native-react-02"
+                d="M32.5,116.6v-9.8c0-3.5,2.8-6.3,6.3-6.3l0,0c3.5,0,6.3,2.8,6.3,6.3v9.1" />
+              <g>
+                <line class="graf-native-react-02" x1="264.3" y1="15.3" x2="264.3" y2="39.8" />
+                <g>
+                  <path class="graf-native-react-02"
+                    d="M302.7,90.5h-77V43c0-1.8,1.5-3.2,3.2-3.2h70.6c1.8,0,3.2,1.5,3.2,3.2V90.5z" />
+                  <path class="graf-native-react-02"
+                    d="M221.1,90.5h86.3v4.4c0,1.8-1.5,3.2-3.2,3.2h-79.8c-1.8,0-3.2-1.5-3.2-3.2v-4.4H221.1z" />
+                  <line class="graf-native-react-02" x1="225.7" y1="48" x2="300.7" y2="48" />
+                  <rect class="react-native-loader" x="250" y="70" width="0" height="0" />
+                  <circle class="graf-native-react-02" cx="264" cy="43.5" r="0.5" />
+                </g>
+              </g>
+            </g>
+            <g>
+              <path class="graf-native-react-03 react-native-neon2" d="M154.3,206.7c-5.4,3.1-12.9,3.5-20.4,0.2c-6.1-2.6-11.1-7.1-14.3-12.3c1.5,1.3,3.4,2.3,5.3,3.2
+			c7.7,3.6,15.5,3.4,20.9,0l0,0c-7.7-5.9-14.3-13.7-19.2-20c-1-1-1.8-2.3-2.6-3.5c5.9,5.4,15.4,12.3,18.7,14.2
+			c-7.1-7.5-13.4-16.8-13.2-16.5c11.2,11.4,21.7,17.8,21.7,17.8c0.3,0.2,0.6,0.4,0.8,0.5c0.2-0.6,0.4-1.2,0.6-1.8
+			c1.8-6.6-0.3-14.1-4.8-20.3c10.5,6.3,16.7,18.2,14.1,28.1c-0.1,0.3-0.1,0.5-0.2,0.8l0.1,0.1c5.2,6.5,3.7,13.3,3.1,12
+			C162.2,203.9,157,205.6,154.3,206.7z" />
+            </g>
+            <g class="react-native-logo">
+              <path class="graf-native-react-04" d="M273.2,64.6c-0.3-0.1-0.7-0.2-1-0.3c0.1-0.2,0.1-0.5,0.2-0.7c0.8-3.7,0.3-6.6-1.4-7.6c-1.6-0.9-4.3,0-6.9,2.4
+			c-0.3,0.2-0.5,0.5-0.8,0.7c-0.2-0.2-0.3-0.3-0.5-0.5c-2.8-2.5-5.6-3.5-7.3-2.6c-1.6,0.9-2.1,3.7-1.4,7.2c0.1,0.3,0.1,0.7,0.2,1
+			c-0.4,0.1-0.8,0.2-1.1,0.4c-3.3,1.1-5.4,2.9-5.4,4.8s2.2,3.8,5.7,5c0.3,0.1,0.6,0.2,0.8,0.3c-0.1,0.4-0.2,0.7-0.2,1.1
+			c-0.6,3.4-0.1,6.1,1.5,7.1c1.7,1,4.5,0,7.2-2.4c0.2-0.2,0.4-0.4,0.6-0.6c0.3,0.3,0.6,0.5,0.8,0.8c2.6,2.3,5.2,3.2,6.8,2.3
+			c1.7-1,2.2-3.9,1.5-7.4c-0.1-0.3-0.1-0.5-0.2-0.8c0.2-0.1,0.4-0.1,0.6-0.2c3.6-1.2,5.9-3.1,5.9-5
+			C278.7,67.6,276.5,65.8,273.2,64.6z M264.9,59.4c2.3-2,4.4-2.8,5.4-2.2s1.4,3,0.8,6.2c0,0.2-0.1,0.4-0.1,0.6
+			c-1.3-0.3-2.7-0.5-4.1-0.7c-0.9-1.2-1.7-2.3-2.6-3.3C264.4,59.8,264.6,59.6,264.9,59.4z M256.9,71c0.3,0.5,0.6,1.1,0.9,1.6
+			s0.6,1.1,1,1.6c-1-0.1-2-0.3-2.9-0.5C256.1,72.9,256.5,72,256.9,71z M256.9,67.9c-0.4-0.9-0.7-1.8-1-2.7c0.9-0.2,1.8-0.4,2.8-0.5
+			c-0.3,0.5-0.6,1-1,1.6C257.4,66.8,257.1,67.4,256.9,67.9z M257.6,69.5c0.4-0.8,0.8-1.7,1.3-2.5l0,0c0.5-0.8,1-1.6,1.5-2.4
+			c0.9-0.1,1.9-0.1,2.8-0.1c1,0,1.9,0,2.8,0.1c0.5,0.8,1,1.6,1.5,2.4s0.9,1.6,1.3,2.5c-0.4,0.9-0.9,1.7-1.3,2.5l0,0
+			c-0.5,0.8-1,1.6-1.5,2.4c-0.9,0.1-1.9,0.1-2.8,0.1c-1,0-1.9,0-2.8-0.1c-0.5-0.8-1-1.6-1.5-2.4S258,70.3,257.6,69.5z M268.7,72.6
+			c0.3-0.5,0.6-1.1,0.9-1.6c0.4,0.9,0.8,1.9,1,2.7c-0.9,0.2-1.9,0.4-2.9,0.5C268,73.7,268.4,73.2,268.7,72.6z M269.6,67.9
+			c-0.3-0.5-0.6-1.1-0.9-1.6s-0.6-1-0.9-1.6c1,0.1,1.9,0.3,2.8,0.5C270.3,66.1,270,67,269.6,67.9z M263.2,61
+			c0.6,0.7,1.2,1.4,1.8,2.2c-1.2-0.1-2.4-0.1-3.7,0C262,62.4,262.6,61.7,263.2,61z M256.1,57.2c1-0.6,3.3,0.3,5.7,2.4
+			c0.2,0.1,0.3,0.3,0.5,0.4c-0.9,1-1.8,2.1-2.6,3.3c-1.5,0.1-2.9,0.4-4.1,0.6c-0.1-0.3-0.2-0.6-0.2-1l0,0
+			C254.7,60,255.1,57.8,256.1,57.2z M254.6,73.4c-0.3-0.1-0.5-0.2-0.8-0.2c-1.5-0.5-2.8-1.2-3.6-1.9c-0.8-0.7-1.2-1.3-1.2-1.8
+			c0-1.1,1.7-2.6,4.5-3.5c0.4-0.1,0.7-0.2,1.1-0.3c0.4,1.3,0.9,2.6,1.5,3.9C255.5,70.8,255,72.2,254.6,73.4z M261.7,79.5
+			c-1.2,1.1-2.4,1.8-3.5,2.2l0,0c-1,0.3-1.7,0.3-2.2,0.1c-1-0.6-1.4-2.7-0.8-5.7c0.1-0.3,0.1-0.7,0.2-1c1.3,0.3,2.7,0.5,4.2,0.6
+			c0.9,1.2,1.8,2.3,2.7,3.3C262.1,79.1,261.9,79.3,261.7,79.5z M263.3,78c-0.6-0.7-1.3-1.4-1.9-2.2c0.6,0,1.2,0,1.8,0
+			c0.6,0,1.3,0,1.9,0C264.5,76.6,263.9,77.3,263.3,78z M271.3,79.8c-0.2,1-0.6,1.7-1,1.9c-1,0.6-3.1-0.2-5.3-2.1
+			c-0.3-0.2-0.5-0.5-0.8-0.7c0.9-1,1.7-2.1,2.6-3.3c1.5-0.1,2.9-0.4,4.2-0.6c0.1,0.3,0.1,0.5,0.2,0.7
+			C271.5,77.3,271.5,78.7,271.3,79.8z M272.4,73.2L272.4,73.2c-0.2,0.1-0.3,0.1-0.5,0.2c-0.4-1.2-0.9-2.6-1.6-3.9
+			c0.6-1.3,1.1-2.6,1.5-3.9c0.3,0.1,0.6,0.2,0.9,0.3c2.9,1,4.6,2.4,4.6,3.6C277.4,70.6,275.5,72.2,272.4,73.2z" />
+              <path class="graf-native-react-04" d="M263.2,72.2c1.5,0,2.8-1.2,2.8-2.8c0-1.5-1.2-2.8-2.8-2.8c-1.5,0-2.8,1.2-2.8,2.8
+			C260.4,71,261.7,72.2,263.2,72.2z" />
+            </g>
+            <path class="graf-native-react-03 react-native-neon1" d="M404.4,197.9c-1.7,0-3.1-1.3-3.1-2.9v-12.4c0-1.6,1.4-2.9,3.1-2.9s3.1,1.3,3.1,2.9V195
+		C407.5,196.7,406.1,197.9,404.4,197.9z M394.9,204h-2.4c0.1,0.3,0.1,0.5,0.1,0.8v0.2v1v5c0,1.6-1.4,2.9-3.1,2.9s-3.1-1.3-3.1-2.9
+		v-5v-1v-0.2c0-0.3,0-0.5,0.1-0.8h-5.8c0.1,0.3,0.1,0.5,0.1,0.8v0.2v1v5c0,1.6-1.4,2.9-3.1,2.9s-3.1-1.3-3.1-2.9v-5v-1v-0.2
+		c0-0.3,0-0.5,0.1-0.8h-2.4c-1.8,0-3.3-1.4-3.3-3.1v-16.8v-2v-2.4h0.2H398h0.2v2.4v2v16.8C398.2,202.7,396.7,204,394.9,204z
+		 M376.5,166.2l-0.6-0.8l-0.6-0.8l-1.3-1.8c-0.2-0.2-0.1-0.5,0.1-0.7c0.3-0.2,0.5-0.1,0.7,0.1l1.5,1.9l0.6,0.8l0.6,0.8
+		c1.9-0.7,4-1,6.2-1s4.3,0.4,6.2,1l0.6-0.8l0.6-0.8l1.4-1.9c0.2-0.2,0.5-0.3,0.7-0.1s0.3,0.5,0.1,0.7l-1.3,1.8l-0.5,0.8l-0.6,0.8
+		c4.4,1.9,7.4,5.5,7.4,9.6h-29.1C369.1,171.8,372.1,168.2,376.5,166.2z M389.9,172c0.9,0,1.5-0.6,1.5-1.5c0-0.8-0.7-1.4-1.5-1.4
+		c-0.9,0-1.5,0.6-1.5,1.4C388.3,171.4,389,172,389.9,172z M377.4,172c0.9,0,1.5-0.6,1.5-1.5c0-0.8-0.7-1.4-1.5-1.4
+		c-0.9,0-1.5,0.6-1.5,1.4C375.8,171.4,376.6,172,377.4,172z M362.9,197.9c-1.7,0-3.1-1.3-3.1-2.9v-12.4c0-1.6,1.4-2.9,3.1-2.9
+		s3.1,1.3,3.1,2.9V195C366.1,196.7,364.6,197.9,362.9,197.9z" />
+          </g>
+        </svg>
+
+      </div>
+      <div class="page-block__graphic-mobile">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 224.4 198.1" width="224.4px" height="198.1px"
+          style="enable-background:new 0 0 224.4 198.1;" xml:space="preserve">
+          <style>
+            .graf-native-react-mobile-00 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+            }
+
+            .graf-native-react-mobile-01 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-miterlimit: 10;
+            }
+
+            .graf-native-react-mobile-02 {
+              fill: #FFFFFF;
+            }
+
+            .graf-native-react-mobile-03 {
+              fill: none;
+            }
+          </style>
+          <g>
+            <g>
+              <g>
+                <polyline class="graf-native-react-mobile-00"
+                  points="176.4,115.3 176.4,100.9 189,100.9 189,116.2 			" />
+                <circle class="graf-native-react-mobile-00" cx="110.5" cy="8.1" r="7.1" />
+                <path class="graf-native-react-mobile-00 react-native-line"
+                  d="M117.7,8.1h54.7c6.2,0,11.2,5,11.2,11.2v81.1" />
+                <path class="graf-native-react-mobile-00 react-native-line"
+                  d="M103.4,8.1H50.1c-6.2,0-11.2,5-11.2,11.2v81.1" />
+                <path class="graf-native-react-mobile-00"
+                  d="M32.5,116.6v-9.8c0-3.5,2.8-6.3,6.3-6.3l0,0c3.5,0,6.3,2.8,6.3,6.3v9.1" />
+                <g>
+                  <line class="graf-native-react-mobile-00" x1="110.5" y1="15.3" x2="110.5" y2="39.8" />
+                  <g>
+                    <path class="graf-native-react-mobile-00"
+                      d="M149,90.5H72V43c0-1.8,1.5-3.2,3.2-3.2h70.6c1.8,0,3.2,1.5,3.2,3.2L149,90.5L149,90.5z" />
+                    <path class="graf-native-react-mobile-00"
+                      d="M67.3,90.5h86.3v4.4c0,1.8-1.5,3.2-3.2,3.2H70.5c-1.8,0-3.2-1.5-3.2-3.2V90.5z" />
+                    <line class="graf-native-react-mobile-00" x1="71.9" y1="48" x2="148.9" y2="48" />
+                    <rect class="react-native-loader" x="96" y="70" width="0" height="0" />
+                    <circle class="graf-native-react-mobile-00" cx="110.3" cy="43.5" r="0.5" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path class="graf-native-react-mobile-01" d="M30.1,166.4l-1.6,0.9h-3.7c0,0-3.2,1.2-5.6,0.9s-4.8-1.3-5.4-2.5s-2.1-1.9-2.3-2.8s0-1.8,0-1.8l-1.5-1.6
+				c0,0-0.1-4.1,0.9-5.7c1-1.6,0.9-4,0.9-4s1.3-2.5,4.2-5.3c2.9-2.8,5.6-6,6.4-9.1c0.9-3.1,2.8-3.7,2.8-3.7s2.8-0.9,7.2,0.7
+				c4.4,1.6,7.8,1.6,9.8,0.7s5.6-0.6,6.9,0.6c1.3,1.2,3.4,2.3,3.1,4.7s-3.7,4.8-6.7,6.2c-3.1,1.3-4,3.3-5.6,5.2
+				c-1.6,1.9-4.7,4.3-4.7,8C35.2,161.6,30.1,166.4,30.1,166.4z" />
+                    <path class="graf-native-react-mobile-00" d="M11.4,161.2h2.9c0,0,4,2.2,8.2,1.8s5.6-2.5,5.6-2.5" />
+                    <path class="graf-native-react-mobile-00" d="M14.4,161.2c0,0-0.1-4.5,0.7-7" />
+                    <path class="graf-native-react-mobile-00" d="M17.2,155.1c0,0,1.5-1,5.3-1" />
+                    <line class="graf-native-react-mobile-00" x1="12.6" y1="154.1" x2="11.6" y2="151.9" />
+                    <ellipse class="graf-native-react-mobile-00" cx="45.3" cy="138.9" rx="1.7" ry="1.2" />
+                    <path class="graf-native-react-mobile-00" d="M39.9,141.2c0,0,0.9-5.1,6-5.4" />
+                    <path class="graf-native-react-mobile-00"
+                      d="M20.8,128.9c0,0-5.9,0.1-10.8,3.8s-8.5,4.1-8.5,4.1s3.5,7.6,14.5,7.8" />
+                    <path class="graf-native-react-mobile-00" d="M20.8,131.6c0,0-5.4,0.8-8.2,3s-5.1,3.1-5.1,3.1" />
+                    <path class="graf-native-react-mobile-00" d="M64,135.8c0,0,0-4.4-4-5.9s-5.1-3.5-5.1-3.5s2.5-1.8,5.7,0s5.1,4.7,5.6,7.6c0.4,2.9-1.5,7-7.5,6.1
+						c0,0,2.1-3.9-1.3-7.2c-3.4-3.3-2.8-6.1-2.8-6.1" />
+                    <path class="graf-native-react-mobile-00" d="M23.2,133.6c0,0-4.6-1-1.8-8s8.5-6,8.5-6s0.6-3.5,8.1-3.2c0,0,7.5-0.9,12.7,0.7c0,0,2.1-0.7,6,1
+						s5.6,4.4,5.6,4.4s2.5,1.3,4.8,4.4c2.3,3.1,3.5,6.6,3.5,6.6s1.3,0.8,2.8,2.2c1.5,1.3,2.1,3.1,2.1,3.1s2.1-1.4,5.6,0
+						s3.7,2.3,3.7,2.3s2.6-1,9.7,0" />
+                    <path class="graf-native-react-mobile-00"
+                      d="M36.5,197.1c-0.7-2.3,0.6-4.7-1.2-6.9s-6-2.8-6.4-7.3s-1.3-6.2-3.4-7.5s-4.8-3.7-4.7-7.1" />
+                    <path class="graf-native-react-mobile-00"
+                      d="M28.4,167.3c0,0,2.9,2.3,7.8,1.6c4.8-0.7,10.7-3.3,12.4-5.9" />
+                  </g>
+                  <path class="graf-native-react-mobile-00" d="M36.5,197.1c0,0,50.4-3.4,57.9-55.8" />
+                </g>
+                <g>
+                  <g>
+                    <path class="graf-native-react-mobile-01" d="M194.3,166.4l1.6,0.9h3.7c0,0,3.2,1.2,5.6,0.9s4.8-1.3,5.4-2.5s2.1-1.9,2.3-2.8s0-1.8,0-1.8l1.5-1.6
+						c0,0,0.1-4.1-0.9-5.7c-1-1.6-0.9-4-0.9-4s-1.3-2.5-4.2-5.3s-5.6-6-6.4-9.1c-0.9-3.1-2.8-3.7-2.8-3.7s-2.8-0.9-7.2,0.7
+						c-4.4,1.6-7.8,1.6-9.8,0.7s-5.6-0.6-6.9,0.6c-1.3,1.2-3.4,2.3-3.1,4.7s3.7,4.8,6.7,6.2c3.1,1.3,4,3.3,5.6,5.2s4.7,4.3,4.7,8
+						C189.2,161.6,194.3,166.4,194.3,166.4z" />
+                    <path class="graf-native-react-mobile-00" d="M213,161.2h-3c0,0-4,2.2-8.2,1.8s-5.6-2.5-5.6-2.5" />
+                    <path class="graf-native-react-mobile-00" d="M210,161.2c0,0,0.1-4.5-0.7-7" />
+                    <path class="graf-native-react-mobile-00" d="M207.2,155.1c0,0-1.5-1-5.3-1" />
+                    <line class="graf-native-react-mobile-00" x1="211.8" y1="154.1" x2="212.8" y2="151.9" />
+                    <ellipse class="graf-native-react-mobile-00" cx="179.1" cy="138.9" rx="1.7" ry="1.2" />
+                    <path class="graf-native-react-mobile-00" d="M184.5,141.2c0,0-0.9-5.1-6-5.4" />
+                    <path class="graf-native-react-mobile-00"
+                      d="M203.6,128.9c0,0,5.9,0.1,10.8,3.8c5,3.7,8.5,4.1,8.5,4.1s-3.5,7.6-14.5,7.8" />
+                    <path class="graf-native-react-mobile-00" d="M203.6,131.6c0,0,5.4,0.8,8.2,3s5.1,3.1,5.1,3.1" />
+                    <path class="graf-native-react-mobile-00" d="M160.4,135.8c0,0,0-4.4,4-5.9s5.1-3.5,5.1-3.5s-2.5-1.8-5.7,0s-5.1,4.7-5.6,7.6c-0.4,2.9,1.5,7,7.5,6.1
+						c0,0-2.1-3.9,1.3-7.2c3.4-3.3,2.8-6.1,2.8-6.1" />
+                    <path class="graf-native-react-mobile-00" d="M201.2,133.6c0,0,4.6-1,1.8-8s-8.5-6-8.5-6s-0.6-3.5-8.1-3.2c0,0-7.5-0.9-12.7,0.7c0,0-2.1-0.7-6,1
+						s-5.6,4.4-5.6,4.4s-2.5,1.3-4.8,4.4c-2.3,3.1-3.5,6.6-3.5,6.6s-1.3,0.8-2.8,2.2c-1.5,1.3-2.1,3.1-2.1,3.1s-2.1-1.4-5.6,0
+						s-3.7,2.3-3.7,2.3s-2.6-1-9.7,0" />
+                    <path class="graf-native-react-mobile-00"
+                      d="M187.9,197.1c0.7-2.3-0.6-4.7,1.2-6.9s6-2.8,6.4-7.3s1.3-6.2,3.4-7.5c2.1-1.3,4.8-3.7,4.7-7.1" />
+                    <path class="graf-native-react-mobile-00"
+                      d="M196,167.3c0,0-2.9,2.3-7.8,1.6c-4.8-0.7-10.7-3.3-12.4-5.9" />
+                  </g>
+                  <path class="graf-native-react-mobile-00" d="M187.9,197.1c0,0-50.4-3.4-57.9-55.8" />
+                </g>
+              </g>
+              <g>
+                <path class="graf-native-react-mobile-02 react-native-logo" d="M119.7,64.5c-0.3-0.1-0.7-0.2-1-0.3c0.1-0.2,0.1-0.5,0.2-0.7c0.8-3.7,0.3-6.6-1.4-7.6
+				c-1.6-0.9-4.3,0-6.9,2.4c-0.3,0.2-0.5,0.5-0.8,0.7c-0.2-0.2-0.3-0.3-0.5-0.5c-2.8-2.5-5.6-3.5-7.3-2.6c-1.6,0.9-2.1,3.7-1.4,7.2
+				c0.1,0.3,0.1,0.7,0.2,1c-0.4,0.1-0.8,0.2-1.1,0.4c-3.3,1.1-5.4,2.9-5.4,4.8s2.2,3.8,5.7,5c0.3,0.1,0.6,0.2,0.8,0.3
+				c-0.1,0.4-0.2,0.7-0.2,1.1c-0.6,3.4-0.1,6.1,1.5,7.1c1.7,1,4.5,0,7.2-2.4c0.2-0.2,0.4-0.4,0.6-0.6c0.3,0.3,0.6,0.5,0.8,0.8
+				c2.6,2.3,5.2,3.2,6.8,2.3c1.7-1,2.2-3.9,1.5-7.4c-0.1-0.3-0.1-0.5-0.2-0.8c0.2-0.1,0.4-0.1,0.6-0.2c3.6-1.2,5.9-3.1,5.9-5
+				C125.2,67.5,123,65.7,119.7,64.5z M111.4,59.3c2.3-2,4.4-2.8,5.4-2.2s1.4,3,0.8,6.2c0,0.2-0.1,0.4-0.1,0.6
+				c-1.3-0.3-2.7-0.5-4.1-0.7c-0.9-1.2-1.7-2.3-2.6-3.3C110.9,59.7,111.1,59.5,111.4,59.3z M103.4,70.9c0.3,0.5,0.6,1.1,0.9,1.6
+				s0.6,1.1,1,1.6c-1-0.1-2-0.3-2.9-0.5C102.6,72.8,103,71.9,103.4,70.9z M103.4,67.8c-0.4-0.9-0.7-1.8-1-2.7
+				c0.9-0.2,1.8-0.4,2.8-0.5c-0.3,0.5-0.6,1-1,1.6C103.9,66.7,103.6,67.3,103.4,67.8z M104.1,69.4c0.4-0.8,0.8-1.7,1.3-2.5l0,0
+				c0.5-0.8,1-1.6,1.5-2.4c0.9-0.1,1.9-0.1,2.8-0.1c1,0,1.9,0,2.8,0.1c0.5,0.8,1,1.6,1.5,2.4s0.9,1.6,1.3,2.5
+				c-0.4,0.9-0.9,1.7-1.3,2.5l0,0c-0.5,0.8-1,1.6-1.5,2.4c-0.9,0.1-1.9,0.1-2.8,0.1c-1,0-1.9,0-2.8-0.1c-0.5-0.8-1-1.6-1.5-2.4
+				S104.5,70.2,104.1,69.4z M115.2,72.5c0.3-0.5,0.6-1.1,0.9-1.6c0.4,0.9,0.8,1.9,1,2.7c-0.9,0.2-1.9,0.4-2.9,0.5
+				C114.5,73.6,114.9,73.1,115.2,72.5z M116.1,67.8c-0.3-0.5-0.6-1.1-0.9-1.6s-0.6-1-0.9-1.6c1,0.1,1.9,0.3,2.8,0.5
+				C116.8,66,116.5,66.9,116.1,67.8z M109.7,60.9c0.6,0.7,1.2,1.4,1.8,2.2c-1.2-0.1-2.4-0.1-3.7,0C108.5,62.3,109.1,61.6,109.7,60.9
+				z M102.6,57.1c1-0.6,3.3,0.3,5.7,2.4c0.2,0.1,0.3,0.3,0.5,0.4c-0.9,1-1.8,2.1-2.6,3.3c-1.5,0.1-2.9,0.4-4.1,0.6
+				c-0.1-0.3-0.2-0.6-0.2-1l0,0C101.2,59.9,101.6,57.7,102.6,57.1z M101.1,73.3c-0.3-0.1-0.5-0.2-0.8-0.2c-1.5-0.5-2.8-1.2-3.6-1.9
+				c-0.8-0.7-1.2-1.3-1.2-1.8c0-1.1,1.7-2.6,4.5-3.5c0.4-0.1,0.7-0.2,1.1-0.3c0.4,1.3,0.9,2.6,1.5,3.9
+				C102,70.7,101.5,72.1,101.1,73.3z M108.2,79.4c-1.2,1.1-2.4,1.8-3.5,2.2l0,0c-1,0.3-1.7,0.3-2.2,0.1c-1-0.6-1.4-2.7-0.8-5.7
+				c0.1-0.3,0.1-0.7,0.2-1c1.3,0.3,2.7,0.5,4.2,0.6c0.9,1.2,1.8,2.3,2.7,3.3C108.6,79,108.4,79.2,108.2,79.4z M109.8,77.9
+				c-0.6-0.7-1.3-1.4-1.9-2.2c0.6,0,1.2,0,1.8,0c0.6,0,1.3,0,1.9,0C111,76.5,110.4,77.2,109.8,77.9z M117.8,79.7
+				c-0.2,1-0.6,1.7-1,1.9c-1,0.6-3.1-0.2-5.3-2.1c-0.3-0.2-0.5-0.5-0.8-0.7c0.9-1,1.7-2.1,2.6-3.3c1.5-0.1,2.9-0.4,4.2-0.6
+				c0.1,0.3,0.1,0.5,0.2,0.7C118,77.2,118,78.6,117.8,79.7z M118.9,73.1L118.9,73.1c-0.2,0.1-0.3,0.1-0.5,0.2
+				c-0.4-1.2-0.9-2.6-1.6-3.9c0.6-1.3,1.1-2.6,1.5-3.9c0.3,0.1,0.6,0.2,0.9,0.3c2.9,1,4.6,2.4,4.6,3.6
+				C123.9,70.5,122,72.1,118.9,73.1z" />
+                <path class="graf-native-react-mobile-02 react-native-logo" d="M109.7,72.1c1.5,0,2.8-1.2,2.8-2.8c0-1.5-1.2-2.8-2.8-2.8c-1.5,0-2.8,1.2-2.8,2.8
+				C106.9,70.9,108.2,72.1,109.7,72.1z" />
+              </g>
+              <g class="react-native-neon2">
+                <circle cx="76.5" cy="177.5" r="15" fill="#0091ea" />
+                <path class="graf-native-react-mobile-02" d="M76.7,160.5c-9.2,0-16.6,7.5-16.6,16.6s7.5,16.6,16.6,16.6s16.6-7.5,16.6-16.6S85.9,160.5,76.7,160.5z
+				M86.5,186c-1.2-2.3-3.4-1.6-4.6-1.1c-2.3,1.3-5.6,1.5-8.9,0.1c-2.7-1.1-4.8-3.1-6.2-5.4c0.7,0.6,1.5,1,2.3,1.4
+				c3.4,1.6,6.7,1.5,9.1,0c-3.4-2.6-6.2-6-8.4-8.7c-0.4-0.4-0.8-1-1.1-1.5c2.6,2.3,6.7,5.4,8.1,6.2c-3.1-3.3-5.8-7.3-5.7-7.2
+				c4.9,5,9.4,7.7,9.4,7.7c0.1,0.1,0.3,0.2,0.3,0.2c0.1-0.3,0.2-0.5,0.3-0.8c0.8-2.9-0.1-6.1-2.1-8.8c4.6,2.7,7.3,7.9,6.1,12.2
+				c0,0.1,0,0.2-0.1,0.3l0,0C87.4,183.6,86.7,186.6,86.5,186z" />
+              </g>
+              <g class="react-native-neon1">
+                <circle cx="146.5" cy="177.5" r="15" fill="#0091ea" />
+                <path class="graf-native-react-mobile-02" d="M144.2,169.9c-0.3,0-0.6,0.2-0.6,0.5s0.3,0.6,0.6,0.6s0.6-0.2,0.6-0.6C144.8,170.1,144.5,169.9,144.2,169.9z
+				" />
+                <path class="graf-native-react-mobile-02" d="M149,169.9c-0.3,0-0.6,0.2-0.6,0.5s0.2,0.6,0.6,0.6c0.3,0,0.6-0.2,0.6-0.6
+				C149.6,170.1,149.4,169.9,149,169.9z" />
+                <path class="graf-native-react-mobile-02" d="M146.6,160.5c-9.2,0-16.6,7.5-16.6,16.6s7.5,16.6,16.6,16.6s16.6-7.5,16.6-16.6S155.8,160.5,146.6,160.5z
+				 M139.8,179.9c0,0.7-0.5,1.1-1.2,1.1s-1.2-0.5-1.2-1.1v-4.8c0-0.6,0.5-1.1,1.2-1.1s1.2,0.5,1.2,1.1V179.9z M152.2,174.9v0.8v6.5
+				c0,0.7-0.6,1.2-1.3,1.2H150c0,0.1,0,0.2,0,0.3v0.1v0.4v1.9c0,0.6-0.5,1.1-1.2,1.1s-1.2-0.5-1.2-1.1v-1.9v-0.4v-0.1
+				c0-0.1,0-0.2,0-0.3h-2.2c0,0.1,0,0.2,0,0.3v0.1v0.4v1.9c0,0.6-0.5,1.1-1.2,1.1s-1.2-0.5-1.2-1.1v-1.9v-0.4v-0.1
+				c0-0.1,0-0.2,0-0.3h-0.9c-0.7,0-1.3-0.5-1.3-1.2v-6.5v-0.8V174h0.1H152h0.1L152.2,174.9L152.2,174.9z M141.1,172.5
+				c0-1.5,1.1-2.9,2.8-3.7l-0.2-0.3l-0.2-0.3l-0.5-0.7c-0.1-0.1,0-0.2,0-0.3c0.1-0.1,0.2,0,0.3,0l0.6,0.7l0.2,0.3l0.2,0.3
+				c0.7-0.3,1.5-0.4,2.4-0.4s1.7,0.2,2.4,0.4l0.2-0.3l0.2-0.3l0.5-0.7c0.1-0.1,0.2-0.1,0.3,0s0.1,0.2,0,0.3l-0.5,0.7l-0.2,0.3
+				l-0.2,0.3c1.7,0.7,2.9,2.1,2.9,3.7H141.1z M155.8,179.9c0,0.7-0.5,1.1-1.2,1.1s-1.2-0.5-1.2-1.1v-4.8c0-0.6,0.5-1.1,1.2-1.1
+				s1.2,0.5,1.2,1.1V179.9z" />
+              </g>
+              <rect class="graf-native-react-mobile-03" width="222.9" height="198.1" />
+            </g>
+        </svg>
+
+      </div>
+      <p class="page-block__desc page-block--narrow page-block--second-desc">
+        Nowadays when building a mobile app you should consider supporting two platforms: iOS and Android. Doing this
+        you have to have
+        at least two developers that specialize in two languages and the final result of the development are two apps.
+        What if there was an alternative to this? There is: Meet React Native.
+      </p>
+    </section>
+    <section class="page-block page-block--solid-white-bg page-block--extra-space page-block--narrow-tiles" id="why">
+      <h2 class="page-block__title">Why development in React Native?</h2>
+      <p class="page-block__desc">
+        React Native is a JavaScript framework that allows a JavaScript developer to write two mobile apps (iOS and
+        Android) using the
+        same codebase thus using less resources than in native development. Here are a few reasons why React Native
+        might be the choice for your app:
+      </p>
+      <div class="tiles azure-solid-titles">
+        <section class="tile react-native__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-time-budget"></use>
+            </svg>
+            <h3 class="tile__title">Time and Budget</h3>
+          </header>
+          <p class="page-block__desc">
+            The obvious advantage is that less time is used to build an iOS and Android app in React Native than when
+            developing two native apps.
+            Less time means less money which essentially means that an app written in React Native should be less costly
+            than a native app.
+          </p>
+        </section>
+        <section class="tile react-native__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-support-fb"></use>
+            </svg>
+            <h3 class="tile__title">Facebook Support</h3>
+          </header>
+          <p class="page-block__desc">
+            Behind React Native is Facebook, which means that it is a well developed and thought through technology with
+            a lot of support and
+            a perspective of evolution when looking at the future. This has made React Native the most promising hybrid
+            approach for a long time.
+          </p>
+        </section>
+        <section class="tile react-native__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-javascript"></use>
+            </svg>
+            <h3 class="tile__title">JavaScript</h3>
+          </header>
+          <p class="page-block__desc">
+            In theory a developer that knows JavaScript can learn React Native quite easily. The fact that JavaScript is
+            the number one language
+            for web frontends means that there are a lot of JavaScript developers out there so the ability to maintain
+            and build out a React Native app is very good.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section class="page-block page-block--solid-light-bg page-block--extra-space page-block--narrow-tiles" id="what">
+      <h2 class="page-block__title">What apps are good in React Native?</h2>
+      <p class="page-block__desc">So far so good! However we still recommend this approach only for a certain type of
+        apps as the technology is somewhat limited and pretty new on the market.</p>
+      <div class="tiles azure-solid-titles">
+        <section class="tile react-native__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-proof-concept"></use>
+            </svg>
+            <h3 class="tile__title">Proof of Concept</h3>
+          </header>
+          <p class="page-block__desc">
+            Looking to build a pilot app to prove your point to investors or to test the waters? Want to cover two
+            platforms at
+            once? In such a situation it is feasible to construct a Proof of Concept using React Native to save time and
+            money.
+          </p>
+        </section>
+        <section class="tile react-native__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-mvp"></use>
+            </svg>
+            <h3 class="tile__title">Basic MVP</h3>
+          </header>
+          <p class="page-block__desc">
+            Startup beginnings are often harsh in terms of budget. On the other side time to market is vital to find the
+            right
+            product-market fit and to get traction for your app. Often, first versions can be built using a framework
+            such as
+            React Native to start making money or to prove a point to investors.
+          </p>
+        </section>
+        <section class="tile react-native__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-simple-app"></use>
+            </svg>
+            <h3 class="tile__title">Simple Apps</h3>
+          </header>
+          <p class="page-block__desc">
+            Apps that do not have many features, handle big loads of data or include functions that use the phone’s
+            hardware
+            can be a good match for React Native, remember the rule of thumb: The more advanced an app, the better the
+            fit for native development.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section
+      class="page-block page-block--selectable-narrow page-block--solid-white-bg page-block--extra-space page-block--double-description"
+      id="why-not">
+      <h2 class="page-block__title">When is React Native not a good choice?</h2>
+      <p class="page-block__desc">
+        Codequest recommends using native development as a long term solution for app development.
+        There are not yet technologies that can threaten mobile apps that are written in their dedicated language.
+      </p>
+      <div class="logos">
+        <div class="element"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+            x="0px" y="0px" width="57.5px" height="51.5px" viewBox="0 0 57.5 51.5"
+            style="enable-background:new 0 0 57.5 51.5;" xml:space="preserve">
+            <style>
+              .logo-swift-orange-00 {
+                fill: #FF6D00;
+              }
+            </style>
+            <defs>
+            </defs>
+            <g>
+              <path class="logo-swift-orange-00" d="M43.4,48c-6.8,3.9-16.1,4.3-25.5,0.3C10.3,45,4,39.4,0,32.9c1.9,1.6,4.2,2.9,6.6,4c9.7,4.5,19.3,4.2,26.2,0
+		c0,0,0,0,0,0c-9.7-7.4-17.9-17.1-24-25C7.4,10.7,6.5,9,5.5,7.6c7.4,6.8,19.2,15.3,23.4,17.8C20,16,12.1,4.4,12.4,4.7
+		C26.5,18.9,39.5,27,39.5,27c0.4,0.2,0.8,0.4,1,0.6c0.3-0.7,0.5-1.5,0.7-2.2c2.3-8.2-0.3-17.6-6-25.3c13.1,7.9,20.8,22.8,17.6,35.2
+		c-0.1,0.3-0.2,0.7-0.3,1c0,0,0.1,0.1,0.1,0.1c6.5,8.1,4.7,16.6,3.9,15C53.1,44.5,46.7,46.6,43.4,48z" />
+            </g>
+          </svg>
+
+        </div>
+        <div class="element"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+            x="0px" y="0px" width="66px" height="66px" viewBox="0 0 66 66" style="enable-background:new 0 0 66 66;"
+            xml:space="preserve">
+            <style>
+              .logo-obj-c-black-00 {
+                fill: #212121;
+              }
+
+              .logo-obj-c-black-01 {
+                fill: #FFFFFF;
+              }
+            </style>
+            <defs>
+            </defs>
+            <g>
+              <path class="logo-obj-c-black-00" d="M57.8,66H8.2C3.7,66,0,62.3,0,57.8V8.2C0,3.7,3.7,0,8.2,0h49.6C62.3,0,66,3.7,66,8.2v49.6
+		C66,62.3,62.3,66,57.8,66z" />
+              <g>
+                <path class="logo-obj-c-black-01" d="M45.7,35.3c-0.5,1.1-1,2.1-1.7,3.1c-0.9,1.3-1.6,2.2-2.2,2.7c-0.9,0.8-1.8,1.2-2.8,1.2
+			c-0.7,0-1.6-0.2-2.6-0.6c-1-0.4-2-0.6-2.8-0.6c-0.9,0-1.9,0.2-2.9,0.6c-1,0.4-1.9,0.6-2.5,0.7c-1,0-1.9-0.4-2.9-1.3
+			c-0.6-0.5-1.4-1.5-2.3-2.8c-1-1.4-1.8-3-2.4-4.8c-0.7-2-1-3.9-1-5.8c0-2.1,0.5-4,1.4-5.5c0.7-1.2,1.7-2.2,2.9-2.9
+			c1.2-0.7,2.5-1.1,3.9-1.1c0.8,0,1.8,0.2,3,0.7c1.2,0.5,2.1,0.7,2.4,0.7c0.3,0,1.2-0.3,2.7-0.8c1.4-0.5,2.6-0.7,3.6-0.6
+			c2.7,0.2,4.7,1.3,6,3.2c-2.4,1.4-3.6,3.5-3.6,6.1c0,2,0.8,3.7,2.2,5.1c0.7,0.6,1.4,1.1,2.2,1.4C46,34.3,45.9,34.8,45.7,35.3
+			L45.7,35.3z M39.5,11.2c0,1.6-0.6,3.1-1.7,4.4c-1.4,1.6-3.1,2.6-4.9,2.4c0-0.2,0-0.4,0-0.6c0-1.5,0.7-3.2,1.8-4.5
+			c0.6-0.7,1.3-1.2,2.2-1.7c0.9-0.4,1.8-0.7,2.6-0.7C39.5,10.7,39.5,10.9,39.5,11.2L39.5,11.2z" />
+                <g>
+                  <g>
+                    <path class="logo-obj-c-black-01" d="M14.1,53.8c0,0.5-0.1,1-0.3,1.4c-0.2,0.4-0.4,0.8-0.7,1.1c-0.3,0.3-0.7,0.6-1.2,0.8c-0.5,0.2-1,0.3-1.5,0.3
+					c-0.5,0-1.1-0.1-1.5-0.3c-0.5-0.2-0.8-0.4-1.2-0.8C7.4,56,7.2,55.7,7,55.2c-0.2-0.4-0.3-0.9-0.3-1.4s0.1-1,0.3-1.4
+					c0.2-0.4,0.4-0.8,0.7-1.1c0.3-0.3,0.7-0.6,1.2-0.8c0.5-0.2,1-0.3,1.5-0.3c0.6,0,1.1,0.1,1.5,0.3c0.5,0.2,0.8,0.4,1.2,0.8
+					c0.3,0.3,0.6,0.7,0.7,1.1C14,52.8,14.1,53.3,14.1,53.8z M12.4,53.8c0-0.4,0-0.7-0.1-0.9c-0.1-0.3-0.2-0.5-0.4-0.7
+					c-0.2-0.2-0.4-0.3-0.6-0.4c-0.2-0.1-0.5-0.2-0.8-0.2c-0.3,0-0.6,0.1-0.8,0.2c-0.2,0.1-0.5,0.3-0.6,0.4c-0.2,0.2-0.3,0.4-0.4,0.7
+					c-0.1,0.3-0.1,0.6-0.1,0.9c0,0.4,0,0.7,0.1,0.9c0.1,0.3,0.2,0.5,0.4,0.7c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.2,0.8,0.2
+					c0.3,0,0.6-0.1,0.8-0.2c0.2-0.1,0.5-0.2,0.6-0.4s0.3-0.4,0.4-0.7C12.4,54.5,12.4,54.1,12.4,53.8z" />
+                    <path class="logo-obj-c-black-01" d="M16.3,52.8c0.2-0.2,0.4-0.3,0.6-0.4c0.2-0.1,0.5-0.2,0.8-0.2c0.3,0,0.5,0.1,0.8,0.2s0.4,0.3,0.6,0.5
+					c0.2,0.2,0.3,0.5,0.4,0.8c0.1,0.3,0.1,0.6,0.1,1c0,0.4-0.1,0.8-0.2,1.1c-0.1,0.3-0.2,0.6-0.4,0.9c-0.2,0.2-0.4,0.4-0.7,0.6
+					c-0.3,0.1-0.6,0.2-0.9,0.2c-0.2,0-0.3,0-0.4,0c-0.1,0-0.2-0.1-0.3-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c-0.1-0.1-0.2-0.2-0.2-0.2
+					l-0.1,0.3c0,0.1-0.1,0.2-0.1,0.2c-0.1,0-0.1,0.1-0.2,0.1h-1v-7.3h1.5V52.8z M16.3,56c0.1,0.1,0.2,0.2,0.4,0.3
+					c0.1,0.1,0.3,0.1,0.4,0.1c0.1,0,0.3,0,0.4-0.1c0.1-0.1,0.2-0.1,0.3-0.3c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2,0.1-0.4,0.1-0.7
+					c0-0.3,0-0.5-0.1-0.6c0-0.2-0.1-0.3-0.2-0.4c-0.1-0.1-0.2-0.2-0.3-0.2c-0.1-0.1-0.2-0.1-0.4-0.1c-0.2,0-0.3,0-0.5,0.1
+					c-0.1,0.1-0.3,0.2-0.4,0.4V56z" />
+                    <path class="logo-obj-c-black-01" d="M21.9,52.3v5c0,0.2,0,0.5-0.1,0.7c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.2-0.3,0.3-0.5,0.4
+					c-0.2,0.1-0.5,0.1-0.8,0.1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3-0.1l0-0.8c0-0.1,0-0.1,0.1-0.2c0,0,0.1,0,0.2,0s0.2,0,0.3,0
+					c0.1,0,0.1-0.1,0.2-0.1c0,0,0.1-0.1,0.1-0.2c0-0.1,0-0.2,0-0.3v-5H21.9z M22.1,50.9c0,0.1,0,0.2-0.1,0.3c0,0.1-0.1,0.2-0.2,0.3
+					c-0.1,0.1-0.2,0.1-0.3,0.2c-0.1,0-0.2,0.1-0.4,0.1c-0.1,0-0.2,0-0.3-0.1c-0.1,0-0.2-0.1-0.3-0.2c-0.1-0.1-0.1-0.2-0.2-0.3
+					c0-0.1-0.1-0.2-0.1-0.3c0-0.1,0-0.2,0.1-0.3c0-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.2-0.1,0.3-0.2c0.1,0,0.2-0.1,0.3-0.1
+					c0.1,0,0.2,0,0.4,0.1s0.2,0.1,0.3,0.2c0.1,0.1,0.2,0.2,0.2,0.3C22.1,50.7,22.1,50.8,22.1,50.9z" />
+                    <path class="logo-obj-c-black-01" d="M24.2,55.1c0,0.4,0.2,0.7,0.4,0.9c0.2,0.2,0.5,0.3,0.8,0.3c0.2,0,0.3,0,0.5-0.1c0.1,0,0.2-0.1,0.3-0.1
+					c0.1-0.1,0.2-0.1,0.3-0.1c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1l0.4,0.5c-0.2,0.2-0.3,0.3-0.5,0.4
+					c-0.2,0.1-0.4,0.2-0.6,0.3c-0.2,0.1-0.4,0.1-0.6,0.1c-0.2,0-0.4,0-0.5,0c-0.4,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.3-0.8-0.5
+					c-0.2-0.2-0.4-0.5-0.5-0.8c-0.1-0.3-0.2-0.7-0.2-1.2c0-0.3,0.1-0.7,0.2-1c0.1-0.3,0.3-0.6,0.5-0.8c0.2-0.2,0.5-0.4,0.8-0.5
+					c0.3-0.1,0.7-0.2,1-0.2c0.3,0,0.6,0.1,0.9,0.2c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.2,0.4,0.4,0.5,0.7c0.1,0.3,0.2,0.6,0.2,1
+					c0,0.1,0,0.2,0,0.3c0,0.1,0,0.1-0.1,0.2c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0-0.2,0H24.2z M26.1,54.2c0-0.1,0-0.2,0-0.3
+					c0-0.1-0.1-0.2-0.2-0.3c-0.1-0.1-0.2-0.2-0.3-0.2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.3,0-0.5,0.1-0.7,0.2c-0.2,0.2-0.3,0.4-0.3,0.7
+					H26.1z" />
+                    <path class="logo-obj-c-black-01" d="M31.9,53.5c0,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2-0.1c-0.1,0-0.1-0.1-0.2-0.1
+					c-0.1,0-0.2-0.1-0.3-0.1c-0.1,0-0.2-0.1-0.4-0.1c-0.2,0-0.3,0-0.5,0.1c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.1-0.2,0.3-0.2,0.5
+					s-0.1,0.4-0.1,0.6c0,0.5,0.1,0.9,0.3,1.1c0.2,0.3,0.4,0.4,0.8,0.4c0.2,0,0.3,0,0.4-0.1c0.1,0,0.2-0.1,0.3-0.1
+					c0.1-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.3,0.1l0.4,0.5c-0.2,0.2-0.3,0.3-0.5,0.4
+					c-0.2,0.1-0.3,0.2-0.5,0.3c-0.2,0.1-0.4,0.1-0.5,0.1s-0.4,0-0.5,0c-0.3,0-0.6-0.1-0.9-0.2c-0.3-0.1-0.5-0.3-0.7-0.5
+					c-0.2-0.2-0.4-0.5-0.5-0.8c-0.1-0.3-0.2-0.7-0.2-1.1c0-0.4,0.1-0.7,0.2-1c0.1-0.3,0.3-0.6,0.5-0.8c0.2-0.2,0.5-0.4,0.8-0.5
+					s0.7-0.2,1.1-0.2c0.4,0,0.7,0.1,1,0.2c0.3,0.1,0.6,0.3,0.8,0.6L31.9,53.5z" />
+                    <path class="logo-obj-c-black-01" d="M38.4,57.3h-1.5v-4h-2.1v2.5c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.1,0.1,0.2,0.1c0.1,0,0.1,0,0.1,0s0.1,0,0.1,0
+					c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0c0,0,0.1,0.1,0.1,0.1l0.5,0.7c-0.2,0.1-0.4,0.3-0.7,0.3
+					c-0.2,0.1-0.5,0.1-0.8,0.1c-0.2,0-0.5,0-0.6-0.1c-0.2-0.1-0.3-0.2-0.5-0.3c-0.1-0.1-0.2-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6
+					v-2.6h-0.4c-0.1,0-0.1,0-0.2-0.1c-0.1-0.1-0.1-0.1-0.1-0.2v-0.6l0.8-0.2l0.3-1.2c0-0.2,0.1-0.2,0.3-0.2h0.8v1.5h3.6V57.3z
+					 M38.6,50.9c0,0.1,0,0.2-0.1,0.3c0,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.2,0.1-0.3,0.2c-0.1,0-0.2,0.1-0.4,0.1c-0.1,0-0.2,0-0.3-0.1
+					s-0.2-0.1-0.3-0.2c-0.1-0.1-0.1-0.2-0.2-0.3c0-0.1-0.1-0.2-0.1-0.3c0-0.1,0-0.2,0.1-0.3s0.1-0.2,0.2-0.3
+					c0.1-0.1,0.2-0.1,0.3-0.2c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.4,0.1c0.1,0,0.2,0.1,0.3,0.2c0.1,0.1,0.2,0.2,0.2,0.3
+					C38.6,50.7,38.6,50.8,38.6,50.9z" />
+                    <path class="logo-obj-c-black-01"
+                      d="M44.2,52.3l-2,5h-1.4l-2-5h1.3c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.1,0.1,0.2l0.7,2.3
+					c0.1,0.2,0.1,0.4,0.2,0.5c0,0.2,0.1,0.3,0.1,0.5c0.1-0.3,0.2-0.7,0.3-1.1l0.7-2.3c0-0.1,0.1-0.1,0.1-0.2s0.2-0.1,0.3-0.1H44.2z" />
+                    <path class="logo-obj-c-black-01" d="M45.7,55.1c0,0.4,0.2,0.7,0.4,0.9c0.2,0.2,0.5,0.3,0.8,0.3c0.2,0,0.3,0,0.5-0.1c0.1,0,0.2-0.1,0.3-0.1
+					c0.1-0.1,0.2-0.1,0.3-0.1c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1l0.4,0.5c-0.2,0.2-0.3,0.3-0.5,0.4
+					c-0.2,0.1-0.4,0.2-0.6,0.3c-0.2,0.1-0.4,0.1-0.6,0.1c-0.2,0-0.4,0-0.5,0c-0.4,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.3-0.8-0.5
+					c-0.2-0.2-0.4-0.5-0.5-0.8c-0.1-0.3-0.2-0.7-0.2-1.2c0-0.3,0.1-0.7,0.2-1c0.1-0.3,0.3-0.6,0.5-0.8c0.2-0.2,0.5-0.4,0.8-0.5
+					c0.3-0.1,0.7-0.2,1-0.2c0.3,0,0.6,0.1,0.9,0.2c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.2,0.4,0.4,0.5,0.7c0.1,0.3,0.2,0.6,0.2,1
+					c0,0.1,0,0.2,0,0.3c0,0.1,0,0.1-0.1,0.2c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0-0.2,0H45.7z M47.6,54.2c0-0.1,0-0.2,0-0.3
+					c0-0.1-0.1-0.2-0.2-0.3c-0.1-0.1-0.2-0.2-0.3-0.2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.3,0-0.5,0.1-0.7,0.2c-0.2,0.2-0.3,0.4-0.3,0.7
+					H47.6z" />
+                    <path class="logo-obj-c-black-01" d="M49.7,53.8h2.6V55h-2.6V53.8z" />
+                    <path class="logo-obj-c-black-01" d="M58.3,55.5c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0.1l0.6,0.7c-0.3,0.4-0.6,0.7-1.1,0.8c-0.4,0.2-0.9,0.3-1.5,0.3
+					c-0.5,0-1-0.1-1.4-0.3c-0.4-0.2-0.8-0.4-1.1-0.8c-0.3-0.3-0.5-0.7-0.7-1.1c-0.2-0.4-0.2-0.9-0.2-1.4c0-0.5,0.1-1,0.3-1.5
+					c0.2-0.4,0.4-0.8,0.7-1.1c0.3-0.3,0.7-0.6,1.1-0.7c0.4-0.2,0.9-0.3,1.4-0.3c0.3,0,0.5,0,0.8,0.1c0.2,0,0.5,0.1,0.7,0.2
+					c0.2,0.1,0.4,0.2,0.6,0.3c0.2,0.1,0.3,0.2,0.5,0.4l-0.6,0.7c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.2,0.1c-0.1,0-0.1,0-0.2,0
+					c-0.1,0-0.1-0.1-0.2-0.1s-0.1-0.1-0.2-0.1c-0.1,0-0.2-0.1-0.2-0.1c-0.1,0-0.2-0.1-0.3-0.1c-0.1,0-0.3,0-0.4,0
+					c-0.3,0-0.5,0.1-0.7,0.2c-0.2,0.1-0.4,0.2-0.6,0.4c-0.2,0.2-0.3,0.4-0.4,0.7c-0.1,0.3-0.1,0.6-0.1,1c0,0.4,0,0.7,0.1,1
+					c0.1,0.3,0.2,0.5,0.4,0.7c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.2,0.7,0.2c0.1,0,0.3,0,0.4,0c0.1,0,0.2,0,0.3-0.1
+					c0.1,0,0.2-0.1,0.3-0.1c0.1-0.1,0.2-0.1,0.3-0.2c0,0,0.1-0.1,0.1-0.1S58.2,55.5,58.3,55.5z" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+
+        </div>
+      </div>
+      <p class="page-block__desc page-block--narrow page-block--second-desc">
+        To make sure the user experience and speed of a mobile app is top notch there is really no other choice than
+        using development in Swift for iOS or Java/Kotlin for Android. Tests show that native apps are still more
+        performant and well polished than hybrid apps. See our iOS Development in Swift services here.
+      </p>
+      <div class="page-block__button-read-more"><a class="page-block__button-text" href="ios-development.html">Read
+          more</a>
+      </div>
+    </section>
+    <section class="page-block page-block--call-to-action page-block--solid-azure-bg" id="call-to-action">
+      <h2 class="page-block__title">Get in touch for a free quote!</h2>
+      <p class="page-block__desc">See the benefits of building your iOS and Android app using one codebase with React
+        Native.</p>
+      <div class="page-block__button">
+        <button class="color-azure hover-azure page-block__button-link" onclick="goToContactPage()">Write us
+          today!</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer" id="footer">
+    <h2 class="visuallyhidden">Footer</h2>
+    <div class="page-footer__logo">
+      <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+        <use xlink:href="#icon-codequest-white"></use>
+      </svg>
+    </div>
+    <nav class="page-footer__nav">
+      <ul class="page-footer__list">
+        <li class="page-footer__list-item"><a class="page-footer__link" href="index.html">Home</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="services.html">Services</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="careers.html">Careers</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="faq.html">FAQ</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="https://medium.com/codequest">Blog
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-external-link"></use>
+            </svg></a></li>
+        <li class="page-footer__list-item">
+          <button class="page-footer__link" onclick="goToContactPage()">Hire us!</button>
+        </li>
+        <li class="page-footer__list-item page-footer__list-item--privacy-policy"><a class="page-footer__link"
+            href="privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+    <div class="page-footer__address">
+      <address itemscope itemtype="http://schema.org/Organization"></address>
+      <link itemprop="url" href="index.html">
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">E-mail and phone number</h3>
+        <ul class="page-footer__list page-footer__instant-contact">
+          <li class="page-footer__list-item">
+            <div class="instant-contact__wrapper">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-email"></use>
+              </svg><span class="f38hg4 instant-contact__contact" role="link" tabindex="0" aria-label="Message us"
+                data-fek9t8b-hedgehog="olleh" data-fek9t8b-bagithi="moc" data-fek9t8b-siyo="tseuqedoc"
+                data-fek9t8b-enamabla="">
+                <!--[if IE]>
+                  <style>.f38hg4{unicode-bidi:bidi-override;direction:rtl;}</style><![endif]-->
+                <style>
+                  .f38hg4:after {
+                    content: attr(data-fek9t8b-bagithi)'.'attr(data-fek9t8b-siyo)'@'attr(data-fek9t8b-hedgehog);
+                    unicode-bidi: bidi-override;
+                    direction: rtl;
+                  }
+
+                  @supports (-ms-ime-align:auto) {
+                    .f38hg4 {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .f38hg4:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+
+                  @media all and (-ms-high-contrast:none),
+                  (-ms-high-contrast:active) {
+                    .f38hg4 {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .f38hg4:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+                </style>
+              </span>
+            </div>
+          </li>
+          <li class="page-footer__list-item"><a class="page-footer__link" href="tel:+48531861864" itemprop="telephone">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-phone"></use>
+              </svg>+48 531 861 864</a></li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--footer facebookIconDesc--footer" role="img">
+                <title id="facebookIcon--footer">Like us on Facebook</title>
+                <desc id="facebookIconDesc--footer">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--footer linkedinIconDesc--footer" role="img">
+                <title id="linkedinIcon--footer">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--footer">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--footer twitterIconDesc--footer" role="img">
+                <title id="twitterIcon--footer">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--footer">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--footer githubIconDesc--footer"
+                role="img">
+                <title id="githubIcon--footer">Fork us on GitHub</title>
+                <desc id="githubIconDesc--footer">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">Office address and Invoice details</h3><span
+          class="page-footer__office-address-title" itemprop="name">Office address:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Plac Dąbrowskiego 1</span><br><span
+            itemprop="postalCode">00-057</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p><span class="page-footer__invoice-address-title" itemprop="name">Invoice details:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Zamiany 8 LU 202</span><br><span
+            itemprop="postalCode">02-786</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">REGON, VAT UE and KRS</h3>
+        <dl class="page-footer__finances">
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">REGON</dt>
+            <dd class="page-footer__finances-desc">146176183</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">VAT UE</dt>
+            <dd class="page-footer__finances-desc" itemprop="taxID">9512357282</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">KRS</dt>
+            <dd class="page-footer__finances-desc">0000424452</dd>
+          </div>
+        </dl>
+        <ul class="page-footer__list page-footer__subsidies">
+          <li class="page-footer__list-item page-footer__subsidies-ue-funds"><a class="page-footer__link"
+              href="https://www.poir.gov.pl/en/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="EFIcon UEPOIRLink" role="img">
+                <title id="EFIcon">European Funds Smart Growth</title>
+                <desc id="UEPOIRLink">Go to European Operational Programme Smart Growth website</desc>
+                <use xlink:href="#icon-funds-uf"></use>
+              </svg></a></li>
+          <li class="page-footer__list-item page-footer__subsidies-er-funds"><a class="page-footer__link"
+              href="http://ec.europa.eu/regional_policy/en/funding/erdf/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="ERDFIcon UEERDFLink" role="img">
+                <title id="ERDFIcon">European Regional Development Fund</title>
+                <desc id="UEERDFLink">Go to European Regional Development Fund website</desc>
+                <use xlink:href="#icon-funds-eu"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+  <footer class="cookies-footer" id="cookies-footer">
+    <div class="cookies-footer__content">
+      <svg class="svg-icon" width="32px" height="32px" aria-hidden="true">
+        <use xlink:href="#icon-cookie-small-icon"></use>
+      </svg>
+      <p class="cookies-footer__desc">I am aware, that information about the administrator and my rights related to my
+        personal data, as well as the <a href="privacy-policy.html">cookies policy</a>, can be found in the Rules
+        for the
+        Processing and Protection of Personal Data in codequest sp. z o.o.</p>
+    </div>
+    <button class="cookies-footer__button" id="understand-button">Thanks!
+      <svg class="svg-icon" width="12px" height="12px" aria-hidden="true">
+        <use xlink:href="#icon-thumbs-up-solid"></use>
+      </svg>
+    </button>
+  </footer>
+  <script>
+    WebFontConfig = {
+      google: {
+        families: [
+          'Lato:400,700,900',
+          'PT Serif:400,400i,700,700i'
+        ],
+      },
+      timeout: 2000
+    };
+  </script>
+  <script src="../ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
+  <script>
+    const goToContactPage = function () {
+      fbq('track', 'goToContactPage', {
+        content_name: 'Go to contact page',
+        content_ids: ['contact'],
+        content_type: 'product',
+      });
+      window.location.pathname = '/contact';
+    }
+  </script>
+  <script type="text/javascript">
+    _linkedin_partner_id = "2597492";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function () {
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })();
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=2597492&amp;fmt=gif" />
+  </noscript>  <script type="text/javascript" src="assets/main.js"></script>
+</body>
+
+
+<!-- Mirrored from codequest.com/react-native-development by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:14:22 GMT -->
+</html>

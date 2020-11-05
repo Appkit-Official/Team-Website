@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 831.1 783.3" style="enable-background:new 0 0 831.1 783.3;" xml:space="preserve">
+<style>
+	.circuit_static_0{fill:none;stroke:#F2F3F4;stroke-width:2px;stroke-miterlimit:10;}
+	.circuit_static_1{fill:none;}
+</style>
+<title>pcba-normal-mini</title>
+<g id="Layer_2_1_">
+	<g id="Layer_4">
+		<path class="circuit_static_0" d="M706.8,409.4h39c3.3,0,6,2.7,6,6v39c0,3.3-2.7,6-6,6h-39c-3.3,0-6-2.7-6-6v-39
+			C700.8,412.1,703.5,409.4,706.8,409.4z"/>
+		<circle class="circuit_static_0" cx="622.1" cy="189.7" r="4"/>
+		<circle class="circuit_static_0" cx="555.9" cy="203.6" r="4"/>
+		<circle class="circuit_static_0" cx="532.4" cy="29.3" r="4"/>
+		<circle class="circuit_static_0" cx="556.9" cy="116.3" r="4"/>
+		<circle class="circuit_static_0" cx="553.2" cy="47.3" r="4"/>
+		<circle class="circuit_static_0" cx="568.9" cy="63.5" r="4"/>
+		<circle class="circuit_static_0" cx="634.8" cy="85.5" r="4"/>
+		<circle class="circuit_static_0" cx="515.4" cy="9.6" r="4"/>
+		<circle class="circuit_static_0" cx="496.6" cy="32.3" r="4"/>
+		<circle class="circuit_static_0" cx="334.3" cy="61.6" r="4"/>
+		<circle class="circuit_static_0" cx="310.6" cy="49.1" r="4"/>
+		<circle class="circuit_static_0" cx="274.6" cy="42.3" r="4"/>
+		<circle class="circuit_static_0" cx="289" cy="42.3" r="4"/>
+		<circle class="circuit_static_0" cx="257.7" cy="39.3" r="4"/>
+		<circle class="circuit_static_0" cx="240.2" cy="34.3" r="4"/>
+		<circle class="circuit_static_0" cx="359" cy="74.9" r="4"/>
+		<circle class="circuit_static_0" cx="506.5" cy="17.6" r="4"/>
+		<circle class="circuit_static_0" cx="564.9" cy="216.1" r="4"/>
+		<circle class="circuit_static_0" cx="544.9" cy="228.6" r="4"/>
+		<circle class="circuit_static_0" cx="543.5" cy="212.1" r="4"/>
+		<circle class="circuit_static_0" cx="525.8" cy="278.3" r="4"/>
+		<circle class="circuit_static_0" cx="507.4" cy="208.1" r="4"/>
+		<circle class="circuit_static_0" cx="619.2" cy="282.3" r="4"/>
+		<circle class="circuit_static_0" cx="592.5" cy="280" r="4"/>
+		<circle class="circuit_static_0" cx="582.2" cy="241.1" r="4"/>
+		<circle class="circuit_static_0" cx="572.2" cy="261.4" r="4"/>
+		<circle class="circuit_static_0" cx="506.6" cy="272" r="4"/>
+		<circle class="circuit_static_0" cx="485.1" cy="282.3" r="4"/>
+		<circle class="circuit_static_0" cx="483.5" cy="267" r="4"/>
+		<circle class="circuit_static_0" cx="483.5" cy="232.6" r="4"/>
+		<circle class="circuit_static_0" cx="483.5" cy="217" r="4"/>
+		<circle class="circuit_static_0" cx="635.2" cy="289.1" r="4"/>
+		<circle class="circuit_static_0" cx="634.8" cy="405.3" r="4"/>
+		<circle class="circuit_static_0" cx="589.2" cy="359.4" r="4"/>
+		<circle class="circuit_static_0" cx="623.2" cy="394.9" r="4"/>
+		<circle class="circuit_static_0" cx="592" cy="323.8" r="4"/>
+		<circle class="circuit_static_0" cx="693" cy="407.7" r="4"/>
+		<circle class="circuit_static_0" cx="685" cy="301.8" r="4"/>
+		<circle class="circuit_static_0" cx="700.4" cy="313.8" r="4"/>
+		<circle class="circuit_static_0" cx="711.4" cy="327.8" r="4"/>
+		<circle class="circuit_static_0" cx="724.3" cy="339.1" r="4"/>
+		<circle class="circuit_static_0" cx="675.6" cy="290.4" r="4"/>
+		<circle class="circuit_static_0" cx="620.8" cy="349" r="4"/>
+		<circle class="circuit_static_0" cx="604.4" cy="349" r="4"/>
+		<circle class="circuit_static_0" cx="645.8" cy="192.8" r="4"/>
+		<circle class="circuit_static_0" cx="814.4" cy="374.4" r="4"/>
+		<circle class="circuit_static_0" cx="819.1" cy="403.7" r="4"/>
+		<circle class="circuit_static_0" cx="819.1" cy="428.5" r="4"/>
+		<circle class="circuit_static_0" cx="807.3" cy="450.2" r="4"/>
+		<circle class="circuit_static_0" cx="769.9" cy="462.6" r="4"/>
+		<circle class="circuit_static_0" cx="688" cy="467.6" r="4"/>
+		<circle class="circuit_static_0" cx="562.1" cy="606.3" r="4"/>
+		<circle class="circuit_static_0" cx="578.8" cy="606.3" r="4"/>
+		<circle class="circuit_static_0" cx="606.9" cy="472.4" r="4"/>
+		<circle class="circuit_static_0" cx="579.7" cy="430.2" r="4"/>
+		<circle class="circuit_static_0" cx="580.7" cy="447.9" r="4"/>
+		<circle class="circuit_static_0" cx="755.8" cy="512.3" r="4"/>
+		<circle class="circuit_static_0" cx="754.8" cy="574.2" r="4"/>
+		<path class="circuit_static_0" d="M588.4,203.6h19c1.7,0,3,1.3,3,3v19c0,1.7-1.3,3-3,3h-19c-1.7,0-3-1.3-3-3v-19
+			C585.4,204.9,586.8,203.6,588.4,203.6z"/>
+		<polyline class="circuit_static_0" points="597.9,203.6 597.9,196.1 577.7,175.3 577.7,103.1 568.4,93.8 568.4,67.5 		"/>
+		<polyline class="circuit_static_0" points="604.4,203.6 604.4,196.1 610.8,189.7 618.5,189.7 		"/>
+		<polyline class="circuit_static_0" points="591.4,203.6 591.4,199.1 570.6,178.3 570.6,112.1 570.6,107.5 560.7,97.6 560.7,75.2 552.9,67.4 
+			552.9,51.3 		"/>
+		<polyline class="circuit_static_0" points="611,216.1 622.5,216.1 643.3,195.3 		"/>
+		<polyline class="circuit_static_0" points="611,209.6 618.5,209.6 635.2,192.9 635.2,89.4 		"/>
+		<polyline class="circuit_static_0" points="585.7,216.1 578.2,216.1 568.4,216.1 		"/>
+		<polyline class="circuit_static_0" points="585.7,222.6 578.2,222.6 572.2,228.6 548.9,228.6 		"/>
+		<polyline class="circuit_static_0" points="585.7,209.6 578.2,209.6 572.2,203.5 560.3,203.5 		"/>
+		<polyline class="circuit_static_0" points="597.9,228.6 597.9,236.1 597.9,253.4 611.6,267.2 611.6,314.3 620.8,323.5 620.8,345 		"/>
+		<polyline class="circuit_static_0" points="604.4,228.6 604.4,236.1 604.4,247.8 619.2,262.6 619.2,278.3 		"/>
+		<polyline class="circuit_static_0" points="591.4,228.6 591.4,236.1 591.4,259.8 604.6,273.1 604.6,345 		"/>
+		<path class="circuit_static_0" d="M400.5,452.2v-19c0-1.7,1.3-3,3-3h19c1.7,0,3,1.3,3,3v19c0,1.7-1.3,3-3,3h-19
+			C401.9,455.2,400.5,453.8,400.5,452.2z"/>
+		<polyline class="circuit_static_0" points="425.3,449.1 441.3,449.1 450.8,449.1 461.4,438.4 470.2,447.2 470.2,513.5 433.4,550.3 433.4,591.1 
+					"/>
+		<polyline class="circuit_static_0" points="425.3,442.6 441.3,442.6 446.3,442.6 458.6,430.2 458.6,399.9 458.6,320.7 432.1,294.2 		"/>
+		<polyline class="circuit_static_0" points="425.3,436.3 441.3,436.3 450.1,427.5 450.1,325.7 418.7,294.3 		"/>
+		<polyline class="circuit_static_0" points="419.5,454.5 419.5,471 429.4,480.8 429.4,492.4 		"/>
+		<polyline class="circuit_static_0" points="413,454.5 413,471.5 413,480.7 405.5,488.2 		"/>
+		<polyline class="circuit_static_0" points="406.5,454.5 406.5,464.5 406.5,471.4 387.2,490.7 352.3,490.7 		"/>
+		<polyline class="circuit_static_0" points="418.8,429.7 418.8,421.2 426.6,413.4 433.8,413.4 		"/>
+		<polyline class="circuit_static_0" points="412.3,430.2 412.3,417.2 417.1,412.4 417.1,375.7 		"/>
+		<polyline class="circuit_static_0" points="405.8,430.2 405.8,421.2 405.8,390.9 		"/>
+		<polyline class="circuit_static_0" points="400.8,449.2 390.8,449.2 373.6,466.4 373.6,476.4 		"/>
+		<polyline class="circuit_static_0" points="400.8,442.7 390.8,442.7 386.6,442.7 362,467.3 362,477.4 		"/>
+		<polyline class="circuit_static_0" points="400.8,436.2 390.8,436.2 390.8,403 		"/>
+		<circle class="circuit_static_0" cx="515.7" cy="409.9" r="4"/>
+		<circle class="circuit_static_0" cx="506.9" cy="390.9" r="4"/>
+		<circle class="circuit_static_0" cx="486.1" cy="599.6" r="4"/>
+		<circle class="circuit_static_0" cx="487.1" cy="573.2" r="4"/>
+		<circle class="circuit_static_0" cx="499.3" cy="573.2" r="4"/>
+		<circle class="circuit_static_0" cx="511.5" cy="595.6" r="4"/>
+		<circle class="circuit_static_0" cx="522.7" cy="578.4" r="4"/>
+		<circle class="circuit_static_0" cx="525.1" cy="592.4" r="4"/>
+		<circle class="circuit_static_0" cx="547.6" cy="465" r="4"/>
+		<circle class="circuit_static_0" cx="552.8" cy="499" r="4"/>
+		<circle class="circuit_static_0" cx="568.2" cy="509.3" r="4"/>
+		<circle class="circuit_static_0" cx="532.8" cy="420.6" r="4"/>
+		<circle class="circuit_static_0" cx="542.4" cy="433.9" r="4"/>
+		<circle class="circuit_static_0" cx="499.6" cy="620.1" r="4"/>
+		<circle class="circuit_static_0" cx="437.7" cy="413.5" r="4"/>
+		<circle class="circuit_static_0" cx="437.7" cy="399" r="4"/>
+		<circle class="circuit_static_0" cx="415.7" cy="292.2" r="4"/>
+		<circle class="circuit_static_0" cx="390.2" cy="259.8" r="4"/>
+		<circle class="circuit_static_0" cx="337.3" cy="406.3" r="4"/>
+		<circle class="circuit_static_0" cx="286.4" cy="411.7" r="4"/>
+		<circle class="circuit_static_0" cx="301" cy="407.7" r="4"/>
+		<circle class="circuit_static_0" cx="338.9" cy="367.4" r="4"/>
+		<circle class="circuit_static_0" cx="429.4" cy="292.2" r="4"/>
+		<circle class="circuit_static_0" cx="400.7" cy="223.1" r="4"/>
+		<circle class="circuit_static_0" cx="429.4" cy="496.4" r="4"/>
+		<circle class="circuit_static_0" cx="459.8" cy="458.4" r="4"/>
+		<circle class="circuit_static_0" cx="437.4" cy="465" r="4"/>
+		<circle class="circuit_static_0" cx="385" cy="566.3" r="4"/>
+		<circle class="circuit_static_0" cx="403" cy="490.7" r="4"/>
+		<circle class="circuit_static_0" cx="404.9" cy="509.2" r="4"/>
+		<circle class="circuit_static_0" cx="389" cy="500.6" r="4"/>
+		<circle class="circuit_static_0" cx="389.5" cy="519.9" r="4"/>
+		<circle class="circuit_static_0" cx="415.5" cy="495" r="4"/>
+		<circle class="circuit_static_0" cx="348.3" cy="490.7" r="4"/>
+		<circle class="circuit_static_0" cx="188.4" cy="487" r="4"/>
+		<circle class="circuit_static_0" cx="8.5" cy="503" r="4"/>
+		<circle class="circuit_static_0" cx="51.8" cy="556.7" r="4"/>
+		<circle class="circuit_static_0" cx="93.8" cy="541.3" r="4"/>
+		<circle class="circuit_static_0" cx="114.7" cy="552.7" r="4"/>
+		<circle class="circuit_static_0" cx="134.3" cy="565.3" r="4"/>
+		<circle class="circuit_static_0" cx="153" cy="578.4" r="4"/>
+		<circle class="circuit_static_0" cx="164.9" cy="637" r="4"/>
+		<circle class="circuit_static_0" cx="138.3" cy="592.4" r="4"/>
+		<circle class="circuit_static_0" cx="103" cy="456.4" r="4"/>
+		<circle class="circuit_static_0" cx="122.7" cy="465.6" r="4"/>
+		<circle class="circuit_static_0" cx="221.9" cy="606.2" r="4"/>
+		<circle class="circuit_static_0" cx="203" cy="621.5" r="4"/>
+		<circle class="circuit_static_0" cx="241.3" cy="625" r="4"/>
+		<circle class="circuit_static_0" cx="223.9" cy="634.9" r="4"/>
+		<circle class="circuit_static_0" cx="362" cy="481.4" r="4"/>
+		<circle class="circuit_static_0" cx="373.6" cy="480.4" r="4"/>
+		<circle class="circuit_static_0" cx="417.2" cy="371.4" r="4"/>
+		<circle class="circuit_static_0" cx="386.8" cy="377.7" r="4"/>
+		<circle class="circuit_static_0" cx="420.2" cy="343.3" r="4"/>
+		<circle class="circuit_static_0" cx="405.5" cy="386.7" r="4"/>
+		<circle class="circuit_static_0" cx="390.8" cy="399" r="4"/>
+		<circle class="circuit_static_0" cx="433.4" cy="595.1" r="4"/>
+		<circle class="circuit_static_0" cx="433.4" cy="612.3" r="4"/>
+		<circle class="circuit_static_0" cx="395.2" cy="663" r="4"/>
+		<circle class="circuit_static_0" cx="373.5" cy="658.1" r="4"/>
+		<circle class="circuit_static_0" cx="385" cy="672.7" r="4"/>
+		<circle class="circuit_static_0" cx="406.5" cy="710.8" r="4"/>
+		<circle class="circuit_static_0" cx="595.2" cy="751.3" r="4"/>
+		<circle class="circuit_static_0" cx="395.2" cy="619.3" r="4"/>
+		<circle class="circuit_static_0" cx="377.6" cy="615.5" r="4"/>
+		<circle class="circuit_static_0" cx="353.5" cy="637" r="4"/>
+		<circle class="circuit_static_0" cx="546.1" cy="619.5" r="4"/>
+		<circle class="circuit_static_0" cx="611.9" cy="670.9" r="4"/>
+		<circle class="circuit_static_0" cx="627.2" cy="666.9" r="4"/>
+		<circle class="circuit_static_0" cx="644.9" cy="486.7" r="4"/>
+		<circle class="circuit_static_0" cx="601" cy="641" r="4"/>
+		<circle class="circuit_static_0" cx="675.4" cy="477.4" r="4"/>
+		<circle class="circuit_static_0" cx="662.1" cy="491.1" r="4"/>
+		<circle class="circuit_static_0" cx="636.2" cy="516.5" r="4"/>
+		<circle class="circuit_static_0" cx="621.9" cy="725.7" r="4"/>
+		<circle class="circuit_static_0" cx="626.4" cy="693.9" r="4"/>
+		<circle class="circuit_static_0" cx="631.5" cy="755.3" r="4"/>
+		<circle class="circuit_static_0" cx="631.5" cy="739.1" r="4"/>
+		<circle class="circuit_static_0" cx="641.9" cy="749.4" r="4"/>
+		<circle class="circuit_static_0" cx="662" cy="693.9" r="4"/>
+		<circle class="circuit_static_0" cx="676.6" cy="769.5" r="4"/>
+		<path class="circuit_static_0" d="M483.3,675h-39c-3.3,0-6-2.7-6-6v-39c0-3.3,2.7-6,6-6h39c3.3,0,6,2.7,6,6v39C489.3,672.3,486.6,675,483.3,675
+			z"/>
+		<polyline class="circuit_static_0" points="467.1,623.8 467.1,576.3 467.1,569.3 506.9,529.5 506.9,426.3 496.8,416.2 496.8,321.2 496.8,36.3 
+					"/>
+		<polyline class="circuit_static_0" points="475.1,623.8 475.1,572.3 515.7,531.7 515.7,412.8 		"/>
+		<polyline class="circuit_static_0" points="443.8,674.4 443.8,675.7 423.2,696.2 404.2,677.3 404.2,653.7 394.3,643.7 394.3,623.5 		"/>
+		<polyline class="circuit_static_0" points="451.8,674.4 451.8,677.7 423.5,706 395.2,677.6 395.2,667.9 		"/>
+		<polyline class="circuit_static_0" points="504.1,620.1 530.5,620.1 588.2,562.5 588.2,497.2 571.2,480.3 571.2,421.4 525.8,376.1 525.8,322 
+			525.8,282.3 		"/>
+		<polyline class="circuit_static_0" points="490,598.9 497.8,598.9 508.1,609.3 524.3,609.3 577.7,555.9 577.7,499.4 560.1,481.8 560.1,423.7 
+			515.7,379.4 515.7,321.2 515.7,261 507.4,252.7 507.4,212.1 		"/>
+		<polyline class="circuit_static_0" points="608.9,667.9 560.3,619.3 550.1,619.3 		"/>
+		<polyline class="circuit_static_0" points="490.3,570.5 525.4,535.4 525.4,455.4 532.8,448 532.8,423.4 		"/>
+		<polyline class="circuit_static_0" points="502.1,570.5 534.1,538.5 534.1,458.9 542.4,450.5 542.4,437.4 		"/>
+		<polyline class="circuit_static_0" points="511.7,591.1 511.7,576.4 543.9,544.2 543.9,486.7 547.6,483 547.6,469 		"/>
+		<polyline class="circuit_static_0" points="526.1,575.2 552.8,548.5 552.8,503.4 		"/>
+		<polyline class="circuit_static_0" points="527.5,590.4 560.6,557.2 560.6,537 568.2,529.5 568.2,513.5 		"/>
+		<polyline class="circuit_static_0" points="506.9,386.7 506.9,321.2 506.9,275.3 		"/>
+		<polyline class="circuit_static_0" points="404.8,708.3 343,646.5 331.3,634.7 227.9,634.7 		"/>
+		<polyline class="circuit_static_0" points="439,661.7 429.3,661.7 425.3,661.7 404.6,641 404.6,606.1 342.8,606.1 225.3,606.1 		"/>
+		<polyline class="circuit_static_0" points="439,653.7 429.3,653.7 413.2,637.5 413.2,597.1 342.8,597.1 314.3,597.1 304.4,587.2 215.3,587.2 
+			168.4,634.1 		"/>
+		<polyline class="circuit_static_0" points="439,645.7 432.3,645.7 421.4,634.8 421.4,587.1 342.8,587.1 319.3,587.1 309.2,577 209.7,577 
+			194.6,592 143.7,592 		"/>
+		<polyline class="circuit_static_0" points="439,629.7 432.3,629.7 432.3,616.4 		"/>
+		<polyline class="circuit_static_0" points="373.6,615.3 342.8,615.3 236.7,615.3 230.5,621.5 207,621.5 		"/>
+		<polyline class="circuit_static_0" points="385,669.7 385,625 342.8,625 245.3,625 		"/>
+		<polyline class="circuit_static_0" points="373.6,653.7 373.6,636 357.5,636 		"/>
+		<polyline class="circuit_static_0" points="459.7,463.1 459.7,510.1 392.5,577.2 342.8,577.2 324.8,577.2 315.4,567.8 203.7,567.8 193,578.4 
+			156,578.4 		"/>
+		<polyline class="circuit_static_0" points="381,566.3 369.3,566.3 362,559 342.8,559 328.3,559 326.6,559 299.7,532.1 220.3,532.1 187.9,564.6 
+			138.3,564.6 		"/>
+		<polyline class="circuit_static_0" points="437.5,469 437.5,474.5 448.4,485.4 448.4,505.9 404.8,549.5 391.1,549.5 342.8,549.5 331,549.5 
+			304.4,522.9 214.7,522.9 184.6,552.9 119.1,552.9 		"/>
+		<polyline class="circuit_static_0" points="415.6,499 415.6,524.4 400.8,539.3 342.8,539.3 337.7,539.3 334.3,539.3 307.5,512.4 210.7,512.4 
+			181.9,541.2 98.1,541.2 		"/>
+		<polyline class="circuit_static_0" points="404.9,513.5 404.9,521 395.8,530 342.8,530 339.2,530 312.4,503.2 205.7,503.2 196.5,512.4 
+			95.7,512.4 54,554.1 		"/>
+		<polyline class="circuit_static_0" points="385,520.1 342.8,520.1 317.3,494.6 200,494.6 192.1,502.5 13,502.5 		"/>
+		<polyline class="circuit_static_0" points="385,500.6 366.7,500.6 358,509.3 342.8,509.3 320.5,487 191.7,487 		"/>
+		<polyline class="circuit_static_0" points="437.7,395 437.7,332.1 416.4,332.1 377.2,371.4 377.2,428.2 343.4,462 339.3,466 202.3,466 
+			191.9,455.6 155.1,455.6 144.8,465.9 127.1,465.9 		"/>
+		<polyline class="circuit_static_0" points="400.7,227.1 400.7,263.8 400.7,334.3 366.7,368.4 366.7,423.4 343.2,446.9 333.4,456.7 211.1,456.7 
+			204.8,456.7 194.3,446.2 150.6,446.2 140.4,456.3 106.1,456.3 		"/>
+		<polyline class="circuit_static_0" points="390.2,263.8 390.2,329.3 356.1,363.4 356.1,418.1 342.5,431.7 326,448.1 210.3,448.1 198.9,436.7 
+			142.3,436.7 		"/>
+		<line class="circuit_static_0" x1="389" y1="375.4" x2="417.9" y2="346.5"/>
+		<polyline class="circuit_static_0" points="556.9,120.3 556.9,168.1 543.5,181.5 543.5,208.3 		"/>
+		<polyline class="circuit_static_0" points="706.3,410.2 706.3,400.5 684.6,378.8 684.6,333.8 675.6,324.8 675.6,294.6 		"/>
+		<polyline class="circuit_static_0" points="714.3,410.2 714.3,400.5 714.3,395.8 691.9,373.4 691.9,325 685,318.1 685,305.8 		"/>
+		<polyline class="circuit_static_0" points="722.3,410.2 722.3,400.5 722.3,374.4 700.4,352.5 700.4,318.3 		"/>
+		<polyline class="circuit_static_0" points="730.3,410.2 730.3,400.5 730.3,366.9 711.3,347.9 711.3,331 		"/>
+		<polyline class="circuit_static_0" points="738.3,410.2 738.3,400.5 738.3,353.4 726.5,341.6 		"/>
+		<polyline class="circuit_static_0" points="746.3,410.2 746.3,400.5 772.6,374.2 810.3,374.2 		"/>
+		<polyline class="circuit_static_0" points="752.2,453.9 761.9,453.9 767.9,459.8 		"/>
+		<polyline class="circuit_static_0" points="752.2,445.9 761.9,445.9 774.9,445.9 791.7,462.7 744.9,509.5 744.9,530.2 754.9,540.2 754.9,569.2 
+					"/>
+		<polyline class="circuit_static_0" points="752.2,437.9 761.9,437.9 779.1,437.9 804.2,463 758.2,509 		"/>
+		<polyline class="circuit_static_0" points="752.2,429.9 761.9,429.9 787.3,429.9 804.3,446.8 		"/>
+		<polyline class="circuit_static_0" points="752.2,421.9 761.9,421.9 794.7,421.9 801.3,428.5 815.1,428.5 		"/>
+		<polyline class="circuit_static_0" points="752.2,413.9 761.9,413.9 782.8,413.9 793,403.7 814.4,403.7 		"/>
+		<polyline class="circuit_static_0" points="706.3,460.1 706.3,469.8 706.3,478.3 634.9,549.7 634.9,675.8 626.4,684.3 626.4,689.9 		"/>
+		<polyline class="circuit_static_0" points="714.3,460.1 714.3,469.8 714.3,482.1 643.7,552.7 643.7,691.8 631.8,703.7 631.8,735.1 		"/>
+		<polyline class="circuit_static_0" points="722.3,460.1 722.3,469.8 722.3,485.1 651.2,556.2 651.2,740.8 644.8,747.2 		"/>
+		<polyline class="circuit_static_0" points="635.2,293.1 635.2,360.2 648,373 648,407.7 689,407.7 		"/>
+		<polyline class="circuit_static_0" points="592.5,327.3 592.5,350.4 634.8,392.6 634.8,400.8 		"/>
+		<line class="circuit_static_0" x1="592" y1="362" x2="622.1" y2="392"/>
+		<polyline class="circuit_static_0" points="582.3,433.9 615.8,467.4 683.5,467.4 		"/>
+		<polyline class="circuit_static_0" points="583.7,450.6 597.3,464.2 597.3,570.2 564,603.5 		"/>
+		<polyline class="circuit_static_0" points="606.9,476.4 606.9,576.2 580.9,602.2 		"/>
+		<polyline class="circuit_static_0" points="671.4,477.4 635.4,477.4 615.8,497 615.8,582.4 601,597.2 601,636 		"/>
+		<polyline class="circuit_static_0" points="642.3,488.2 625.8,504.8 625.8,591.1 617.9,599 617.9,629.5 627.9,639.5 627.9,663 		"/>
+		<line class="circuit_static_0" x1="660.1" y1="493.7" x2="639.7" y2="514.1"/>
+		<polyline class="circuit_static_0" points="700.6,455.4 690.9,455.4 618.1,455.4 536.1,373.4 536.1,321.2 536.1,266 518.4,248.4 518.4,192.8 
+			506.5,180.9 506.5,21.3 		"/>
+		<polyline class="circuit_static_0" points="700.6,447.4 690.9,447.4 622.3,447.4 545.1,370.1 545.1,321.2 545.1,260.5 525.7,241.2 525.7,184.7 
+			515.4,174.3 515.4,13.6 		"/>
+		<polyline class="circuit_static_0" points="700.6,439.4 690.9,439.4 624.6,439.4 554,368.7 554,321.2 554,255.2 534.3,235.5 534.3,174.8 
+			547.2,161.9 547.2,94.3 532.4,79.5 532.4,33.3 		"/>
+		<circle class="circuit_static_0" cx="260.6" cy="434.3" r="4"/>
+		<circle class="circuit_static_0" cx="221.6" cy="437.8" r="4"/>
+		<circle class="circuit_static_0" cx="208.6" cy="423.5" r="4"/>
+		<circle class="circuit_static_0" cx="138.3" cy="436.3" r="4"/>
+		<circle class="circuit_static_0" cx="84.1" cy="393.4" r="4"/>
+		<circle class="circuit_static_0" cx="231.6" cy="370.6" r="4"/>
+		<circle class="circuit_static_0" cx="261.7" cy="313.7" r="4"/>
+		<circle class="circuit_static_0" cx="261.7" cy="292.2" r="4"/>
+		<circle class="circuit_static_0" cx="270.9" cy="324.6" r="4"/>
+		<circle class="circuit_static_0" cx="291.9" cy="379.7" r="4"/>
+		<circle class="circuit_static_0" cx="274.6" cy="383.3" r="4"/>
+		<circle class="circuit_static_0" cx="274.6" cy="349.3" r="4"/>
+		<circle class="circuit_static_0" cx="244.7" cy="345.3" r="4"/>
+		<circle class="circuit_static_0" cx="224.6" cy="269.2" r="4"/>
+		<circle class="circuit_static_0" cx="242.8" cy="313.7" r="4"/>
+		<path class="circuit_static_0" d="M263.8,418.8h-19c-1.7,0-3-1.3-3-3v-19c0-1.7,1.3-3,3-3h19c1.7,0,3,1.3,3,3v19
+			C266.8,417.4,265.5,418.8,263.8,418.8z"/>
+		<polyline class="circuit_static_0" points="241.1,412.8 234.1,412.8 225.6,412.8 206.1,393.4 88.8,393.4 		"/>
+		<polyline class="circuit_static_0" points="241.1,406.3 234.1,406.3 228.7,406.3 213.1,390.6 213.1,363.4 224.6,351.9 224.6,274.2 		"/>
+		<polyline class="circuit_static_0" points="241.1,399.8 232.1,399.8 220.6,388.3 220.6,366.6 234.6,352.7 234.6,335.3 243,326.8 243,317.7 		
+			"/>
+		<polyline class="circuit_static_0" points="266.4,412.8 273.4,412.8 281.6,421 288.4,427.8 316.8,427.8 335.6,409.1 		"/>
+		<polyline class="circuit_static_0" points="266.4,406.3 273.4,406.3 277.9,406.3 291.9,392.2 291.9,383.7 		"/>
+		<polyline class="circuit_static_0" points="266.4,399.8 273.4,399.8 283.3,389.8 283.3,345.3 271,332.9 271,328.6 		"/>
+		<polyline class="circuit_static_0" points="247.6,393.6 247.6,386.6 234,373 		"/>
+		<polyline class="circuit_static_0" points="254.1,393.6 254.1,386.6 254.1,383.3 244.7,373.9 244.7,349.3 		"/>
+		<polyline class="circuit_static_0" points="260.6,393.6 260.6,386.6 260.6,379.5 251.8,370.7 251.8,356.2 261.7,346.4 261.7,317.7 		"/>
+		<polyline class="circuit_static_0" points="247.6,419 247.6,421.9 239.4,430.1 232.7,430.1 226.3,423.8 213.6,423.8 		"/>
+		<polyline class="circuit_static_0" points="254.1,419 254.1,425.9 242.3,437.8 225.6,437.8 		"/>
+		<polyline class="circuit_static_0" points="260.6,419 260.6,425.9 260.6,430.3 		"/>
+		<line class="circuit_static_0" x1="274.9" y1="354" x2="274.9" y2="379.5"/>
+		<polyline class="circuit_static_0" points="288.3,414.8 292.6,419 312.3,419 338.9,392.5 338.9,371.4 		"/>
+		<rect class="circuit_static_1" width="831.1" height="783.3"/>
+	</g>
+</g>
+<polyline class="circuit_static_0" points="700.4,431.2 628.1,431.2 562.3,365.4 562.3,271.3 569.3,264.3 "/>
+</svg>

@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from codequest.com/ios-development by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:14:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>codequest - Swift iOS Development Poland</title>
+  <meta name="description"
+    content="Are you looking for an iOS development partner in Poland? Codequest builds native iOS apps using development in Swift. Check us out!">
+  <meta property="og:title" content="codequest is a software development studio.">
+  <meta property="og:description"
+    content="We are a collective of engineers, product designers, and creatives who take products from zero to one. Hire us to build you a world-class iOS, Android, or Web app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="assets/images/static/logo-fb.png">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="341">
+  <meta property="fb:app_id" content="1028261210595998">
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,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"
+    sizes="32x32">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABL1BMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///+4qfXxAAAAY3RSTlMAAFDn6FIGrrEHHIzv8I4dIL3+1Z7UviEEl5sbmUKh8soXFsjzokMf0oeEKOB9e+Eqa9D8tAoJ/dFsAbb5BWr4uRg69KNg4jwizM4jnE5xcpq7RfbtPz7s90eG+saIC+kyMAy2BLHkAAAAAWJLR0Rkwtq4CQAAAAd0SU1FB+EBEhUwCvPCalUAAADZSURBVBjTNc9pXwFRFAbw+0TFJLsMJkK2bDEhW0ZSZGkVZYnO9/8O3Zn78/zum/O/z4tzGOMBDkzmQ4Dtg6NjIot1D4B0YiM6tTtEB3C63B6v1+c+8+sCyAEKSkBIIUXmgvNw5CKq/8Til4kkWCpNlBHVKyKfn2VzRHkBBaLiNZNLZfWmokPVUrutywyNaLNVbwPtu47WbRjV+2Lvod9P9B6fjEWAwZBU4u95JCCk1caT6cvkVX2TDHj/+JyB52u++Dag+rOMpwDHarmuiGM2gd8tsDMrf3z+Byi4H3ZKAKd+AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTAxLTE4VDIxOjQ4OjEwKzAxOjAw1xf8fgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wMS0xOFQyMTo0ODoxMCswMTowMKZKRMIAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
+    sizes="16x16">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WR3GZLJ');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3315161-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-3315161-2', { 'optimize_id': 'GTM-NGDNXF2' });
+  </script>
+  <!-- End Global site tag (gtag.js) -->
+  <!-- Add display:none until DOM Content is loaded to avoid Flash of Unstyled Content-->
+  <style>
+    .no-unstyled-content {
+      display: none;
+    }
+  </style>
+  <script>document.documentElement.className = 'no-unstyled-content';</script>
+  <!-- Facebook Pixel Code-->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      '../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1506046949701910');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1506046949701910&amp;ev=PageView&amp;noscript=1"></noscript>
+  <!-- End Facebook Pixel Code-->
+  <!-- Hotjar Tracking Code for https://codequest.com/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1696973, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body class="on-top" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager (noscript)-->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR3GZLJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript)-->
+  <header class="page-header">
+    <div class="page-header__top"><a class="page-header__logo" href="index.html">
+        <svg class="svg-icon" width="1em" height="1em" aria-labelledby="codequestLogo codequestMainPage" role="img">
+          <title id="codequestLogo">codequest - Go to the main page</title>
+          <desc id="codequestMainPage">Go to the main page</desc>
+          <use xlink:href="#icon-codequest"></use>
+        </svg></a>
+      <div class="page-header__menu" role="navigation">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__menu-list-item">
+            <button class="page-header__menu-link page-header__menu-link--case-studies" data-js-case-studies-toggle
+              tabindex="0">Case studies</button>
+            <div class="page-header__case-studies-dropdown-wrapper" data-js-case-studies-dropdown>
+              <div class="case-studies-dropdown__triangle"></div>
+              <div class="page-header__case-studies-dropdown">
+                <ul class="case-studies-dropdown__list">
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/wellme.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Wellme</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/foundersuite.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Foundersuite</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/nvent.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Install Pro 360</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/booli.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Booli</strong> / iOS app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/selecthub.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>SelectHub</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/kredytmarket.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>kredytmarket</strong> / Web app
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="careers.html">Careers</a>
+          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="faq.html">FAQ</a></li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="https://medium.com/codequest"
+              target="_blank">Blog
+              <svg class="svg-icon" width="0.8em" height="0.8em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__menu-list-item" id="call-to-action-link">
+            <button class="page-header__menu-link" onclick="goToContactPage()">Start project with us</button>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header--background"></div>
+      <div class="page-header__hamburger"><a class="navigation-trigger" href="#"><span
+            class="navigation-helper"></span><span class="navigation-helper"></span><span
+            class="navigation-helper"></span></a></div>
+      <nav class="page-header__nav">
+        <ul class="page-header__dropdown-menu">
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="index.html">Home</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link page-header__dropdown-menu-link--case-studies"
+              data-js-mobile-case-studies-toggle>Case studies</button>
+            <ul class="page-header__dropdown-menu-case-studies-list" data-js-mobile-case-studies-dropdown>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/wellme.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Wellme</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/foundersuite.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Foundersuite</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/nvent.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Install Pro 360</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/booli.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Booli</strong> / <span class="case-studies-link__app-type">iOS app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/selecthub.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>SelectHub</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/kredytmarket.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>kredytmarket</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+            </ul>          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="careers.html">Careers</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="faq.html">FAQ</a>
+          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="https://medium.com/codequest" target="_blank">Blog
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link" onclick="goToContactPage()">Hire us!</button>
+          </li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--header facebookIconDesc--header" role="img">
+                <title id="facebookIcon--header">Like us on Facebook</title>
+                <desc id="facebookIconDesc--header">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--header linkedinIconDesc--header" role="img">
+                <title id="linkedinIcon--header">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--header">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--header twitterIconDesc--header" role="img">
+                <title id="twitterIcon--header">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--header">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--header githubIconDesc--header"
+                role="img">
+                <title id="githubIcon--header">Fork us on GitHub</title>
+                <desc id="githubIconDesc--header">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section
+      class="page-block page-block--selectable-narrow page-block--solid-blue-bg page-block--extra-space page-block--double-description page-block--white-text"
+      id="ios-main">
+      <h1 class="page-block__title title-center-box">Native iOS Development in Swift</h1>
+      <p class="page-block__desc page-block--wide">Design flawless apps using technology officially supported by Apple.
+      </p>
+      <div class="page-block__graphic-desktop"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+          y="0px" width="869.9px" height="406px" viewBox="0 0 869.9 406" style="enable-background:new 0 0 869.9 406;"
+          xml:space="preserve" aria-hidden="true">
+          <style>
+            .graphic-ios-development-00 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <g>
+              <g>
+                <g>
+                  <path class="graphic-ios-development-00" d="M204.3,143.9c-31.5-38.1-57.3-69.2-61.9-74.8c-13-15.7-23.4-27.6-42.4-19.9s-71.7,31.3-85.8,37
+					C-2.3,93-2.3,113.2,8.3,126s211.8,256,222.1,268.5s26.5,15,43.1,1.3c13.4-11.1,59.8-49.5,67.8-56.1c8-6.6,6.5-22.1-1.4-31.7
+					c0,0-32.9-39.8-72-87" />
+                  <path class="graphic-ios-development-00"
+                    d="M199.3,144.4c-33.7-40.7-61.1-73.8-63.7-77c-0.8-1-12.8-18-24-14.1s-13.4,4.6-13.4,4.6s2.1,3.1,3.9,5.4
+					s3.7,4.5-1,7.3s-42.6,19.6-48.1,22C47.4,95,41.4,93,39.6,90.1c-1.8-2.8-3.4-4.2-7.1-2.7s-3.7,1.4-9.9,4.4s-7.3,11.4-1.7,18.1
+					c5.6,6.7,216,261.1,222.6,269.1s16.2,13,28,3.3c0,0,58.1-48.1,62.9-52s8.4-12.3,0.7-21.6c-3.1-3.7-34.2-41.3-71-85.8" />
+
+                  <ellipse transform="matrix(0.7705 -0.6375 0.6375 0.7705 -24.0014 69.6494)"
+                    class="graphic-ios-development-00" cx="84.7" cy="68.2" rx="2.2" ry="2.5" />
+                  <line class="graphic-ios-development-00" x1="62.9" y1="77.6" x2="77.7" y2="70.7" />
+                  <path class="graphic-ios-development-00" d="M14.5,133.5c0,0,0-3.5,2.5-6.1s3.8-3.2,3.8-3.2" />
+                  <path class="graphic-ios-development-00" d="M35,152.7L35,152.7c-0.8,0.7-2,0.5-2.6-0.2l-7.7-9.3c-0.7-0.8-0.5-2,0.2-2.6l0,0c0.8-0.7,2-0.5,2.6,0.2
+					l7.7,9.3C35.9,150.8,35.8,152,35,152.7z" />
+                  <path class="graphic-ios-development-00" d="M63.2,187L63.2,187c-1.4,1.2-3.5,1-4.7-0.4l-15.8-19c-1.2-1.4-1-3.5,0.4-4.7l0,0c1.4-1.2,3.5-1,4.7,0.4
+					l15.8,19C64.8,183.8,64.6,185.9,63.2,187z" />
+                  <path class="graphic-ios-development-00" d="M87,215.3L87,215.3c-1.6,1.3-4,1.1-5.3-0.5l-15.1-18.2c-1.3-1.6-1.1-4,0.5-5.3h0c1.6-1.3,4-1.1,5.3,0.5
+					L87.5,210C88.9,211.6,88.6,214,87,215.3z" />
+                  <path class="graphic-ios-development-00" d="M223.9,386.6c0,0,0.4-2.5,3.1-5c2.7-2.5,4-3.3,4-3.3" />
+                </g>
+                <path class="graphic-ios-development-00" d="M24.3,82C8.2,89,1.6,100.9,13.2,114.9c12.3,14.9,96.1,116.1,96.1,116.1s116.3,140.6,128.7,155.5
+				c12.3,14.9,26.2,12.7,36.5,4.2c10.3-8.5,55.2-45.7,66-54.6s3.2-22.5,3.2-22.5" />
+              </g>
+            </g>
+            <path class="graphic-ios-development-00 ios-birds ios-bird2" d="M208.1,188.7c2.8,2.8,7.2,4.2,12.3,3.5c4.1-0.6,7.9-2.5,10.7-5.1c-1.2,0.5-2.4,0.9-3.7,1.1
+		c-5.3,0.9-9.9-0.5-12.7-3.5c0,0,0,0,0,0c5.7-2.3,10.9-5.9,15-8.9c0.8-0.5,1.5-1.1,2.1-1.7c-4.5,2.3-11.3,4.9-13.7,5.5
+		c5.5-3.4,10.9-7.9,10.7-7.8c-8.7,5-16.1,7.2-16.1,7.2c-0.2,0.1-0.4,0.1-0.6,0.2c0-0.4-0.1-0.8-0.1-1.2c0-4.3,2.5-8.5,6.2-11.5
+		c-7.4,2.1-13.1,8.3-13.2,14.7c0,0.2,0,0.3,0,0.5c0,0,0,0-0.1,0.1c-4.2,3.1-4.5,7.4-3.9,6.8C203.9,185.7,206.7,187.5,208.1,188.7
+		L208.1,188.7z" />
+            <path class="graphic-ios-development-00 ios-birds ios-bird9" d="M483.5,176c-4.9,13.6-2.6,30.7,7.8,46.4c8.4,12.8,20.7,22.4,33.8,27.6c-3.6-3-6.7-6.7-9.5-10.7
+		c-11.4-16.1-14-33.8-8.6-47.6c0,0,0,0,0,0c16.7,15.2,37,27,53.4,35.6c2.8,1.9,6,3.2,9,4.4c-14.8-11.3-34.2-29.9-40-36.8
+		c20,13.1,43.7,23.7,43,23.2C542,197.3,523,176.1,523,176.1c-0.6-0.7-1.1-1.2-1.5-1.7c1.2-0.8,2.5-1.4,3.8-2.1
+		c14.2-6.8,32.1-5.2,48.1,2.6c-18.7-21.2-48.3-30.4-69.8-20.5c-0.6,0.3-1.2,0.5-1.7,0.8c-0.1-0.1-0.2-0.1-0.3-0.2
+		c-16.8-9.1-31.8-3.1-28.6-2.1C486.6,157.1,484.9,169.6,483.5,176L483.5,176z" />
+            <path class="graphic-ios-development-00 ios-birds ios-bird4" d="M244.5,153c4.3,6.3,12.3,10.6,22.2,11.1c8,0.4,15.9-1.9,22.2-5.8c-2.4,0.6-4.9,0.8-7.5,0.7
+		c-10.4-0.1-18.8-4.5-22.9-11.1c0,0,0,0,0,0c11.6-2.4,23-7.4,31.7-11.7c1.7-0.6,3.2-1.6,4.7-2.4c-9.4,2.8-23.3,5.3-28.1,5.6
+		c11.8-4.4,23.6-11.3,23.2-11.1c-18.3,6.5-33.2,8-33.2,8c-0.5,0-0.9,0.1-1.2,0.1c0.1-0.8,0.2-1.5,0.3-2.3c1.5-8.2,7.8-15.3,16-19.7
+		c-14.8,1.4-27.9,11.1-30.4,23.4c-0.1,0.3-0.1,0.7-0.2,1c-0.1,0-0.1,0-0.2,0.1c-9.1,4.3-11.2,12.6-9.8,11.5
+		C237.4,145.8,242.2,150.4,244.5,153L244.5,153z" />
+            <path class="graphic-ios-development-00 ios-birds ios-bird1" d="M182.9,211.4c0.9,2.6,3.2,4.9,6.6,6c2.7,0.9,5.7,0.9,8.3,0.2c-0.9,0-1.8-0.2-2.7-0.5c-3.6-1.1-6-3.4-6.8-6.1
+		c0,0,0,0,0,0c4.3,0.3,8.7-0.3,12.1-0.9c0.6,0,1.3-0.2,1.9-0.4c-3.5,0-8.6-0.5-10.3-0.8c4.5-0.4,9.3-1.6,9.1-1.5
+		c-7,0.4-12.3-0.5-12.3-0.5c-0.2,0-0.3-0.1-0.4-0.1c0.1-0.3,0.2-0.5,0.3-0.8c1.3-2.7,4.2-4.5,7.5-5.2c-5.3-1-10.8,1.1-12.8,5.1
+		c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0-0.1,0c-3.6,0.6-5.1,3.2-4.5,3C181.2,208.3,182.4,210.3,182.9,211.4L182.9,211.4z" />
+            <path class="graphic-ios-development-00 ios-birds ios-bird5" d="M300.1,193.5c6.2,5.5,15.7,8,26.3,5.9c8.6-1.7,16.3-6.2,21.9-12c-2.4,1.2-5,2.1-7.7,2.7
+		c-11,2.6-21,0.2-27.1-5.7c0,0,0,0,0,0c11.7-5.6,22.3-13.8,30.4-20.7c1.6-1.1,3-2.5,4.3-3.8c-9.2,5.4-23.2,11.7-28.1,13.3
+		c11.2-7.8,22-18.1,21.6-17.8c-17.6,11.6-33,17.2-33,17.2c-0.5,0.2-0.9,0.3-1.2,0.4c-0.1-0.8-0.2-1.6-0.3-2.5
+		c-0.5-9,4.2-18.2,11.7-24.9c-15.3,5.3-26.5,19-25.9,32.6c0,0.4,0,0.7,0.1,1.1c0,0-0.1,0.1-0.1,0.1c-8.4,7-8.5,16.2-7.3,14.7
+		C290.8,187.7,297,191.3,300.1,193.5L300.1,193.5z" />
+            <path class="graphic-ios-development-00 ios-birds ios-bird3" d="M240.7,207.7c2.6,4.2,7.7,7.1,14.1,7.6c5.2,0.4,10.3-0.9,14.5-3.3c-1.6,0.3-3.2,0.4-4.9,0.3
+		c-6.7-0.3-12-3.3-14.6-7.6c0,0,0,0,0,0c7.6-1.3,15-4.3,20.7-6.9c1.1-0.3,2.1-1,3.1-1.5c-6.1,1.6-15.2,2.9-18.2,3
+		c7.7-2.6,15.5-6.8,15.2-6.7c-12,3.8-21.6,4.5-21.6,4.5c-0.3,0-0.6,0-0.8,0c0.1-0.5,0.1-1,0.2-1.5c1.2-5.2,5.3-9.7,10.7-12.4
+		c-9.6,0.6-18.2,6.6-20.1,14.4c-0.1,0.2-0.1,0.4-0.1,0.6c0,0-0.1,0-0.1,0c-6,2.6-7.5,7.9-6.5,7.2
+		C236.3,202.9,239.3,205.9,240.7,207.7L240.7,207.7z" />
+            <path class="graphic-ios-development-00 ios-birds ios-bird7" d="M391.7,140.8c-0.1,8.2,4.2,16.9,12.7,23.5c6.8,5.3,15.2,8.2,23.2,8.6c-2.5-1-4.8-2.4-7.1-4
+		c-9.1-6.6-13.7-15.6-13.3-24c0,0,0,0,0,0c11.7,5.1,24.8,7.7,35.1,9.3c1.8,0.5,3.8,0.6,5.6,0.7c-10-3.4-23.8-9.8-28.2-12.4
+		c13.1,3.4,27.8,4.7,27.3,4.6c-20.2-5.6-34.2-13.5-34.2-13.5c-0.4-0.3-0.8-0.5-1.1-0.6c0.5-0.6,1.1-1.2,1.7-1.8
+		c6.4-6.3,16.3-8.7,26.3-7.4c-13.9-8-31.4-7.5-41.2,1.8c-0.3,0.2-0.5,0.5-0.8,0.8c-0.1,0-0.1,0-0.2,0c-10.7-1.8-17.6,4.2-15.7,4.1
+		C389.9,130.1,391.3,137.1,391.7,140.8L391.7,140.8z" />
+            <path class="graphic-ios-development-00 ios-birds ios-bird6" d="M319,118.5c7.7,1.9,16.9-0.4,24.9-6.9c6.5-5.3,11-12.6,13.1-20.1c-1.4,2.1-3.3,4-5.3,5.8
+		c-8.2,7.2-17.7,9.6-25.5,7.4c0,0,0,0,0,0c7.3-10,12.6-21.8,16.4-31.2c0.9-1.6,1.4-3.5,1.9-5.2c-5.3,8.7-14.4,20.4-17.8,24
+		c6-11.7,10.4-25.2,10.2-24.8c-9.7,17.8-20.1,29.4-20.1,29.4c-0.4,0.4-0.6,0.7-0.8,0.9c-0.5-0.6-0.9-1.3-1.4-2
+		c-4.5-7.4-4.7-17.3-1.4-26.4c-10.5,11.4-13.9,28.1-7.2,39.3c0.2,0.3,0.4,0.6,0.5,0.9c0,0.1,0,0.1-0.1,0.2c-4,9.7,0.1,17.6,0.5,15.8
+		C308.5,117.8,315.4,118,319,118.5L319,118.5z" />
+            <path class="graphic-ios-development-00 ios-lines ios-line9" d="M507.4,251.4c0,0,16.9,17.2,35,23" />
+            <path class="graphic-ios-development-00 ios-lines ios-line6" d="M348.1,92c0,0,15.8-18.3,20-36.7" />
+            <path class="graphic-ios-development-00 ios-lines ios-line6" d="M320,76.4c0,0,9.1-22.4,7.2-41.2" />
+            <path class="graphic-ios-development-00 ios-lines ios-line6" d="M354.1,68.3c0,0,8-12,9.1-25" />
+            <path class="graphic-ios-development-00 ios-lines ios-line7" d="M429.8,164.5c0,0,15.5,5.9,30.4,3.9" />
+            <path class="graphic-ios-development-00 ios-lines ios-line7" d="M437.2,131.4c0,0,21.6,7.3,42.7,3.6" />
+            <path class="graphic-ios-development-00 ios-lines ios-line9" d="M545.1,241.2c0,0,25.3,17.6,60.9,17.8" />
+            <path class="graphic-ios-development-00 ios-lines ios-line5" d="M344.5,182.6c0,0,22.3-9.2,34.5-23.8" />
+            <path class="graphic-ios-development-00 ios-lines ios-line5" d="M322.1,155.9c0,0,24.3-13.5,37.6-34.5" />
+            <path class="graphic-ios-development-00 ios-lines ios-line5" d="M345.9,150.9c0,0,23.3-15.2,35.1-37.1" />
+            <path class="graphic-ios-development-00 ios-lines ios-birds ios-bird8" d="M402.7,81.5c5.3,8.7,15.7,14.9,28.9,16.2c10.7,1,21.4-1.5,30-6.3c-3.2,0.6-6.6,0.7-10.1,0.5
+		c-13.9-0.9-24.7-7.2-29.8-16.3c0,0,0,0,0,0c15.7-2.4,31.1-8.4,43-13.6c2.3-0.7,4.4-1.9,6.4-3c-12.7,3.1-31.5,5.5-37.8,5.7
+		c16-5.1,32.2-13.5,31.7-13.3c-24.9,7.5-44.8,8.5-44.8,8.5c-0.6,0-1.2,0-1.6,0.1c0.1-1,0.3-2,0.6-3c2.6-10.8,11.3-19.9,22.6-25.2
+		c-19.8,0.9-37.9,13-42,29.2c-0.1,0.4-0.2,0.9-0.3,1.3c-0.1,0-0.1,0.1-0.2,0.1c-12.4,5.2-15.7,16-13.8,14.7
+		C393.8,71.4,399.9,77.9,402.7,81.5L402.7,81.5z" />
+            <path class="graphic-ios-development-00 ios-lines ios-line8" d="M458.7,84.4c0,0,29.5-2.9,48.9-15.7" />
+            <path class="graphic-ios-development-00 ios-lines ios-line8" d="M441.9,45.1c0,0,33.3-7.3,56.4-27.3" />
+            <path class="graphic-ios-development-00 ios-lines ios-line8" d="M471.6,47.7c0,0,32.7-9.6,54.4-31.2" />
+            <path class="graphic-ios-development-00 ios-lines ios-birds ios-bird11" d="M645,256.7c-2.9,16.5,3.3,35.6,18.3,51.5c12.1,12.9,28.2,21.4,44.2,24.7c-4.7-2.7-9-6.3-13-10.3
+		c-16.3-16.1-22.9-35.8-19.4-52.7c0,0,0,0,0,0c22.1,14,47.8,23.4,68.2,29.9c3.6,1.6,7.5,2.4,11.2,3.3c-19.2-9.9-45.1-27.3-53.1-34
+		c25.4,10.9,54.7,18.2,53.8,17.8c-39-17.7-65-38.1-65-38.1c-0.8-0.7-1.5-1.2-2-1.6c1.2-1.1,2.6-2.2,4-3.2
+		c14.9-10.7,35.7-12.4,55.5-6.8c-25.6-20.5-61.3-25-83.9-9.3c-0.6,0.4-1.2,0.8-1.8,1.3c-0.1,0-0.2-0.1-0.4-0.1
+		c-21-7-37,2.9-33.1,3.3C644.8,234.4,645.4,249,645,256.7L645,256.7z" />
+            <path class="graphic-ios-development-00 ios-lines ios-line11" d="M711.5,321.1c0,0,39.9,28.4,78,33.5" />
+            <path class="graphic-ios-development-00 ios-lines ios-line11" d="M733.2,253.9c0,0,49.4,27.1,99.9,27.3" />
+            <path class="graphic-ios-development-00 ios-lines ios-line11" d="M767.4,289.5c0,0,51.1,23.6,101.5,20.3" />
+            <path class="graphic-ios-development-00 ios-lines ios-line9" d="M570.2,196.2c0,0,21.4,16.3,41.5,20.6" />
+            <path class="graphic-ios-development-00 ios-lines ios-line9" d="M580.5,184.7c0,0,25.3,17.6,60.9,17.8" />
+            <path class="graphic-ios-development-00 ios-lines ios-birds ios-bird10" d="M527.9,113.3c7.6,15.2,23.9,27.1,45.7,31c17.6,3.3,35.7,0.6,50.8-6.3c-5.4,0.6-11.1,0.2-16.8-0.6
+		c-22.9-3.4-40.1-15.6-47.3-31.3c0,0,0,0,0,0c26.4-1.8,52.9-9.5,73.5-16.4c3.9-0.8,7.6-2.5,11.1-4c-21.6,3.4-53.1,4.7-63.6,4.1
+		c27.3-6.3,55.5-17.8,54.5-17.6C593.3,81,560,79.9,560,79.9c-1.1-0.1-1.9-0.1-2.6-0.1c0.4-1.6,0.8-3.3,1.3-4.9
+		c5.8-17.6,21.7-31.4,41.2-38.7c-33.1-1.4-64.9,16.2-74,42.5c-0.2,0.7-0.5,1.4-0.7,2.1c-0.1,0-0.2,0.1-0.4,0.1
+		c-21.3,6.9-28.4,24.5-25,22.5C514.4,95.3,523.6,106.9,527.9,113.3L527.9,113.3z" />
+            <path class="graphic-ios-development-00 ios-lines ios-line10" d="M610.5,122.7c0,0,28.3-0.3,47.9-10.9" />
+            <path class="graphic-ios-development-00 ios-lines ios-line10" d="M611.2,154.2c0,0,28.3-0.3,47.9-10.9" />
+            <path class="graphic-ios-development-00 ios-lines ios-line10" d="M633.1,114c0,0,35.4-7.2,64.5-37.2" />
+            <path class="graphic-ios-development-00 ios-lines ios-line10" d="M591.2,46.9c0,0,28.3-0.3,47.9-10.9" />
+            <path class="graphic-ios-development-00 ios-lines ios-line10" d="M615.3,56.3c0,0,31.2-4.9,51.1-18.5" />
+            <path class="graphic-ios-development-00 ios-lines ios-line10" d="M613.8,38.2c0,0,35.4-7.2,64.5-37.2" />
+          </g>
+        </svg>
+
+      </div>
+      <div class="page-block__graphic-mobile"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+          y="0px" width="243.7px" height="239px" viewBox="0 0 243.7 239" style="enable-background:new 0 0 243.7 239;"
+          xml:space="preserve" aria-hidden="true">
+          <style>
+            .graphic-ios-dev-mobile-00 {
+              fill: none;
+              stroke: #FFFFFF;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-miterlimit: 10;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <g>
+              <g>
+                <g>
+                  <path class="graphic-ios-dev-mobile-00" d="M128.3,68.7C110.6,42.5,96.1,21,93.5,17.2C86.2,6.4,80.4-1.8,67.8,1.9s-47.6,15.5-57,18.2
+					C-0.2,23.4-1.4,36.2,4.5,45s119,176.3,124.7,184.9c5.8,8.6,15.9,11.2,27.4,3.5c9.3-6.2,41.2-27.8,46.7-31.5
+					c5.5-3.7,5.5-13.7,1.1-20.3c0,0-18.5-27.4-40.4-59.9" />
+                  <path class="graphic-ios-dev-mobile-00" d="M125,68.7c-18.9-28-34.3-50.8-35.8-53.1c-0.4-0.7-7-12.3-14.4-10.5C67.4,7,66,7.3,66,7.3s1.1,2.1,2.2,3.7
+					c1,1.5,2.1,3.1-1.1,4.6s-28.3,9.8-32,11c-3.7,1.2-7.4-0.5-8.3-2.4c-1-1.9-1.9-2.9-4.4-2.2c-2.4,0.7-2.4,0.7-6.6,2.2
+					s-5.3,6.8-2.2,11.4s121.3,179.8,125,185.3c3.7,5.5,9.5,9.3,17.6,3.8c0,0,40-27,43.3-29.2c3.3-2.2,6.1-7.3,1.8-13.7
+					c-1.7-2.5-19.2-28.5-39.9-59.1" />
+                  <ellipse transform="matrix(0.829 -0.5593 0.5593 0.829 2.4584 33.9917)"
+                    class="graphic-ios-dev-mobile-00" cx="56.8" cy="13" rx="1.4" ry="1.6" />
+                  <line class="graphic-ios-dev-mobile-00" x1="42.3" y1="17.6" x2="52.2" y2="14.2" />
+                  <path class="graphic-ios-dev-mobile-00" d="M8,50.2c0,0,0.2-2.3,2-3.7c1.7-1.5,2.6-1.8,2.6-1.8" />
+                  <path class="graphic-ios-dev-mobile-00" d="M19.9,63.7L19.9,63.7c-0.5,0.4-1.3,0.2-1.7-0.3L13.9,57c-0.4-0.5-0.2-1.3,0.3-1.7h0
+					c0.5-0.4,1.3-0.2,1.7,0.3l4.3,6.4C20.5,62.6,20.4,63.4,19.9,63.7z" />
+                  <path class="graphic-ios-dev-mobile-00" d="M35.7,87.4L35.7,87.4c-1,0.7-2.3,0.4-3-0.6l-8.8-13.1c-0.7-1-0.4-2.3,0.6-3l0,0c1-0.7,2.3-0.4,3,0.6
+					l8.8,13.1C36.9,85.4,36.6,86.7,35.7,87.4z" />
+                  <path class="graphic-ios-dev-mobile-00" d="M49.1,106.8L49.1,106.8c-1.1,0.7-2.6,0.4-3.3-0.6l-8.5-12.6c-0.7-1.1-0.4-2.6,0.6-3.3l0,0
+					c1.1-0.7,2.6-0.4,3.3,0.6l8.5,12.6C50.5,104.6,50.2,106.1,49.1,106.8z" />
+                  <path class="graphic-ios-dev-mobile-00" d="M125.6,224.5c0,0,0.4-1.6,2.3-3c1.9-1.4,2.8-1.9,2.8-1.9" />
+                </g>
+                <path class="graphic-ios-dev-mobile-00" d="M17.5,18.1C6.7,21.5,1.8,28.7,8.3,38.3c6.9,10.3,54,80,54,80s65.3,96.9,72.3,107.1c6.9,10.2,15.9,9.7,23,4.9
+				c7.1-4.8,38-25.6,45.5-30.7s3.4-14.2,3.4-14.2" />
+              </g>
+            </g>
+            <path class="graphic-ios-dev-mobile-00 ios-birds ios-bird2" d="M127.9,97.5c1.6,2,4.3,3.1,7.6,3c2.6-0.1,5.2-1.1,7.1-2.6c-0.8,0.3-1.6,0.4-2.5,0.5c-3.4,0.3-6.3-0.9-7.9-3
+		c0,0,0,0,0,0c3.8-1.1,7.3-3.1,10.1-4.8c0.5-0.2,1-0.6,1.5-0.9c-3,1.2-7.5,2.4-9.1,2.7c3.7-1.8,7.4-4.4,7.3-4.3
+		c-5.8,2.7-10.7,3.6-10.7,3.6c-0.2,0-0.3,0-0.4,0.1c0-0.2,0-0.5,0-0.8c0.3-2.7,2.1-5.2,4.7-6.9c-4.8,0.9-8.9,4.5-9.3,8.6
+		c0,0.1,0,0.2,0,0.3c0,0,0,0,0,0c-2.9,1.7-3.3,4.5-2.9,4.1C125.4,95.3,127.1,96.7,127.9,97.5L127.9,97.5z" />
+            <path class="graphic-ios-dev-mobile-00 ios-birds ios-bird4" d="M153.3,77c2.3,4.3,7.2,7.5,13.4,8.4c5.1,0.8,10.3-0.2,14.5-2.3c-1.6,0.2-3.2,0.2-4.8,0
+		c-6.6-0.7-11.7-4.1-13.9-8.5c0,0,0,0,0,0c7.6-0.8,15.1-3.3,20.9-5.5c1.1-0.3,2.1-0.8,3.1-1.3c-6.2,1.2-15.2,1.9-18.2,1.8
+		c7.8-2.1,15.8-5.7,15.5-5.6c-12.1,3-21.7,3-21.7,3c-0.3,0-0.6,0-0.8,0c0.1-0.5,0.2-1,0.3-1.4c1.5-5.1,5.9-9.3,11.4-11.5
+		c-9.5,0-18.5,5.3-20.8,13c-0.1,0.2-0.1,0.4-0.2,0.6c0,0-0.1,0-0.1,0c-6.1,2.2-7.9,7.3-6.9,6.7C149.3,72,152,75.2,153.3,77L153.3,77
+		z" />
+            <path class="graphic-ios-dev-mobile-00 ios-birds ios-bird1" d="M110.4,110.4c0.4,1.7,1.7,3.3,3.8,4.2c1.7,0.8,3.6,0.9,5.2,0.6c-0.6-0.1-1.1-0.3-1.7-0.5
+		c-2.2-0.9-3.6-2.6-4-4.3c0,0,0,0,0,0c2.7,0.5,5.5,0.4,7.8,0.2c0.4,0,0.8-0.1,1.2-0.1c-2.2-0.2-5.4-0.8-6.5-1.2c2.9,0,6-0.4,5.9-0.4
+		c-4.5-0.2-7.8-1.1-7.8-1.1c-0.1,0-0.2-0.1-0.3-0.1c0.1-0.2,0.2-0.3,0.3-0.5c1-1.6,3-2.6,5.1-2.9c-3.3-1-6.9,0-8.5,2.4
+		c0,0.1-0.1,0.1-0.1,0.2c0,0,0,0,0,0c-2.3,0.2-3.5,1.7-3.1,1.6C109.5,108.3,110.1,109.6,110.4,110.4L110.4,110.4z" />
+            <path class="graphic-ios-dev-mobile-00 ios-birds ios-bird5" d="M186.2,106.3c3.6,3.9,9.5,6.1,16.4,5.4c5.6-0.5,10.8-2.9,14.7-6.3c-1.6,0.6-3.3,1-5.1,1.3
+		c-7.2,1-13.4-1.2-16.9-5.3c0,0,0,0,0,0c7.8-2.8,15.1-7.4,20.6-11.3c1.1-0.6,2.1-1.4,3-2.2c-6.2,2.9-15.5,6-18.7,6.7
+		c7.6-4.2,15.1-10.1,14.9-10c-12,6.3-22.1,8.9-22.1,8.9c-0.3,0.1-0.6,0.1-0.8,0.2c0-0.5,0-1.1,0-1.6c0.2-5.8,3.8-11.3,9-15.2
+		c-10.1,2.4-18.1,10.5-18.5,19.2c0,0.2,0,0.5,0,0.7c0,0-0.1,0-0.1,0.1c-5.8,3.9-6.4,9.8-5.6,8.9C180.6,102,184.4,104.7,186.2,106.3
+		L186.2,106.3z" />
+            <path class="graphic-ios-dev-mobile-00 ios-birds ios-bird3" d="M147.5,111.6c1.4,2.8,4.5,5,8.5,5.7c3.3,0.6,6.6,0.1,9.4-1.2c-1,0.1-2.1,0-3.1-0.1c-4.3-0.6-7.4-2.9-8.8-5.8
+		c0,0,0,0,0,0c4.9-0.4,9.8-1.8,13.6-3.1c0.7-0.1,1.4-0.5,2-0.8c-4,0.6-9.9,0.9-11.8,0.8c5.1-1.2,10.3-3.3,10.1-3.3
+		c-7.9,1.7-14,1.5-14,1.5c-0.2,0-0.4,0-0.5,0c0.1-0.3,0.1-0.6,0.2-0.9c1.1-3.3,4-5.8,7.6-7.2c-6.1-0.2-12,3-13.7,7.9
+		c0,0.1-0.1,0.3-0.1,0.4c0,0,0,0-0.1,0c-4,1.3-5.3,4.6-4.6,4.2C145,108.3,146.7,110.4,147.5,111.6L147.5,111.6z" />
+            <path class="graphic-ios-dev-mobile-00 ios-birds ios-bird6" d="M202.9,59.6c4.8,1.7,10.8,0.8,16.3-2.9c4.5-3,7.8-7.3,9.6-12c-1,1.3-2.3,2.4-3.7,3.4c-5.6,4.1-11.9,5-16.7,3.1
+		c0,0,0,0,0,0c5.3-5.9,9.4-13.1,12.4-18.9c0.7-1,1.1-2.1,1.5-3.2c-3.9,5.2-10.4,12.1-12.8,14.2c4.6-7.1,8.2-15.4,8.1-15.2
+		c-7.3,10.8-14.7,17.5-14.7,17.5c-0.2,0.2-0.4,0.4-0.6,0.5c-0.3-0.4-0.5-0.9-0.7-1.3c-2.4-5-1.9-11.3,0.8-16.9
+		c-7.4,6.6-10.6,17.1-7,24.6c0.1,0.2,0.2,0.4,0.3,0.6c0,0,0,0.1-0.1,0.1c-3.2,5.9-1,11.2-0.7,10.1C196.3,58.6,200.7,59.2,202.9,59.6
+		L202.9,59.6z" />
+            <path class="graphic-ios-dev-mobile-00 ios-lines ios-line6" d="M223.2,44.6c0,0,11.2-10.7,15.1-22.2" />
+            <path class="graphic-ios-dev-mobile-00 ios-lines ios-line6" d="M206.2,32.9c0,0,7.2-13.7,7.2-25.8" />
+            <path class="graphic-ios-dev-mobile-00 ios-lines ios-line6" d="M228.4,29.9c0,0,5.8-7.2,7.4-15.4" />
+            <path class="graphic-ios-dev-mobile-00 ios-lines ios-line5" d="M215.2,102.1c0,0,14.8-4.5,23.4-13" />
+            <path class="graphic-ios-dev-mobile-00 ios-lines ios-line5" d="M202.6,83.7c0,0,16.3-7.1,26.1-19.7" />
+            <path class="graphic-ios-dev-mobile-00 ios-lines ios-line5" d="M218.1,82c0,0,15.8-8.2,24.7-21.4" />
+          </g>
+        </svg>
+
+      </div>
+      <p class="page-block__desc page-block--narrow page-block--second-desc">
+        Swift is the official go to language to write native apps for iOS. Native means that iOS development is being
+        made in the language dedicated for the platform,
+        using the SDK and design practices that were created by Apple.
+      </p>
+    </section>
+    <section class="page-block page-block--solid-white-bg page-block--extra-space page-block--narrow-tiles"
+      id="why-ios">
+      <h2 class="page-block__title">Why iOS development in Swift?</h2>
+      <p class="page-block__desc">
+        When considering how to create your app you have to use the best tool for the job. For most projects this tool
+        is called Swift,
+        since iOS apps written in this language still have the best performance and the code is officially supported by
+        Apple.
+      </p>
+      <div class="tiles blue-solid-titles">
+        <section class="tile ios__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-ios-01"></use>
+            </svg>
+            <h3 class="tile__title">Performance</h3>
+          </header>
+          <p class="page-block__desc">
+            If you are planning to build an app that will be used by many users or contain advanced features,
+            the optimal technology of choice is Swift. iOS apps written in this language are faster,
+            smoother and designed according to the best practices of Apple, which ultimately means the best User
+            Experience user satisfaction.
+          </p>
+        </section>
+        <section class="tile ios__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-ios-02"></use>
+            </svg>
+            <h3 class="tile__title">Native Design</h3>
+          </header>
+          <p class="page-block__desc">
+            Apple has its own design guidelines for iOS that differ from the guidelines of Google for the Android
+            platform.
+            If you think that the users of your app deserve a great experience dedicated for their platform you should
+            not take any shortcuts and develop your app using Swift.
+          </p>
+        </section>
+        <section class="tile ios__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-ios-03"></use>
+            </svg>
+            <h3 class="tile__title">Mothership Support</h3>
+          </header>
+          <p class="page-block__desc">
+            With all the hybrid technologies being more and more popular people often tend to forget that iOS
+            development in Swift is
+            the official technology supported by Apple. This means better guidelines, support and future updates,
+            straight from the source.
+            As Apple continuously updates their OS with new features you can count on their support for Swift.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section class="page-block page-block--solid-light-bg" id="our-work">
+      <h2 class="page-block__title">Some of our awesome iOS apps 🚀</h2>
+      <p class="page-block__desc">
+        We love to design and develop native iOS apps and our highly skilled team is read to
+        dive into new challenges! Here is a selection of apps that we have created.
+      </p>
+    </section>
+    <section class="page-block page-block--solid-light-bg page-block--no-padding" id="our-work">
+      <div class="slider slider__frame our-work-slider">
+        <script type="application/json">{"adaptiveHeight":false,"autoplay":true,"autoplaySpeed":5000,"arrows":false,"responsive":[{"breakpoint":768,"settings":{"autoplay":false,"adaptiveHeight":true}}]}
+          </script>
+        <ul class="slider__slides">
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title color-cyan">Soothe
+                </h3>
+                <p class="project__desc-content">Soothe is the perfect example of applying native technology to build an
+                  iOS app. The World’s biggest on-demand service for massages has thousands of users every day and the
+                  app must therefore provide them with a flawless user experience so that they can return and get more
+                  massages in the future.</p>
+              </div>
+              <div class="project__visual"><img class="project__image lazyload blur-up"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABnCAYAAADIf0rxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCM0UwNjM3M0FERTYxMUU3OTc1MkIyQkZGOEUzNDM5RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCM0UwNjM3NEFERTYxMUU3OTc1MkIyQkZGOEUzNDM5RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkIzRTA2MzcxQURFNjExRTc5NzUyQjJCRkY4RTM0MzlGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkIzRTA2MzcyQURFNjExRTc5NzUyQjJCRkY4RTM0MzlGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0IBhEAAAS+FJREFUeNrsvQeY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"
+                  data-src="/assets/images/projects/soothe@2x.png"
+                  alt="ios development poland for soothe">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title color-blue">Degoo
+                </h3>
+                <p class="project__desc-content">Degoo is an online backup service designed to host your files. Similar
+                  to services such as Dropbox Degoo needs good performance because it compresses and transfers huge
+                  loads of data everyday. Therefore iOS development in Swift was the only solution when starting this
+                  project.</p>
+              </div>
+              <div class="project__visual"><img class="project__image lazyload blur-up"
+                  src="data:image/png;base64,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"
+                  data-src="/assets/images/projects/degoo@2x.png"
+                  alt="ios development company poland for degoo">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title color-red">Nlyt
+                </h3>
+                <p class="project__desc-content">For this health and fitness app we used development in Elixir to create
+                  the whole API for the iOS app. Thanks to what we created a very light but performant service that is
+                  resistant to errors, scalable and inexpensive to maintain.</p>
+              </div>
+              <div class="project__visual"><img class="project__image lazyload blur-up"
+                  src="data:image/png;base64,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"
+                  data-src="/assets/images/projects/nlyt-2.png" alt="web development for dawanda">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-block page-block--extra-space" id="approach">
+      <h2 class="page-block__title">Approach</h2>
+      <p class="page-block__desc page-block--wide">
+        While new technologies and languages are essential to create great apps, a product would not be robust
+        without a system to verify the quality of the work, and an approach that allows us to build exactly
+        what the client wants. Here are some of the most important solutions that help us deliver what we promise.
+      </p>
+      <div class="tiles four-tiles blue-solid-titles">
+        <section class="tile four-tiles__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-apple-watch"></use>
+            </svg>
+            <h3 class="tile__title">Apple Watch</h3>
+          </header>
+          <p class="four-tiles__tile-content">
+            As Apple moves towards new platforms and operating systems we can assure that Swift is the best way to keep
+            up in this race.
+            Apple Watch development and development of apps that are working across devices benefit the most from using
+            native ios development.
+          </p>
+        </section>
+        <section class="tile four-tiles__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-augmented-reality"></use>
+            </svg>
+            <h3 class="tile__title">Augmented Reality</h3>
+          </header>
+          <p class="four-tiles__tile-content">
+            Augmented Reality is the next big thing from Apple. With ARKit, developers can create mind blowing
+            experiences in the AR space
+            for users of the latest iPhones and iPads. Development of Augmented Reality software for iOS is best
+            supported by Swift.
+          </p>
+        </section>
+        <section class="tile four-tiles__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-complex-apps"></use>
+            </svg>
+            <h3 class="tile__title">Complex Apps</h3>
+          </header>
+          <p class="four-tiles__tile-content">
+            For apps that use complex animations, new features from Apple or that are data heavy there is really only
+            one solution.
+            As mentioned earlier: iOS development in Swift is the best way to achieve great performance and user
+            experience.
+          </p>
+        </section>
+        <section class="tile four-tiles__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-icon-iphone-hardware"></use>
+            </svg>
+            <h3 class="tile__title">Apps using the Phone’s hardware</h3>
+          </header>
+          <p class="four-tiles__tile-content">
+            When creating native Swift apps developers have full power using hardware that come with iOS devices, such
+            as the camera, accelerometer or GPS.
+            While hybrid apps have these possibilities as well, handling hardware in native apps creates smoother user
+            experience and is less prone to create bugs in the development process.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section
+      class="page-block page-block--selectable-narrow page-block--solid-light-bg page-block--extra-space page-block--double-description"
+      id="when-react-native">
+      <h2 class="page-block__title">When should I consider React Native?</h2>
+      <p class="page-block__desc">There are certain apps that could benefit from another approach. As we use the best
+        tool for the job we can also develop your app in React Native!</p>
+      <div class="logos"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+          y="0px" width="64.8px" height="57.6px" viewBox="0 0 64.8 57.6" style="enable-background:new 0 0 64.8 57.6;"
+          xml:space="preserve" aria-hidden="true">
+          <style>
+            .logo-react-native-00 {
+              fill: #7DD7F8;
+            }
+          </style>
+          <defs>
+          </defs>
+          <g>
+            <path class="logo-react-native-00" d="M53.2,18.7c-0.7-0.2-1.4-0.5-2.1-0.7c0.1-0.5,0.2-0.9,0.3-1.4c1.6-7.7,0.5-13.8-3-15.9
+		C45.1-1.2,39.6,0.8,34,5.7c-0.5,0.5-1.1,1-1.6,1.5c-0.4-0.3-0.7-0.7-1.1-1C25.5,1,19.6-1.2,16.1,0.8c-3.4,2-4.4,7.8-3,15
+		c0.1,0.7,0.3,1.4,0.5,2.1c-0.8,0.2-1.6,0.5-2.4,0.8C4.4,21.1,0,24.9,0,28.8c0,4,4.7,8,11.8,10.5c0.6,0.2,1.2,0.4,1.8,0.5
+		c-0.2,0.8-0.4,1.5-0.5,2.3c-1.4,7.1-0.3,12.8,3.1,14.7c3.5,2,9.3-0.1,15-5c0.4-0.4,0.9-0.8,1.4-1.2c0.6,0.5,1.2,1.1,1.8,1.6
+		c5.5,4.7,10.9,6.6,14.3,4.7c3.5-2,4.6-8.1,3.1-15.5c-0.1-0.6-0.2-1.1-0.4-1.7c0.4-0.1,0.8-0.2,1.2-0.4c7.4-2.5,12.3-6.4,12.3-10.5
+		C64.8,24.9,60.2,21.1,53.2,18.7z M35.8,7.8c4.8-4.2,9.2-5.8,11.3-4.6c2.2,1.3,3,6.3,1.6,12.9c-0.1,0.4-0.2,0.9-0.3,1.3
+		c-2.7-0.6-5.6-1.1-8.7-1.4c-1.8-2.5-3.6-4.8-5.5-6.8C34.8,8.7,35.3,8.2,35.8,7.8z M19.1,32.1c0.6,1.1,1.2,2.2,1.8,3.4
+		c0.7,1.1,1.3,2.2,2,3.3c-2.1-0.2-4.1-0.6-6-1C17.6,35.9,18.3,34,19.1,32.1z M19.1,25.6c-0.8-1.9-1.5-3.8-2.1-5.6
+		c1.8-0.4,3.8-0.8,5.9-1c-0.7,1.1-1.3,2.2-2,3.3C20.3,23.3,19.7,24.4,19.1,25.6z M20.6,28.8c0.9-1.8,1.8-3.5,2.8-5.2v0
+		c1-1.7,2-3.4,3.1-5c1.9-0.1,3.9-0.2,5.9-0.2c2,0,4,0.1,5.9,0.2c1.1,1.6,2.1,3.3,3.1,5c1,1.7,1.9,3.4,2.8,5.2
+		c-0.9,1.8-1.8,3.5-2.8,5.2l0,0c-1,1.7-2,3.4-3.1,5c-1.9,0.1-3.9,0.2-5.9,0.2c-2,0-4-0.1-5.9-0.2c-1.1-1.6-2.2-3.3-3.2-5
+		C22.4,32.3,21.4,30.6,20.6,28.8z M43.8,35.4c0.7-1.1,1.3-2.3,1.9-3.4c0.9,2,1.6,3.9,2.2,5.7c-1.9,0.4-3.9,0.8-6,1
+		C42.5,37.6,43.2,36.5,43.8,35.4z M45.7,25.6c-0.6-1.1-1.2-2.3-1.9-3.4c-0.6-1.1-1.3-2.2-2-3.2c2.1,0.3,4,0.6,5.9,1
+		C47.2,21.8,46.5,23.6,45.7,25.6z M32.4,11.1c1.3,1.4,2.6,2.9,3.8,4.6c-2.5-0.1-5.1-0.1-7.7,0C29.8,14,31.1,12.5,32.4,11.1z
+		 M17.5,3.2c2.2-1.3,7,0.5,12,5c0.3,0.3,0.6,0.6,1,0.9c-1.9,2-3.7,4.3-5.5,6.8c-3,0.3-6,0.7-8.6,1.3c-0.2-0.7-0.3-1.3-0.4-2v0
+		C14.6,9.1,15.5,4.4,17.5,3.2z M14.3,37.1c-0.5-0.2-1.1-0.3-1.6-0.5c-3.2-1.1-5.8-2.5-7.6-4c-1.6-1.4-2.4-2.7-2.4-3.8
+		c0-2.4,3.5-5.4,9.4-7.4c0.7-0.3,1.5-0.5,2.2-0.7c0.8,2.6,1.9,5.4,3.2,8.2C16.2,31.6,15.2,34.4,14.3,37.1z M29.3,49.7
+		c-2.5,2.2-5,3.8-7.2,4.5h0c-2,0.7-3.6,0.7-4.5,0.2c-2-1.2-2.9-5.7-1.7-11.8c0.1-0.7,0.3-1.4,0.5-2.1c2.7,0.6,5.6,1,8.7,1.3
+		c1.8,2.5,3.7,4.8,5.6,6.9C30.2,49,29.7,49.4,29.3,49.7z M32.5,46.6c-1.3-1.4-2.6-3-3.9-4.7c1.2,0,2.5,0.1,3.8,0.1
+		c1.3,0,2.6,0,3.9-0.1C35,43.6,33.8,45.2,32.5,46.6z M49.3,50.4c-0.4,2.1-1.2,3.5-2.1,4c-2,1.2-6.4-0.4-11.1-4.4
+		c-0.5-0.5-1.1-1-1.6-1.5c1.8-2,3.6-4.3,5.4-6.9c3.1-0.3,6.1-0.7,8.8-1.4c0.1,0.5,0.2,1.1,0.4,1.6C49.6,45.2,49.7,48.1,49.3,50.4z
+		 M51.6,36.6L51.6,36.6c-0.4,0.1-0.7,0.2-1.1,0.3c-0.8-2.6-1.9-5.4-3.3-8.2c1.3-2.8,2.4-5.5,3.2-8.1c0.7,0.2,1.3,0.4,1.9,0.6
+		c6,2.1,9.6,5.1,9.6,7.5C62,31.3,58,34.5,51.6,36.6z" />
+            <path class="logo-react-native-00"
+              d="M32.4,34.5c3.2,0,5.8-2.6,5.8-5.8c0-3.2-2.6-5.8-5.8-5.8s-5.8,2.6-5.8,5.8C26.6,31.9,29.2,34.5,32.4,34.5z" />
+          </g>
+        </svg>
+
+      </div>
+      <p class="page-block__desc page-block--narrow page-block--second-desc">
+        If you are looking to build a simple app with few fancy features or if you are looking to create a Proof of
+        Concept to try with your market or
+        with your investors then React Native could be a good solution: This approach allows us to build an app for iOS
+        and Android using one set of code.
+      </p>
+      <div class="page-block__button-read-more"><a class="page-block__button-text"
+          href="react-native-development.html">Read
+          more</a></div>
+    </section>
+    <section class="page-block page-block--call-to-action page-block--solid-blue-bg" id="call-to-action">
+      <h2 class="page-block__title">Get your free native iOS app estimate from codequest! </h2>
+      <p class="page-block__desc">Contact us and we will get back to you with instructions on how to get a quote for
+        your project! </p>
+      <div class="page-block__button">
+        <button class="color-blue hover-blue page-block__button-link" onclick="goToContactPage()">Contact us
+          now!</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer" id="footer">
+    <h2 class="visuallyhidden">Footer</h2>
+    <div class="page-footer__logo">
+      <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+        <use xlink:href="#icon-codequest-white"></use>
+      </svg>
+    </div>
+    <nav class="page-footer__nav">
+      <ul class="page-footer__list">
+        <li class="page-footer__list-item"><a class="page-footer__link" href="index.html">Home</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="services.html">Services</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="careers.html">Careers</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="faq.html">FAQ</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="https://medium.com/codequest">Blog
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-external-link"></use>
+            </svg></a></li>
+        <li class="page-footer__list-item">
+          <button class="page-footer__link" onclick="goToContactPage()">Hire us!</button>
+        </li>
+        <li class="page-footer__list-item page-footer__list-item--privacy-policy"><a class="page-footer__link"
+            href="privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+    <div class="page-footer__address">
+      <address itemscope itemtype="http://schema.org/Organization"></address>
+      <link itemprop="url" href="index.html">
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">E-mail and phone number</h3>
+        <ul class="page-footer__list page-footer__instant-contact">
+          <li class="page-footer__list-item">
+            <div class="instant-contact__wrapper">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-email"></use>
+              </svg><span class="xnkftb instant-contact__contact" role="link" tabindex="0" aria-label="Message us"
+                data-fek9t8b-hedgehog="olleh" data-fek9t8b-bagithi="moc" data-fek9t8b-siyo="tseuqedoc"
+                data-fek9t8b-enamabla="">
+                <!--[if IE]>
+                  <style>.xnkftb{unicode-bidi:bidi-override;direction:rtl;}</style><![endif]-->
+                <style>
+                  .xnkftb:after {
+                    content: attr(data-fek9t8b-bagithi)'.'attr(data-fek9t8b-siyo)'@'attr(data-fek9t8b-hedgehog);
+                    unicode-bidi: bidi-override;
+                    direction: rtl;
+                  }
+
+                  @supports (-ms-ime-align:auto) {
+                    .xnkftb {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .xnkftb:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+
+                  @media all and (-ms-high-contrast:none),
+                  (-ms-high-contrast:active) {
+                    .xnkftb {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .xnkftb:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+                </style>
+              </span>
+            </div>
+          </li>
+          <li class="page-footer__list-item"><a class="page-footer__link" href="tel:+48531861864" itemprop="telephone">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-phone"></use>
+              </svg>+48 531 861 864</a></li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--footer facebookIconDesc--footer" role="img">
+                <title id="facebookIcon--footer">Like us on Facebook</title>
+                <desc id="facebookIconDesc--footer">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--footer linkedinIconDesc--footer" role="img">
+                <title id="linkedinIcon--footer">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--footer">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--footer twitterIconDesc--footer" role="img">
+                <title id="twitterIcon--footer">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--footer">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--footer githubIconDesc--footer"
+                role="img">
+                <title id="githubIcon--footer">Fork us on GitHub</title>
+                <desc id="githubIconDesc--footer">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">Office address and Invoice details</h3><span
+          class="page-footer__office-address-title" itemprop="name">Office address:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Plac Dąbrowskiego 1</span><br><span
+            itemprop="postalCode">00-057</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p><span class="page-footer__invoice-address-title" itemprop="name">Invoice details:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Zamiany 8 LU 202</span><br><span
+            itemprop="postalCode">02-786</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">REGON, VAT UE and KRS</h3>
+        <dl class="page-footer__finances">
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">REGON</dt>
+            <dd class="page-footer__finances-desc">146176183</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">VAT UE</dt>
+            <dd class="page-footer__finances-desc" itemprop="taxID">9512357282</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">KRS</dt>
+            <dd class="page-footer__finances-desc">0000424452</dd>
+          </div>
+        </dl>
+        <ul class="page-footer__list page-footer__subsidies">
+          <li class="page-footer__list-item page-footer__subsidies-ue-funds"><a class="page-footer__link"
+              href="https://www.poir.gov.pl/en/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="EFIcon UEPOIRLink" role="img">
+                <title id="EFIcon">European Funds Smart Growth</title>
+                <desc id="UEPOIRLink">Go to European Operational Programme Smart Growth website</desc>
+                <use xlink:href="#icon-funds-uf"></use>
+              </svg></a></li>
+          <li class="page-footer__list-item page-footer__subsidies-er-funds"><a class="page-footer__link"
+              href="http://ec.europa.eu/regional_policy/en/funding/erdf/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="ERDFIcon UEERDFLink" role="img">
+                <title id="ERDFIcon">European Regional Development Fund</title>
+                <desc id="UEERDFLink">Go to European Regional Development Fund website</desc>
+                <use xlink:href="#icon-funds-eu"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+  <footer class="cookies-footer" id="cookies-footer">
+    <div class="cookies-footer__content">
+      <svg class="svg-icon" width="32px" height="32px" aria-hidden="true">
+        <use xlink:href="#icon-cookie-small-icon"></use>
+      </svg>
+      <p class="cookies-footer__desc">I am aware, that information about the administrator and my rights related to my
+        personal data, as well as the <a href="privacy-policy.html">cookies policy</a>, can be found in the Rules
+        for the
+        Processing and Protection of Personal Data in codequest sp. z o.o.</p>
+    </div>
+    <button class="cookies-footer__button" id="understand-button">Thanks!
+      <svg class="svg-icon" width="12px" height="12px" aria-hidden="true">
+        <use xlink:href="#icon-thumbs-up-solid"></use>
+      </svg>
+    </button>
+  </footer>
+  <script>
+    WebFontConfig = {
+      google: {
+        families: [
+          'Lato:400,700,900',
+          'PT Serif:400,400i,700,700i'
+        ],
+      },
+      timeout: 2000
+    };
+  </script>
+  <script src="../ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
+  <script>
+    const goToContactPage = function () {
+      fbq('track', 'goToContactPage', {
+        content_name: 'Go to contact page',
+        content_ids: ['contact'],
+        content_type: 'product',
+      });
+      window.location.pathname = '/contact';
+    }
+  </script>
+  <script type="text/javascript">
+    _linkedin_partner_id = "2597492";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function () {
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })();
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=2597492&amp;fmt=gif" />
+  </noscript>  <script type="text/javascript" src="assets/main.js"></script>
+</body>
+
+
+<!-- Mirrored from codequest.com/ios-development by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:14:21 GMT -->
+</html>

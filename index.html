@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from codequest.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:11:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>codequest - Web &amp; Mobile Software Development Studio</title>
+  <meta name="description"
+    content="We are a collective of engineers, product designers, and creatives who take products from zero to one. Hire us to build you a world-class iOS, Android, or Web app.">
+  <meta property="og:title" content="codequest is a software development studio.">
+  <meta property="og:description"
+    content="We are a collective of engineers, product designers, and creatives who take products from zero to one. Hire us to build you a world-class iOS, Android, or Web app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="assets/images/static/logo-fb.png">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="341">
+  <meta property="fb:app_id" content="1028261210595998">
+  <base >
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB3VBMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///9JtlwCAAAAnXRSTlMAACqt87AsF7zAGWD9/maHjBVn1ddqFgFCw/zGRVvn9elfAk3qnVw/Ppzm7FEh0Lc1AzO01CSErxiriQ7d2Sgl1t9hDyezfHa2Cu82Mu2xDDHaGjQ89BId4iMf2yBo8vlPS/dtBVCo9qcHBqLHqVMTuVi+VONS4VkILgmgG+ifux76+2vktbINHEaX2HKPdwRzk0xH8Y5pY5KZzckQO+TsXgAAAAFiS0dEnp+yowsAAAAHdElNRQfhARIVMAuExVrDAAAB/0lEQVQ4y3WT/UOLURTH962paKNNVjbtYVRbEU/yVmgpWkjewrxkasKEvETEZGRJ3oni/K/Ovbd57vOo88vO8z2fe86559y5XJYBRcVu94oSwLW0obSM2FauWgYAyj0C8K5eJgWwhqRVLAkAPv9aBVSuC/yPoKp6fZAWLRjaUAVnvCYsQh7DkH1s3BSBPf/mLSyHa+vqozWxBnYbt9qqYFsTd799h8kizOadXqKWXdAT7OZDe/aqQ0BgH3+2FlIAbdHy/UQHDlpKe5yo41B9p1CArsOysSNWUaBbNpwoYg09xfJqR4/pNY/3SvFEHwMnlX/qtA6UxtWpMwyc7Zd+i08HzjVJ0YgycL5S+heSOnCxQ4qXLjOAKwPCv5rSm7w2KLT+IXmN9PXh0A2im7csIHObaHDkzt3M4mDMe6OM11lzuM9JH/jMfzmBhwbRozFTHYikHnOCJ/oyMB7jkr0VT58B4yWtjfwx0WNbFp4nxGN7UZbNvgzzqmh0Eo59+1+RZrnXznjqDSfwqqj4bRiztSDjNOXPhuLxkQn/W7ITQLWIJyYRyQcC+QimJfFOu+UMC++7rDkkxfuOacBQjgfVnSkA6Vk3P+1ZrUbfByaMj2k1qE+fecG5L3m9S0m4vyrg23dnXBA/eA5zCvjJ8V955z+nbT640K6A5G9P7Z9C/C/xA8QH+Fot/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wMS0xOFQyMTo0ODoxMSswMTowMHFg98oAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDEtMThUMjE6NDg6MTErMDE6MDAAPU92AAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    sizes="32x32">
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABL1BMVEUAAAArMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEsrMEv///+4qfXxAAAAY3RSTlMAAFDn6FIGrrEHHIzv8I4dIL3+1Z7UviEEl5sbmUKh8soXFsjzokMf0oeEKOB9e+Eqa9D8tAoJ/dFsAbb5BWr4uRg69KNg4jwizM4jnE5xcpq7RfbtPz7s90eG+saIC+kyMAy2BLHkAAAAAWJLR0Rkwtq4CQAAAAd0SU1FB+EBEhUwCvPCalUAAADZSURBVBjTNc9pXwFRFAbw+0TFJLsMJkK2bDEhW0ZSZGkVZYnO9/8O3Zn78/zum/O/z4tzGOMBDkzmQ4Dtg6NjIot1D4B0YiM6tTtEB3C63B6v1+c+8+sCyAEKSkBIIUXmgvNw5CKq/8Til4kkWCpNlBHVKyKfn2VzRHkBBaLiNZNLZfWmokPVUrutywyNaLNVbwPtu47WbRjV+2Lvod9P9B6fjEWAwZBU4u95JCCk1caT6cvkVX2TDHj/+JyB52u++Dag+rOMpwDHarmuiGM2gd8tsDMrf3z+Byi4H3ZKAKd+AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTAxLTE4VDIxOjQ4OjEwKzAxOjAw1xf8fgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wMS0xOFQyMTo0ODoxMCswMTowMKZKRMIAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
+    sizes="16x16">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WR3GZLJ');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3315161-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-3315161-2', { 'optimize_id': 'GTM-NGDNXF2' });
+  </script>
+  <!-- End Global site tag (gtag.js) -->
+  <!-- Add display:none until DOM Content is loaded to avoid Flash of Unstyled Content-->
+  <style>
+    .no-unstyled-content {
+      display: none;
+    }
+  </style>
+  <script>document.documentElement.className = 'no-unstyled-content';</script>
+  <!-- Facebook Pixel Code-->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      '../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1506046949701910');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1506046949701910&amp;ev=PageView&amp;noscript=1"></noscript>
+  <!-- End Facebook Pixel Code-->
+  <!-- Hotjar Tracking Code for https://codequest.com/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1696973, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</head>
+
+<body class="on-top" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Google Tag Manager (noscript)-->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR3GZLJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript)-->
+  <header class="page-header">
+    <div class="eu-funds__header">
+      <ul class="eu-funds__subsidies">
+        <li class="eu-funds__subsidy er-funds"><a class="eu-funds__subsidy-link"
+            href="http://ec.europa.eu/regional_policy/en/funding/erdf/">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-funds-eu"></use>
+            </svg></a></li>
+        <li class="eu-funds__subsidy ue-funds"><a class="eu-funds__subsidy-link" href="https://www.poir.gov.pl/en/">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-funds-uf"></use>
+            </svg></a></li>
+      </ul>
+      <p class="eu-funds__content">
+        <strong class='eu-funds__content-name'>codequest</strong>
+        <span class='eu-funds__content-mobile'>has received EU funds in two different projects. </span>
+        <span class='eu-funds__content-desktop'>has received EU funds in two different projects: Go to Brand - Brand
+          Promotion and R&D - Automated Code Review, an R&D project to build a prototype of our product codebeat.
+        </span><a class="eu-funds__subsidy-link" href="eu-ef.html">Read more</a>
+      </p>
+    </div>
+    <div class="page-header__top"><a class="page-header__logo" href="index.html">
+        <svg class="svg-icon" width="1em" height="1em" aria-labelledby="codequestLogo codequestMainPage" role="img">
+          <title id="codequestLogo">codequest - Go to the main page</title>
+          <desc id="codequestMainPage">Go to the main page</desc>
+          <use xlink:href="#icon-codequest"></use>
+        </svg></a>
+      <div class="page-header__menu" role="navigation">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="services.html">Services</a></li>
+          <li class="page-header__menu-list-item">
+            <button class="page-header__menu-link page-header__menu-link--case-studies" data-js-case-studies-toggle
+              tabindex="0">Case studies</button>
+            <div class="page-header__case-studies-dropdown-wrapper" data-js-case-studies-dropdown>
+              <div class="case-studies-dropdown__triangle"></div>
+              <div class="page-header__case-studies-dropdown">
+                <ul class="case-studies-dropdown__list">
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/wellme.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Wellme</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/foundersuite.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Foundersuite</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/nvent.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Install Pro 360</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/booli.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>Booli</strong> / iOS app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/selecthub.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>SelectHub</strong> / Web app
+                    </a>
+                  </li>
+                  <li class="case-studies-dropdown__list-item">
+                    <a href="case-studies/kredytmarket.html" class="case-studies-dropdown__link" data-js-case-studies-link>
+                      <strong>kredytmarket</strong> / Web app
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="careers.html">Careers</a>
+          </li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="faq.html">FAQ</a></li>
+          <li class="page-header__menu-list-item"><a class="page-header__menu-link" href="https://medium.com/codequest"
+              target="_blank">Blog
+              <svg class="svg-icon" width="0.8em" height="0.8em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__menu-list-item" id="call-to-action-link">
+            <button class="page-header__menu-link" onclick="goToContactPage()">Start project with us</button>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header--background"></div>
+      <div class="page-header__hamburger"><a class="navigation-trigger" href="#"><span
+            class="navigation-helper"></span><span class="navigation-helper"></span><span
+            class="navigation-helper"></span></a></div>
+      <nav class="page-header__nav">
+        <ul class="page-header__dropdown-menu">
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link" href="index.html">Home</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="services.html">Services</a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link page-header__dropdown-menu-link--case-studies"
+              data-js-mobile-case-studies-toggle>Case studies</button>
+            <ul class="page-header__dropdown-menu-case-studies-list" data-js-mobile-case-studies-dropdown>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/wellme.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Wellme</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/foundersuite.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Foundersuite</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/nvent.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Install Pro 360</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/booli.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>Booli</strong> / <span class="case-studies-link__app-type">iOS app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/selecthub.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>SelectHub</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+              <li class="page-header__dropdown-menu-case-studies-list-item">
+                <a href="case-studies/kredytmarket.html" class="page-header__dropdown-menu-case-studies-link">
+                  <strong>kredytmarket</strong> / <span class="case-studies-link__app-type">Web app</span>
+                </a>
+              </li>
+            </ul>          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="careers.html">Careers</a></li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="page-header__dropdown-menu-item"><a class="page-header__dropdown-menu-link"
+              href="https://medium.com/codequest" target="_blank">Blog
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-external-link"></use>
+              </svg></a></li>
+          <li class="page-header__dropdown-menu-item">
+            <button class="page-header__dropdown-menu-link" onclick="goToContactPage()">Hire us!</button>
+          </li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--header facebookIconDesc--header" role="img">
+                <title id="facebookIcon--header">Like us on Facebook</title>
+                <desc id="facebookIconDesc--header">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--header linkedinIconDesc--header" role="img">
+                <title id="linkedinIcon--header">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--header">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--header twitterIconDesc--header" role="img">
+                <title id="twitterIcon--header">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--header">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--header githubIconDesc--header"
+                role="img">
+                <title id="githubIcon--header">Fork us on GitHub</title>
+                <desc id="githubIconDesc--header">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="animated-circuit animated-circuit--regular">
+      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2078 1148" width="0" height="0">
+        <polyline class="sa0" points="1013.5,65.5 944.5,65.5 886.7,7.8 886.7,0.7"></polyline>
+        <polyline class="sa0" points="1012.5,57.7 949.1,57.7 896.1,5.7 896.1,0.7"></polyline>
+        <polyline class="sa0" points="1013.5,50 952.5,50 903.6,1.1 903.6,0.7"></polyline>
+        <polyline class="sa0" points="1013.5,41.8 957.5,41.8 916.9,1.2"></polyline>
+        <polyline class="sa0" points="1012.5,33.7 962,33.7 929,0.7"></polyline>
+        <polyline class="sa0" points="1013.5,25.5 965.7,25.5 940.9,0.7"></polyline>
+        <polyline class="sa0"
+          points="1527.1,375.8 1527.1,407.8 1589.1,469.8 1678.6,469.8 1692.9,469.8 1709.4,486.3 1807.9,486.3">
+        </polyline>
+        <polyline class="sa0"
+          points="1519.6,376.7 1519.6,412.8 1584.9,478.1 1678.6,478.1 1688.9,478.1 1706.3,495.5 1788.5,495.5 1793.5,500.5 1830.5,500.5">
+        </polyline>
+        <polyline class="sa0"
+          points="1511.5,376.7 1511.8,407.8 1511.8,416.8 1582.5,487.5 1678.6,487.5 1685.5,487.5 1701.8,503.9 1784.5,503.9 1790.5,509.9 1853.7,509.9">
+        </polyline>
+        <polyline class="sa0" points="1503.6,376.7 1503.6,407.8 1503.6,452.8 1515.4,464.6 1515.4,506.8"></polyline>
+        <polyline class="sa0"
+          points="1495.5,376.7 1495.8,407.8 1495.8,458.8 1505.5,468.5 1505.5,521.8 1515.8,532.2 1515.8,559.8">
+        </polyline>
+        <polyline class="sa0" points="1487.5,376.7 1487.8,407.8 1487.8,464.8 1495.5,472.5 1495.5,532.8"></polyline>
+        <polyline class="sa0"
+          points="1189.9,565.1 1189.9,574.8 1189.9,584.3 1112.2,584.3 1076.3,548.3 1076.3,492.4 1083,485.7 1083,437.6 1075.7,430.2 1075.7,408.3">
+        </polyline>
+        <polyline class="sa0"
+          points="1197.9,565.1 1197.9,574.8 1197.9,592.6 1075,592.6 1032.5,592.6 987.2,547.3 987.2,466.9 945,466.9 935.3,466.9">
+        </polyline>
+        <polyline class="sa0"
+          points="1205.9,565.1 1205.9,574.8 1205.9,596.2 1201.5,600.7 1077,600.7 1070.3,607.4 1049.4,607.4"></polyline>
+        <polyline class="sa0" points="1213.9,565.1 1213.9,574.8 1213.9,600.2 1204.6,609.5 1094.2,609.5"></polyline>
+        <polyline class="sa0"
+          points="1487.1,325.1 1487.1,315.4 1487.1,277.3 1569.1,195.4 1678.7,195.4 1689.2,195.4 1759.3,265.5 1772.5,265.5 1791.9,284.9">
+        </polyline>
+        <polyline class="sa0"
+          points="1495.1,325.1 1495.1,315.4 1495.1,281.6 1572.4,204.3 1678.7,204.3 1685.2,204.3 1755.4,274.6 1769.5,274.6 1796.6,301.7">
+        </polyline>
+        <polyline class="sa0"
+          points="1503.1,325.1 1503.1,315.4 1503.1,283.8 1573.8,213.2 1678.7,213.2 1681.2,213.2 1752,284.1 1758.7,284.1">
+        </polyline>
+        <polyline class="sa0"
+          points="1511.1,325.1 1511.1,315.4 1511.1,285.8 1575.4,221.5 1678.7,221.5 1753.7,296.6 1769.8,296.6">
+        </polyline>
+        <polyline class="sa0"
+          points="1519.1,325.1 1519.1,315.4 1519.1,289.3 1578.9,229.5 1674.7,229.5 1752,306.9 1786.2,306.9 1809.5,330.2">
+        </polyline>
+        <polyline class="sa0"
+          points="1527.1,325.1 1527.1,315.4 1527.1,292 1581.1,238 1670.7,238 1747.3,314.7 1780.8,314.7 1835.7,369.5">
+        </polyline>
+        <polyline class="sa0"
+          points="1318.7,102.7 1366.2,102.7 1387.4,102.7 1425.2,139.5 1501,139.5 1512.9,127.6 1627.3,127.6 1637.6,117.3 1678.7,117.3 1743.9,117.3 1762.9,98.3 1938.8,98.3 1949.7,109.1 2016.5,109.1">
+        </polyline>
+        <polyline class="sa0"
+          points="1318.7,110.5 1366.2,110.5 1382.4,110.5 1420.6,148.7 1506.3,148.7 1517.4,137.6 1631.7,137.6 1642,127.3 1678.7,127.3 1746.2,127.3 1766.7,106.8 1935.5,106.8 1947.9,119.2 1994.2,119.2">
+        </polyline>
+        <polyline class="sa0"
+          points="1318.7,118.3 1366.2,118.3 1378.2,118.3 1416.8,156.9 1511.7,156.9 1521.4,147.2 1636,147.2 1646.8,136.4 1678.7,136.4 1750.2,136.4 1769.9,116.6 1791.5,116.6 1799.7,124.8 1886.2,124.8">
+        </polyline>
+        <polyline class="sa0"
+          points="1318.7,126.3 1366.2,126.3 1373.1,126.3 1413,166.1 1516.2,166.1 1526.3,156 1678.7,156 1689.5,145.2 1756.3,145.2 1766.8,134.7 1964.8,134.7">
+        </polyline>
+        <polyline class="sa0" points="1318.7,134.3 1370.2,134.3 1410.8,174.9 1529.7,174.9"></polyline>
+        <polyline class="sa0" points="1268.1,119 1261.8,119 1212.8,70 1282.1,0.7"></polyline>
+        <polyline class="sa0" points="1268.1,127 1257.8,127 1200.6,69.9 1269.8,0.7"></polyline>
+        <polyline class="sa0" points="1268.1,135 1251.8,135 1186.5,69.8 1255.6,0.7"></polyline>
+        <polyline class="sa0"
+          points="757.7,557.2 748.1,557.2 683.8,557.2 619.5,492.9 619.5,447 619.5,397.9 627.1,390.2"></polyline>
+        <polyline class="sa0"
+          points="757.7,549.2 748.1,549.2 687.3,549.2 627.5,489.4 627.5,447 627.5,407.2 639.4,395.3 639.4,370.1">
+        </polyline>
+        <polyline class="sa0"
+          points="757.7,541.2 748.1,541.2 689.9,541.2 635.9,487.3 635.9,447 649.7,433.3 649.7,409.9"></polyline>
+        <polyline class="sa0"
+          points="787.4,586 787.4,595.7 787.4,614.2 778.8,622.8 778.8,733.5 791.9,746.5 791.9,758.7 763.6,787 763.6,888 707.8,943.7 707.8,1006">
+        </polyline>
+        <polyline class="sa0"
+          points="795.4,586 795.4,595.7 795.4,618.2 787.2,626.5 787.2,727.9 802,742.7 802,763 772.7,792.4 772.7,864 772.7,891.4 717.6,946.4 717.6,1024.7">
+        </polyline>
+        <polyline class="sa0"
+          points="803.4,586 803.4,595.7 803.4,620.9 793.3,631.1 793.3,721.5 810.5,738.7 810.5,767 789.9,787.6 789.9,827.7 781.7,835.9 781.7,855.5 787.9,861.8 787.9,924.7">
+        </polyline>
+        <polyline class="sa0"
+          points="500.6,749.7 500.6,702.2 500.6,681 537.5,643.1 537.5,567.4 525.5,555.4 525.5,447 525.5,439.4 468.7,382.6 468.7,331.6 399.7,262.5 331.9,194.8 331.9,103.5 304,75.5">
+        </polyline>
+        <polyline class="sa0"
+          points="508.4,749.7 508.4,702.2 508.4,686 546.6,647.8 546.6,562 535.6,551 535.6,447 535.6,435.7 478.7,378.9 478.7,328.7 400,249.9 340.4,190.4 340.4,101.4 288.9,49.9">
+        </polyline>
+        <polyline class="sa0"
+          points="516.2,749.7 516.2,702.2 516.2,690.2 554.8,651.6 554.8,556.7 545.1,547 545.1,447 545.1,429.3 488.8,373 488.8,325 399.6,235.8 349.3,185.5 349.2,177 349.2,119.1 368.3,100 372.2,100 381.9,100">
+        </polyline>
+        <polyline class="sa0"
+          points="427.2,113.9 427.2,122.6 427.2,198.7 462.2,233.7 486.5,233.7 504.1,251.3 504.1,275.4 534.7,306">
+        </polyline>
+        <polyline class="sa0" points="419.2,113.9 419.2,122.6 419.2,203.7 540.5,325.1 540.5,338.9"></polyline>
+        <polyline class="sa0" points="411.2,113.9 411.2,122.6 411.2,207.3 518.7,314.9 518.7,357.8 536.6,357.8">
+        </polyline>
+        <polyline class="sa0" points="403.2,113.9 403.2,122.6 403.2,211.3 510.3,318.4 510.3,362.2 537.9,389.8">
+        </polyline>
+        <polyline class="sa0"
+          points="539.2,406.1 500,367 500,321.6 400.2,221.7 357.5,179.7 357.5,122.7 372.2,108 381.9,108"></polyline>
+        <polyline class="sa0" points="1482.1,370.8 1447.1,370.8 1423.1,394.8 1423.1,445.8"></polyline>
+        <polyline class="sa0" points="1481.6,362.8 1444.6,362.8 1415.9,392.6 1415.9,445.8"></polyline>
+        <polyline class="sa0" points="700.7,148.2 700.7,91.7 713.3,79 713.3,27.7 "></polyline>
+        <polyline class="sa0" points="708.5,148.2 708.5,95.7 721.1,83 721.1,0.2  "></polyline>
+        <polyline class="sa0" points="716.3,148.2 716.3,100.7 728.9,88 728.9,0.2 "></polyline>
+        <polyline class="sa0" points="724.1,148.2 724.1,105.7 736.7,93 736.7,0.2 "></polyline>
+        <polyline class="sa0" points="733.1,148.2 733.1,109.7 744.7,98 744.7,0.2 "></polyline>
+        <polyline class="sa0" points="741.1,148.2 741.1,113.7 752.7,102 752.7,0.2  "></polyline>
+        <polyline class="sa0"
+          points="1528.6,487.5 1528.6,510.8 1539.4,521.6 1539.4,563.8 1528.8,574.5 1528.8,616.3 1562,649.5 1609.3,649.5 ">
+        </polyline>
+        <polyline class="sa0"
+          points="1609.1,689.2 1561.6,689.2 1540.4,689.2 1502.6,652.4 1426.8,652.4 1414.9,664.3 1300.5,664.3 1290.2,674.6 1227.1,674.6 1208.1,655.6 1192.5,655.6">
+        </polyline>
+        <polyline class="sa0"
+          points="1609.1,681.4 1561.6,681.4 1545.4,681.4 1507.2,643.3 1421.5,643.3 1410.4,654.3 1296.1,654.3 1285.8,664.6 1230.5,664.6 1210.7,644.8 1174.5,644.8">
+        </polyline>
+        <polyline class="sa0"
+          points="1609.1,673.6 1561.6,673.6 1549.6,673.6 1511,635 1416.1,635 1406.4,644.7 1291.8,644.7 1281,655.5 1249.1,655.5 ">
+        </polyline>
+        <polyline class="sa0"
+          points="1609.1,665.6 1561.6,665.6 1554.6,665.6 1514.8,625.8 1411.6,625.8 1401.5,635.9 1264.5,635.9 ">
+        </polyline>
+        <polyline class="sa0" points="1609.1,657.6 1557.6,657.6 1517,617 1398.1,617"></polyline>
+        <polyline class="sa0" points="1582,775.8 1615.1,742.7 1615.1,695.3 "></polyline>
+        <polyline class="sa0"
+          points="1654.8,695.5 1654.8,743 1654.8,764.2 1618,802 1618,877.8 1629.9,889.7 1629.9,1004.1 1640.2,1014.5 1640.2,1077.5 1621.2,1096.5 1621.2,1112.1">
+        </polyline>
+        <polyline class="sa0"
+          points="1647,695.5 1647,743 1647,759.2 1608.9,797.4 1608.9,883.1 1619.9,894.2 1619.9,1008.5 1630.2,1018.8 1630.2,1074.1 1610.4,1093.9 1610.4,1130.1">
+        </polyline>
+        <polyline class="sa0"
+          points="1639.2,695.5 1639.2,743 1639.2,755 1600.6,793.6 1600.6,888.5 1610.4,898.2 1610.4,1012.8 1621.1,1023.6 1621.1,1055.5">
+        </polyline>
+        <polyline class="sa0"
+          points="1631.2,695.5 1631.2,743 1631.2,750 1591.4,789.8 1591.4,893 1601.5,903.1 1601.5,1040.1"></polyline>
+        <polyline class="sa0" points="1623.2,695.5 1623.2,747 1582.6,787.6 1582.6,906.5"></polyline>
+        <polyline class="sa0" points="434.1,76 442.8,76 467.1,76 498,45.1 498,1"></polyline>
+        <polyline class="sa0" points="434.1,68 442.8,68 462.5,68 488.7,41.8 488.7,1"></polyline>
+        <polyline class="sa0" points="427.2,62 427.2,52.3 460.9,52.3 477.1,36.1 477.1,1"></polyline>
+        <polyline class="sa0" points="419.2,62 419.2,52.3 419.2,42.8 454.5,42.8 467.4,29.9 467.4,1 "></polyline>
+        <polyline class="sa0" points="411.2,62 411.2,52.3 411.2,33.7 448,33.7 456.2,25.4 456.2,1 "></polyline>
+        <polyline class="sa0" points="546.5,755.9 615.5,755.9 671.3,811.7 671.3,827.9 679.1,835.7 679.1,847.5">
+        </polyline>
+        <polyline class="sa0" points="547.5,763.7 610.9,763.7 661.9,813.8 661.9,862.4 680.7,881.2 685.6,881.2">
+        </polyline>
+        <polyline class="sa0" points="546.5,771.4 607.5,771.4 652.4,816.3 652.4,873.4"></polyline>
+        <polyline class="sa0"
+          points="546.5,779.6 602.5,779.6 641.1,818.2 641.1,892.9 698.3,892.9 719.2,871.9 719.2,823.2"></polyline>
+        <polyline class="sa0"
+          points="547.5,787.7 598,787.7 630.7,820.5 630.7,903.4 705.7,903.4 713.8,895.3 729.8,895.3"></polyline>
+        <polyline class="sa0" points="546.5,794.9 594.5,794.9 621.3,821.7 621.3,932.7"></polyline>
+        <polyline class="sa0" points="381.9,92 372.2,92 342.5,92 281.4,30.9 273.5,30.9 244.1,1.5"></polyline>
+        <polyline class="sa0" points="381.9,84 372.2,84 345.7,84 263.2,1.5"></polyline>
+        <polyline class="sa0" points="381.9,76 372.2,76 349,76 274.7,1.7"></polyline>
+        <polyline class="sa0" points="381.9,68 372.2,68 353.2,68 286.4,1.2"></polyline>
+        <polyline class="sa0" points="396.3,113.9 396.3,122.6 396.3,149.6 388.8,157.2 388.8,189.7"></polyline>
+        <polyline class="sa0" points="388.3,113.9 388.3,122.6 388.3,146.7 380.4,154.6 380.4,177.7"></polyline>
+        <polyline class="sa0" points="378.7,124.9 378.7,142.9 371,150.6 371,170"></polyline>
+      </svg>
+    </div>
+    <section class="page-block page-block--fullscreen page-block--typed-title" id="about-us">
+      <h1 class="page-block__title"><span class="animated-type" data-type-once="We turn ideas into"
+          data-type-rotate="awesome products|clean code|quality software">We turn ideas into <span>awesome
+            products</span></span>
+      </h1>
+      <p class="page-block__desc">
+        We are a collective of doers, engineers, dreamers and creatives
+        who partner with entrepreneurs to take products from zero to one.
+      </p>
+      <div class="slider slider__frame our-team">
+        <script type="application/json">{"slidesToScroll":1,"centerPadding":"0px","slidesToShow":15,"centerMode":true,"focusOnSelect":true,"autoplay":true,"autoplaySpeed":5000,"variableWidth":true,"arrows":false,"dots":false,"draggable":false}
+          </script>
+        <ul class="slider__slides">
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/17/adam-mankowski-bw.65df05ee438dc8be0e75b6e21af21629.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/18/adam-mankowski.334aed2e1b28fb32da47d7a384188ef8.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Adam Mańkowski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Chief Operations Officer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/76/michal-karwanski-bw.5accb50a16cfdfa0eed54c54d50e4caa.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/77/michal-karwanski.12dae5db016e7326e5e9465c978503cc.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Michał Karwański</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Chief Technology Officer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/10/tomasz-korzeniowski.a3969cbce047ccf1b444690a1547ebd1.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/11/tomasz-korzeniowski-bw.89a2cd0fd8e8741a78e229dad79a5f3a.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Tomasz Korzeniowski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Founder &amp; CEO</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/56/hanna-dutkiewicz-bw.1b0a6c00616a184d1d941746bb92e459.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/57/hanna-dutkiewicz.b0f83d6da556c1519f0b0f2dac1c1800.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Hanna Dutkiewicz</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Team Leader</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/86/piotrek-kabacinski-bw.6209de76ee7dcedcf715bf7c0205d13e.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/87/piotrek-kabacinski.f2ee1db85670a76f97f85b365bf56bf8.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Piotr Kabaciński</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Team Leader</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/90/przemyslaw-bielinski-bw.2272122fefa933cf11da6e893dbf4456.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/91/przemyslaw-bielinski.72b33ab7721bb05bd00980ce9717ae9e.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Przemysław Bieliński</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Team Leader</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/168/Hubert%20Kopij-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/169/Hubert%20Kopij-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Hubert Kopij</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/68/marta-lakomska-bw.d1d46e8c12db4f81429d73f39b23ee29.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/69/marta-lakomska.28a36c2ebb6550f96c33259c77f4f2c8.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Marta &quot;Mareta&quot; Łakomska</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Happiness &amp; UX/UI Lead</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/92/rafal-pietraszko-bw.5864476f3cba602310dbff873395424f.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/93/rafal-pietraszko.f160e5cebd0b26f12fcf0354f740ee64.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Rafał Pietraszko</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/162/Filip%20Pietro%c5%84-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/163/Filip%20Pietro%c5%84-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Wiktor Obrębski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/94/tomasz-zdanuk-bw.8242efb8d62cff02df06ff0cc0f18965.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/95/tomasz-zdanuk.e3d6af1ac44987241cfe2f0768439f62.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Tomasz Żdanuk</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/54/antek-moroz-bw.bcdd8ee00fd769cdac73c07bb8dd6e9d.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/55/antek-moroz.521cd2e2aea3c212a2d07c4d5f4fe407.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Antoni Moroz</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/58/iza-korzeniowska-bw.c5247ca3cec00df1b4ad6ff830383576.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/59/iza-korzeniowska.9c59b4c942c2b4e37d86c4ca8b27aac9.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Izabela Korzeniowska</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Chief Financial Officer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/96/pawel-jankowski-bw1.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/97/pawel-jankowski1.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Paweł Jankowski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/60/jakub-komorowski-bw.e89e9701265d31a23c5a34eb26d935b2.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/61/jakub-komorowski.bb89d1a0e775ae0511340df969d6849a.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Jakub Komorowski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/164/Filip%20Pietro%c5%84-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/165/Filip%20Pietro%c5%84-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Mikołaj Demków</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/62/jakub-walczak-bw.4131215912a884400b048b8b7dbb36b9.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/63/jakub-walczak.60da9b64efd42bfff74571e24e3118fb.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Jakub Walczak</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/52/agnieszka-kolodziejak-bw.aa4eaa425f220259625d2035f64f7f2d.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/53/agnieszka-kolodziejak.d18bd872dea70e3f2dc03f9e17d89fad.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Agnieszka Kołodziejak</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Office &amp; Operations Manager</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/64/jerzyk-swiniarski-bw.6f30e843dc820e8c5378db2090af8425.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/65/jerzyk-swiniarski.6f30e843dc820e8c5378db2090af8425.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Jerzy Świniarski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/66/marek-skrajnowski-bw.0f77255b989420f11ea32f99d9425074.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/67/marek-skrajnowski.48e684e1bff327f46c798d3a36707200.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Marek Skrajnowski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/98/Izabela%20Krzemi%c5%84ska-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/99/Izabela%20Krzemi%c5%84ska-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Izabela Krzemińska</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Talent Acquisition Specialist</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/166/Klaudia%20Butkiewicz-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/167/Klaudia%20Butkiewicz-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Klaudia Butkiewicz</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/118/Filip%20Kajetaniak-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/119/Filip%20Kajetaniak-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Filip Kajetaniak</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/70/martyna-balcerowska-bw.d8837f87fc12328209da5cceff01396d.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/71/martyna-balcerowska.088be43903ee28572d56b131f668d2c8.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Martyna Balcerowska</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Product Owner</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/72/mateusz-mecina-bw.0290f47484c55f69ef5a6d9a8771a9e7.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/73/mateusz-mecina.c8acbfd08358cb0739a6fbc48d1c9e2f.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Mateusz Męcina</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/74/michal-cichecki-bw.4db4474c2696da2e9ca41d398875b6c7.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/75/michal-cichecki.65440f0b7d8e6a9a5f6dda9ffa944344.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Michał Cichecki</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/100/Piotr%20Kawczy%c5%84ski-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/101/Piotr%20Kawczy%c5%84ski-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Piotr Kawczyński</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/114/Kamil%20Piasek-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/115/Kamil%20Piasek-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Kamil Piasek</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/102/Rafa%c5%82%20Kramza-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/103/Rafa%c5%82%20Kramza-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Rafał Kramza</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Project Manager</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/84/piotr-majewski-bw.cda40e187d807d24d416c8b09a57840c.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/85/piotr-majewski.99ce24be8c30a729d4826a2cf1e4a819.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Piotr Majewski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/104/Wero%20Lasota-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/105/Wero%20Lasota-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Wero Lasota</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Designer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/106/Krzysztof%20Malinowski-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/107/Krzysztof%20Malinowski-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Krzysztof Malinowski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Project Manager</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/108/Josip%20Rezi%c4%87-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/109/Josip%20Rezi%c4%87-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Josip Rezić</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/110/Przemys%c5%82aw%20Szewczyk-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/111/Przemys%c5%82aw%20Szewczyk-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Przemysław Szewczyk</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/112/Grzegorz%20Zadora-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/113/Grzegorz%20Zadora-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Grzegorz Zadora</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/78/michal-korzawski-bw.9c98fc143652d33851bd5335c7abb8b3.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/79/michal-korzawski.1114034a28b31ab271d100225c694b80.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Michał Korżawski</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/88/piotrek-zuzel-bw.d22f7cc9fc19e9530335e3b2fbff5354.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/89/piotrek-zuzel.9873cb00b52dc17cccab72d1b265c0e9.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                </div><span class="employee__data" itemprop="name" lang="pl">Piotr Żużel</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div itemscope itemtype="http://schema.org/Organization">
+              <div itemprop="employee" itemscope itemtype="http://schema.org/Person">
+                <div class="employee__image">
+                  <img class="employee__image--color" src=uploads/fae/image/asset/160/Filip%20Pietro%c5%84-color.png itemprop="image" width="130" height="130" lang="pl"
+                    alt="employee--color">
+                  <img class=" employee__image--mono" src=uploads/fae/image/asset/161/Filip%20Pietro%c5%84-black-white.png itemprop="image" width="100" height="100" lang="pl"
+                    alt="employee--mono">
+                </div><span class="employee__data" itemprop="name" lang="pl">Filip Pietroń</span>
+                <span class="employee__data" itemprop="jobTitle" lang="pl">Software Engineer</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="page-block__button">
+        <a href="services.html" class="page-block__button-link color-white what-we-do-link">What we do</a>
+      </div>
+    </section>
+    <section class="page-block page-block--solid-dark-bg" id="rating">
+      <h2 class="visuallyhidden">Rating</h2>
+      <div class="main-container main-container--comp-rating">
+        <div class="comp-rating__loader js-clutch-loader"></div>
+        <div class="comp-rating__wrapper js-rating-section">
+          <div class="comp-rating__desc-wrapper">
+            <div class="comp-rating__stars animated-stars">
+              <div class="rating__control rating__control--comp-reviews">
+                <div class="rating__stars">
+                  <svg class="svg-icon rating__star rating__star--inactive rating__star--clutch" width="1em"
+                    height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="svg-icon rating__star rating__star--inactive rating__star--clutch" width="1em"
+                    height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="svg-icon rating__star rating__star--inactive rating__star--clutch" width="1em"
+                    height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="svg-icon rating__star rating__star--inactive rating__star--clutch" width="1em"
+                    height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="svg-icon rating__star rating__star--inactive rating__star--clutch" width="1em"
+                    height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </div>
+                <div class="rating__stars rating__stars--active rating__stars--comp-reviews js-stars--animated">
+                  <svg
+                    class="svg-icon rating__star rating__star--active rating__star--clutch rating__star--clutch-active"
+                    width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="svg-icon rating__star rating__star--active rating__star--clutch rating__star--clutch-active"
+                    width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="svg-icon rating__star rating__star--active rating__star--clutch rating__star--clutch-active"
+                    width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="svg-icon rating__star rating__star--active rating__star--clutch rating__star--clutch-active"
+                    width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="svg-icon rating__star rating__star--active rating__star--clutch rating__star--clutch-active"
+                    width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="comp-rating__desc">codequest has been rated&nbsp;<span
+                class="comp-rating__desc--bold js-stars--counter"> 4.9</span>/5 for app development by our Clients</div>
+          </div><a class="comp-rating__logo" href="https://clutch.co/profile/codequest" target="_blank"><svg
+              class="clutch-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.44 27.91"
+              aria-labelledby="clutchLogo clutchLogoIcon" role="img">
+              <title id="clutchLogo">See codequest&#39;s profile on Clutch</title>
+              <desc id="clutchLogoIcon">Clutch logo</desc>
+              <g id="Warstwa_2" data-name="Warstwa 2">
+                <g id="Warstwa_6" data-name="Warstwa 6">
+                  <path
+                    d="M98.44,27.55H94.15v-.39c0-3.32,0-6.64,0-10a9.25,9.25,0,0,0-.2-2,2.74,2.74,0,0,0-3-2.35,4.87,4.87,0,0,0-2.49.69,4,4,0,0,0-1.87,3.24,11.43,11.43,0,0,0,0,1.17q0,4.56,0,9.14v.39H82.25c0-.1,0-.2,0-.3V.26a2.28,2.28,0,0,1,0-.26H86.5c0,.13,0,.25,0,.38,0,3.11,0,6.22,0,9.34v.38L87,9.82a7.72,7.72,0,0,1,7.64-.37,6.68,6.68,0,0,1,3.6,5c.1.49.16,1,.24,1.49Z" />
+                  <path d="M29.89,0c0,.13,0,.25,0,.38V27.52H25.65V.38c0-.13,0-.25,0-.38Z" />
+                  <path
+                    d="M20,20.22l3,3a14.18,14.18,0,0,1-3.56,2.95A13,13,0,0,1,5,25.24,12.74,12.74,0,0,1,.35,17.57,14.53,14.53,0,0,1,1.44,8a12,12,0,0,1,9.39-7,12.76,12.76,0,0,1,11,3.32c.38.34.75.7,1.1,1L19.85,8.42c-.25-.27-.51-.59-.8-.87a8.83,8.83,0,0,0-11-1A8.53,8.53,0,0,0,4.53,12a10.12,10.12,0,0,0,1.13,7.66,8.05,8.05,0,0,0,7.89,4,8.66,8.66,0,0,0,5.79-2.72Z" />
+                  <path
+                    d="M33.56,9h4.29V19.78A5.39,5.39,0,0,0,38.28,22a2.6,2.6,0,0,0,2.5,1.63,4.76,4.76,0,0,0,3.25-1,4.26,4.26,0,0,0,1.43-3.46c0-3.25,0-6.51,0-9.76V9h4.27V27.52H45.46V26.45l-.41.26a7.82,7.82,0,0,1-8.54-.14,6.85,6.85,0,0,1-2.7-4.38,13.64,13.64,0,0,1-.24-2.39c0-3.46,0-6.91,0-10.37Z" />
+                  <path
+                    d="M77.13,21.65l3,3.1a10.77,10.77,0,0,1-2.59,2,10,10,0,0,1-11.65-1.67,9.48,9.48,0,0,1-2.7-6.91,9.36,9.36,0,0,1,2.42-6.49A9.12,9.12,0,0,1,71.4,8.73a9.85,9.85,0,0,1,7.33,1.88c.45.33.86.73,1.28,1.09a.45.45,0,0,0,.12.06l-3,3c-.22-.19-.46-.4-.71-.6a5.74,5.74,0,0,0-7.57.28,5.18,5.18,0,0,0-1.42,4,5.15,5.15,0,0,0,4.43,5.07,5.42,5.42,0,0,0,4.65-1.32Z" />
+                  <path
+                    d="M62.53,9v4H59V27.52H54.75V13.06h-3V9l.31,0h2.21c.53,0,.47.06.47-.46,0-1.78,0-3.57,0-5.35V2.8H59v.37c0,1.84,0,3.67,0,5.5,0,.27.07.35.34.35.93,0,1.86,0,2.8,0Z" />
+                  <path d="M72.6,21.48a3.21,3.21,0,1,1,3.23-3.2A3.18,3.18,0,0,1,72.6,21.48Z" />
+                </g>
+              </g>
+            </svg></a>
+        </div>
+      </div>
+    </section>
+    <section class="page-block page-block--dense page-block--solid-light-bg" id="our-expertise">
+      <h2 class="page-block__title">Experts at your service</h2>
+      <p class="page-block__desc">
+        codequest is all you need for your startup venture - from impeccable code, user friendly design to effective
+        marketing and product consultancy.
+      </p>
+      <div class="tiles key-competences">
+        <section class="tile key-competences__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-expertise-web-dev"></use>
+            </svg>
+            <h3 class="tile__title">Web Development</h3>
+          </header>
+          <p class="key-competences__tile-content">We can help you build solid backends using rapid development in Ruby
+            on Rails, responsive frontend interfaces
+            in React or Angular or scalable microservices in Go or Elixir as well as backends in Kotlin. We always use
+            the most optimal approach
+            for the job. <a href="web-development.html">Read more &gt;</a>
+          </p>
+        </section>
+        <section class="tile key-competences__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-expertise-mobile-dev"></use>
+            </svg>
+            <h3 class="tile__title">Mobile Development</h3>
+          </header>
+          <p class="key-competences__tile-content">We have a solid portfolio containing a great selection of mobile
+            apps. Our specialty is native development for iOS using Swift
+            and development for Android in Kotlin and Java,
+            at the same time we can also develop solid multi-platform apps for iOS and Android using React Native. <a
+              href="mobile-development.html">Read more &gt;</a>
+          </p>
+        </section>
+        <section class="tile key-competences__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-expertise-ux-ui-design"></use>
+            </svg>
+            <h3 class="tile__title">UX &amp; UI Design</h3>
+          </header>
+          <p class="key-competences__tile-content">
+            Design-driven creativity runs in our veins.
+            The best kind, for which we use Design Sprints
+            to create users' flow, wireframes, interactive mockups and brand identity. <a href="product-design.html">Read
+              more &gt;</a>
+          </p>
+        </section>
+        <section class="tile key-competences__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-expertise-machine-learning"></use>
+            </svg>
+            <h3 class="tile__title">Machine Learning</h3>
+          </header>
+          <p class="key-competences__tile-content">
+            It’s what makes us tick. We ❤️ Machine Learning and have hands-on experience creating applications
+            using both Artificial Intelligence 🤖 and Machine Learning methods.
+          </p>
+        </section>
+        <section class="tile key-competences__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-expertise-big-data"></use>
+            </svg>
+            <h3 class="tile__title">Big Data</h3>
+          </header>
+          <p class="key-competences__tile-content">
+            With vast experience in concurrent computing and searching for valuable insights, we’re the go-to
+            team when it comes to big data solutions and projects that require processing of a large amount of data.
+          </p>
+        </section>
+        <section class="tile key-competences__tile">
+          <header class="tile__header">
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-expertise-dev-operations"></use>
+            </svg>
+            <h3 class="tile__title">Development Operations</h3>
+          </header>
+          <p class="key-competences__tile-content">
+            Once the application is built, it has to be maintained and easily scalable.
+            We employ AWS certified engineers and can help you out with Docker
+            and Kubernetes.
+          </p>
+        </section>
+      </div>
+      <a href="services.html" class="key-competences__cta-button">Read more</a>
+    </section>
+    <section class="page-block page-block--info page-block--solid-white-bg" id="consultancy">
+      <h2 class="page-block__title">Case studies 🏅</h2>
+      <p class="page-block__desc">
+        At codequest, we have the privilege to work with outstanding clients on great projects! We have been creating
+        top-notch and user-centered software for the past ten years. Below you can check out some of the products we
+        built delivered for organizations of various sizes - from startups to big corporations. Enjoy!
+      </p>
+    </section>
+    <section class="page-block page-block--no-padding" id="our-work">
+      <div class="animated-circuit animated-circuit--mini">
+        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 832 783" width="0" height="0">
+          <path class="sa0"
+            d="M700.58 423.37 690.89 423.37 630.1 423.37 570.29 363.55 570.29 321.17 570.29 281.35 582.19 269.46 582.19 244.19">
+          </path>
+          <path class="sa0"
+            d="M700.58 415.37 690.89 415.37 632.72 415.37 578.78 361.42 578.78 321.17 592.51 307.43 592.51 284.04">
+          </path>
+          <path class="sa0"
+            d="M443.46 623.84 443.46 576.34 443.46 555.09 480.29 517.26 480.29 441.5 468.36 429.57 468.36 321.17 468.36 313.5 411.54 256.69 411.54 205.67 342.54 136.66 243 37.13">
+          </path>
+          <path class="sa0"
+            d="M451.26 623.84 451.26 576.34 451.26 560.09 489.42 521.93 489.42 436.17 478.39 425.14 478.39 321.17 478.39 309.83 421.58 253.02 421.58 202.83 342.81 124.06 260.75 42">
+          </path>
+          <path class="sa0"
+            d="M459.06 623.84 459.06 576.34 459.06 564.34 497.68 525.72 497.68 430.84 487.92 421.08 487.92 321.17 487.92 303.41 431.61 247.1 431.61 199.15 342.39 109.93 277.03 44.57">
+          </path>
+          <path class="sa0" d="M361.99 77.83 483.38 199.22 483.38 213.04"></path>
+          <path class="sa0" d="M353.99 81.46 461.51 188.99 461.51 231.95 479.45 231.95"></path>
+          <path class="sa0" d="M313.62 53.09 453.1 192.57 453.1 236.35 480.69 263.94"></path>
+          <path class="sa0" d="M482.01 280.25 442.86 241.1 442.86 195.7 342.99 95.83 291.09 44.57"></path>
+          <path class="sa0" d="M489.32 630 558.32 630 614.12 685.79 614.12 702 621.93 709.81 621.93 721.6"></path>
+          <path class="sa0" d="M490.32 637.84 553.72 637.84 604.77 687.89 604.77 736.56 623.53 755.32 628.46 755.32">
+          </path>
+          <path class="sa0" d="M489.32 645.5 550.32 645.5 595.24 690.42 595.24 747.5"></path>
+          <path class="sa0"
+            d="M489.32 653.71 545.28 653.71 583.91 692.33 583.91 766.99 641.11 766.99 662.03 746.07 662.03 697.32">
+          </path>
+          <path class="sa0"
+            d="M490.32 661.84 540.82 661.84 573.57 694.59 573.57 777.5 648.54 777.5 656.58 769.45 672.59 769.45"></path>
+        </svg>
+      </div>
+      <div class="slider slider__frame our-work-slider">
+        <script type="application/json">{"adaptiveHeight":false,"autoplay":true,"autoplaySpeed":5000,"arrows":true,"dots":false,"responsive":[{"breakpoint":768,"settings":{"autoplay":false,"adaptiveHeight":true, "arrows": true}}]}
+          </script>
+        <ul class="slider__slides">
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">Foundersuite<span></span></h3>
+                <p class="project__desc-content">A phrase that probably best characterizes Foundersuite is its slogan. ‘Tools to get startup sh..t done’. Dealing with big and challenging tasks is our favorite. Nathan contacted us and we decided to go for it and deliver an easy-to-use and engaging web app that would help people work more efficiently. Codequest built a large web application on Ruby on Rails that combined an idea validation system, investor CRM, progress tracker, and template bundles with checklists.</p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">Web Development</li>
+                  <li class="project__tags-list-item">UX/UI Design</li>
+                  <li class="project__tags-list-item">Branding</li>
+                </ul>
+                <h5 class="project__desc-rating">Customer Ratings</h5>
+                <div class="rating__control">
+                  <div class="rating__stars">
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <div class="rating__stars rating__stars--active">
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <a href="case-studies/foundersuite.html" class="project__read-more-link">Read more</a>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/35/carousel-home-pge-foundersuite.png')" role="img"
+                aria-label="Foundersuite">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">Soothe<span></span></h3>
+                <p class="project__desc-content">Soothe is the world’s largest massage service, enabling therapists to find work more easily and offer their services to homes, offices or hotels. They contacted us in 2015 because they wanted to boost their development speed, and we helped them do just that. The cooperation still continues and we have collaborated with Soothe on backend, frontend, design and the iOS application itself.</p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">Web Development</li>
+                  <li class="project__tags-list-item">iOS Development</li>
+                </ul>
+                <h5 class="project__desc-rating">Customer Ratings</h5>
+                <div class="rating__control">
+                  <div class="rating__stars">
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <div class="rating__stars rating__stars--active">
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ul class="project__traits-list">
+                  <li class="project__traits-list-item">4k active daily users</li>
+                  <li class="project__traits-list-item">1k downloads a day</li>
+                </ul>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/36/soothe_2x.762472d1ee85e6e1daf2e59bad96c9ce.png')" role="img"
+                aria-label="Soothe">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">Wellme<span></span></h3>
+                <p class="project__desc-content">A trendsetting app - Wellme by Orbico Beauty - focuses on improving the availability of on-demand beauty services. This is an innovative solution for the Polish market and was launched for users located in the country’s capital - Warsaw. Codequest was honored to design and develop the web app and continue to support it.</p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">Web Development</li>
+                  <li class="project__tags-list-item">UX/UI Design</li>
+                </ul>
+                <h5 class="project__desc-rating">Customer Ratings</h5>
+                <div class="rating__control">
+                  <div class="rating__stars">
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <div class="rating__stars rating__stars--active">
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <a href="case-studies/wellme.html" class="project__read-more-link">Read more</a>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/7/carousel-home-pge-wellme.png')" role="img"
+                aria-label="Wellme">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">SelectHub<span></span></h3>
+                <p class="project__desc-content">Hernando and Josh came over to our office to ask us what it takes to create a marketplace and platform that will make evaluating the quality of software enterprise simple. Our experience in Ruby on Rails and development of scalable web services gave rise to a thriving business relationship and a unique platform that helps people from various industries interact with each other to save money and time.</p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">Web Development</li>
+                  <li class="project__tags-list-item">UX/UI Design</li>
+                  <li class="project__tags-list-item">Branding</li>
+                </ul>
+                <h5 class="project__desc-rating"></h5>
+                <div class="rating__control">
+                  <div class="rating__stars">
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <div class="rating__stars rating__stars--active">
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <a href="case-studies/selecthub.html" class="project__read-more-link">Read more</a>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/38/carousel-home-page-selecthub.png')" role="img"
+                aria-label="SelectHub">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">Kredytmarket<span></span></h3>
+                <p class="project__desc-content">The team from KredytMarket had an idea to make small business loans easy and hassle-free. They wanted to create an algorithm that would estimate the loan risk based on data that is available online, without the problematic paperwork of taking a loan involved. They came to us with an idea that we turned into a working app. It was one of our most challenging projects, but challenging projects are what we like the most!</p>
+                <h5 class="project__desc-rating">Customer Ratings</h5>
+                <div class="rating__control">
+                  <div class="rating__stars">
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <div class="rating__stars rating__stars--active">
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ul class="project__traits-list">
+                  <li class="project__traits-list-item">1 mln loans granted in the first year</li>
+                </ul>
+                <a href="case-studies/kredytmarket.html" class="project__read-more-link">Read more</a>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/39/carousel-home-pge-kretytmarket.png')" role="img"
+                aria-label="Kredytmarket">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">Equipia<span></span></h3>
+                <p class="project__desc-content">Eqipia is a new recruitment tool for HR departments. It is based on voluntary participation of company employees and uses their network and contacts to find potential new employees. Codequest created the whole app from scratch and continued to support and maintain it.</p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">Web Development</li>
+                  <li class="project__tags-list-item">UX/UI Design</li>
+                </ul>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/40/carousel-home-page-equipia.png')" role="img"
+                aria-label="Equipia">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">Dawanda<span></span></h3>
+                <p class="project__desc-content">Dawanda is the place to find unique handmade products from designers from all over Europe. This German company approached us with an idea to create a DIY section with all types of inspirations and instructions for creative people. The work started with a great workshop and afterward we created a CMS that allows content creators to transform their ideas into great looking tutorials. Currently they have thousands of DIY articles online.</p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">Web Development</li>
+                </ul>
+                <h4 class="project--bought-by">bought by
+                  <img class="project--bought-by-image" src="../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/51/logo-etsy.png" alt="boughtBy">
+                </h4>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/41/carousel-home-page-dawanda.png')" role="img"
+                aria-label="Dawanda">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">Degoo<span></span></h3>
+                <p class="project__desc-content">Have you ever heard of the TV-series Silicon Valley and it’s Pied Piper? Degoo is the real thing! It compresses your files and gives you the largest cloud storage. This backup service offers an unprecedented 100 GB of free space. Degoo is secure, reliable and easy to use. Might this be the perfect place to store your digital stuff?</p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">iOS Development</li>
+                </ul>
+                <ul class="project__traits-list">
+                  <li class="project__traits-list-item">100k installs</li>
+                  <li class="project__traits-list-item">500 new users per day</li>
+                </ul>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/42/carousel-home-page-degoo.png')" role="img"
+                aria-label="Degoo">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">Booli<span></span></h3>
+                <p class="project__desc-content">An iOS mobile app that bolsters the Swedish real estate market.
+Booli is a Swedish real estate platform that enables browsing through housing offers from all over the country. This unique search engine aggregates housing adds and helps potential buyers and sellers learn all the useful information
+
+</p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">iOS Development</li>
+                </ul>
+                <h5 class="project__desc-rating">Rating on Clutch</h5>
+                <div class="rating__control">
+                  <div class="rating__stars">
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--inactive" width="1em" height="1em"
+                      aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <div class="rating__stars rating__stars--active">
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="svg-icon rating__star rating__star--active" width="1em" height="1em" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <a href="case-studies/booli.html" class="project__read-more-link">Read more</a>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/43/carousel-home-page-booli.png')" role="img"
+                aria-label="Booli">
+              </div>
+            </div>
+          </li>
+          <li class="slider__slides-slide">
+            <div class="project">
+              <div class="project__desc">
+                <h3 class="project__desc-title">installPRO360<span></span></h3>
+                <p class="project__desc-content">A heated floor is a reliable and increasingly popular solution for heating private houses and other buildings. codequest had a pleasure to cooperate with the nVent team and build an app with responsive web design for professionals who install the heating systems. The product - installpro360 app - was presented in Gothenburg at Elfack, one of the most prestigious events in the Scandinavian electric industry. Installpro360 is continuously developed and introduced to new markets. </p>
+                <h4 class="project__tags-list-tile">Responsibilities</h4>
+                <ul class="project__tags-list">
+                  <li class="project__tags-list-item">Web Development</li>
+                  <li class="project__tags-list-item">UX/UI Design</li>
+                </ul>
+                <a href="case-studies/nvent.html" class="project__read-more-link">Read more</a>
+              </div>
+              <div class="project__visual" style="background-image: url('../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/44/carousel-home-page-nvent.png')" role="img"
+                aria-label="installPRO360">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-block page-block--info page-block--solid-light-grey-bg" id="consultancy">
+      <h2 class="page-block__title">Let’s make a difference. Together 🎉</h2>
+      <p class="page-block__desc">
+        Are you looking for a partner who will help turn your ideas into an awesome product with clean code and a
+        scalable system? Look no more! We love working with entrepreneurs that aim to make a difference.
+      </p>
+    </section>
+    <section class="page-block page-block--info page-block--solid-white-bg testimonials-section desktop-only-block">
+      <div class="testimonial-column">
+        <img class="testimonial-column__photo" src="../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/9/kp.jpg" alt="testimonial-Prabhakar &quot;KP&quot; Karri"></img>
+        <h4 class="testimonial-column__name">Prabhakar &quot;KP&quot; Karri</h4>
+        <span class="testimonial-column__title">Founder &amp; CEO at Nlyt</span>
+        <div class="testiomnial-column__quote-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 42 32">
+            <path fill="#FF5252"
+              d="M23.88 31.08c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98-2.16-1.8-4.56-2.82-7.2-3.06-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04-2.04 2.32-4.62 3.96-7.74 4.92l2.04 4.08zm-21.84 0c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98C14.04 1.26 11.64.24 9 0c-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04C5.7 24.4 3.12 26.04 0 27l2.04 4.08z" />
+          </svg>
+        </div>
+        <blockquote class="testimonial-column__content">I really appreciate the technical depth and perspective that the codequest team has.</blockquote>
+      </div>
+      <div class="testimonial-column">
+        <img class="testimonial-column__photo" src="../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/8/AleksanderW.jpg" alt="testimonial-Aleksander Widera"></img>
+        <h4 class="testimonial-column__name">Aleksander Widera</h4>
+        <span class="testimonial-column__title">CEO at KredytMarket</span>
+        <div class="testiomnial-column__quote-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 42 32">
+            <path fill="#FF5252"
+              d="M23.88 31.08c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98-2.16-1.8-4.56-2.82-7.2-3.06-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04-2.04 2.32-4.62 3.96-7.74 4.92l2.04 4.08zm-21.84 0c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98C14.04 1.26 11.64.24 9 0c-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04C5.7 24.4 3.12 26.04 0 27l2.04 4.08z" />
+          </svg>
+        </div>
+        <blockquote class="testimonial-column__content">What I like about codequest is that they don&#x27;t start coding until we both are 100% sure that we have the same understanding of issue that we need to code.</blockquote>
+      </div>
+      <div class="testimonial-column">
+        <img class="testimonial-column__photo" src="../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/31/emil_kaiser.jpg" alt="testimonial-Emil Kaiser"></img>
+        <h4 class="testimonial-column__name">Emil Kaiser</h4>
+        <span class="testimonial-column__title">Manager at Booli SE</span>
+        <div class="testiomnial-column__quote-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 42 32">
+            <path fill="#FF5252"
+              d="M23.88 31.08c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98-2.16-1.8-4.56-2.82-7.2-3.06-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04-2.04 2.32-4.62 3.96-7.74 4.92l2.04 4.08zm-21.84 0c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98C14.04 1.26 11.64.24 9 0c-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04C5.7 24.4 3.12 26.04 0 27l2.04 4.08z" />
+          </svg>
+        </div>
+        <blockquote class="testimonial-column__content">They genuinely care about the product, including both the quality of the code and the resulting app.</blockquote>
+      </div>
+    </section>
+    <section class="slider testimonials-mobile-slider mobile-only-block">
+      <script type="application/json">{"adaptiveHeight":false,"autoplay":true,"autoplaySpeed":5000,"arrows":true,"dots":false,"responsive":[{"breakpoint":768,"settings":{"autoplay":false,"adaptiveHeight":true, "arrows": true}}]}
+          </script>
+      <ul class="slider__slides">
+        <li class="slider__slides-slide">
+          <div class="testimonial-column">
+            <img class="testimonial-column__photo" src="../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/9/kp.jpg" alt="testimonial-Prabhakar &quot;KP&quot; Karri"></img>
+            <h4 class="testimonial-column__name">Prabhakar &quot;KP&quot; Karri</h4>
+            <span class="testimonial-column__title">Founder &amp; CEO at Nlyt</span>
+            <div class="testiomnial-column__quote-mark">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 42 32">
+                <path fill="#FF5252"
+                  d="M23.88 31.08c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98-2.16-1.8-4.56-2.82-7.2-3.06-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04-2.04 2.32-4.62 3.96-7.74 4.92l2.04 4.08zm-21.84 0c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98C14.04 1.26 11.64.24 9 0c-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04C5.7 24.4 3.12 26.04 0 27l2.04 4.08z" />
+              </svg>
+            </div>
+            <blockquote class="testimonial-column__content">I really appreciate the technical depth and perspective that the codequest team has.</blockquote>
+          </div>
+        </li>
+        <li class="slider__slides-slide">
+          <div class="testimonial-column">
+            <img class="testimonial-column__photo" src="../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/8/AleksanderW.jpg" alt="testimonial-Aleksander Widera"></img>
+            <h4 class="testimonial-column__name">Aleksander Widera</h4>
+            <span class="testimonial-column__title">CEO at KredytMarket</span>
+            <div class="testiomnial-column__quote-mark">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 42 32">
+                <path fill="#FF5252"
+                  d="M23.88 31.08c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98-2.16-1.8-4.56-2.82-7.2-3.06-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04-2.04 2.32-4.62 3.96-7.74 4.92l2.04 4.08zm-21.84 0c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98C14.04 1.26 11.64.24 9 0c-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04C5.7 24.4 3.12 26.04 0 27l2.04 4.08z" />
+              </svg>
+            </div>
+            <blockquote class="testimonial-column__content">What I like about codequest is that they don&#x27;t start coding until we both are 100% sure that we have the same understanding of issue that we need to code.</blockquote>
+          </div>
+        </li>
+        <li class="slider__slides-slide">
+          <div class="testimonial-column">
+            <img class="testimonial-column__photo" src="../cq-page-backend-prod.s3.amazonaws.com/system/uploads/fae/image/asset/31/emil_kaiser.jpg" alt="testimonial-Emil Kaiser"></img>
+            <h4 class="testimonial-column__name">Emil Kaiser</h4>
+            <span class="testimonial-column__title">Manager at Booli SE</span>
+            <div class="testiomnial-column__quote-mark">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 42 32">
+                <path fill="#FF5252"
+                  d="M23.88 31.08c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98-2.16-1.8-4.56-2.82-7.2-3.06-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04-2.04 2.32-4.62 3.96-7.74 4.92l2.04 4.08zm-21.84 0c2.64-.72 5.04-1.8 7.2-3.24 2.16-1.44 4-3.08 5.52-4.92 1.52-1.84 2.68-3.8 3.48-5.88.8-2.08 1.2-4.08 1.2-6 0-3.52-1.08-6.18-3.24-7.98C14.04 1.26 11.64.24 9 0c-.88 0-1.78.3-2.7.9-.92.6-1.74 1.36-2.46 2.28-.72.92-1.26 1.98-1.62 3.18-.36 1.2-.34 2.44.06 3.72 1.2.48 2.6 1.08 4.2 1.8s2.84 1.44 3.72 2.16c.4 3.04-.42 5.72-2.46 8.04C5.7 24.4 3.12 26.04 0 27l2.04 4.08z" />
+              </svg>
+            </div>
+            <blockquote class="testimonial-column__content">They genuinely care about the product, including both the quality of the code and the resulting app.</blockquote>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="page-block page-block--call-to-action page-block--solid-red-bg" id="call-to-action">
+      <h2 class="page-block__title">Ready to start your project?</h2>
+      <p class="page-block__desc">We would love to hear from you! Let’s talk time, budget and technology!</p>
+      <div class="page-block__button">
+        <button class="color-red hover-red page-block__button-link" onclick="goToContactPage()">Start a project with
+          us!</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer" id="footer">
+    <h2 class="visuallyhidden">Footer</h2>
+    <div class="page-footer__logo">
+      <svg class="svg-icon" width="1em" height="1em" aria-hidden="true" color="white" fill="white" stroke="white">
+        <use xlink:href="#icon-codequest-white"></use>
+      </svg>
+    </div>
+    <nav class="page-footer__nav">
+      <ul class="page-footer__list">
+        <li class="page-footer__list-item"><a class="page-footer__link" href="index.html">Home</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="services.html">Services</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="careers.html">Careers</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="faq.html">FAQ</a></li>
+        <li class="page-footer__list-item"><a class="page-footer__link" href="https://medium.com/codequest">Blog
+            <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+              <use xlink:href="#icon-external-link"></use>
+            </svg></a></li>
+        <li class="page-footer__list-item">
+          <button class="page-footer__link" onclick="goToContactPage()">Hire us!</button>
+        </li>
+        <li class="page-footer__list-item page-footer__list-item--privacy-policy"><a class="page-footer__link"
+            href="privacy-policy.html">Privacy policy</a></li>
+      </ul>
+    </nav>
+    <div class="page-footer__address">
+      <address itemscope itemtype="http://schema.org/Organization"></address>
+      <link itemprop="url" href="index.html">
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">E-mail and phone number</h3>
+        <ul class="page-footer__list page-footer__instant-contact">
+          <li class="page-footer__list-item">
+            <div class="instant-contact__wrapper">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-email"></use>
+              </svg><span class="e6756r instant-contact__contact" role="link" tabindex="0" aria-label="Message us"
+                data-fek9t8b-hedgehog="olleh" data-fek9t8b-bagithi="moc" data-fek9t8b-siyo="tseuqedoc"
+                data-fek9t8b-enamabla="">
+                <!--[if IE]>
+                  <style>.e6756r{unicode-bidi:bidi-override;direction:rtl;}</style><![endif]-->
+                <style>
+                  .e6756r:after {
+                    content: attr(data-fek9t8b-bagithi)'.'attr(data-fek9t8b-siyo)'@'attr(data-fek9t8b-hedgehog);
+                    unicode-bidi: bidi-override;
+                    direction: rtl;
+                  }
+
+                  @supports (-ms-ime-align:auto) {
+                    .e6756r {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .e6756r:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+
+                  @media all and (-ms-high-contrast:none),
+                  (-ms-high-contrast:active) {
+                    .e6756r {
+                      unicode-bidi: bidi-override;
+                      direction: rtl;
+                    }
+
+                    .e6756r:after {
+                      unicode-bidi: normal;
+                      direction: ltr;
+                    }
+                  }
+                </style>
+              </span>
+            </div>
+          </li>
+          <li class="page-footer__list-item"><a class="page-footer__link" href="tel:+48531861864" itemprop="telephone">
+              <svg class="svg-icon" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#icon-phone"></use>
+              </svg>+48 531 861 864</a></li>
+        </ul>
+        <ul class="social-profiles">
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://facebook.com/codequest.eu" title="Like us on Facebook" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="facebookIcon--footer facebookIconDesc--footer" role="img">
+                <title id="facebookIcon--footer">Like us on Facebook</title>
+                <desc id="facebookIconDesc--footer">codequest's Facebook profile</desc>
+                <use xlink:href="#icon-facebook"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://www.linkedin.com/company/code-quest" title="Follow us on LinkedIn" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="linkedinIcon--footer linkedinIconDesc--footer" role="img">
+                <title id="linkedinIcon--footer">Follow us on LinkedIn</title>
+                <desc id="linkedinIconDesc--footer">codequest's LinkedIn profile</desc>
+                <use xlink:href="#icon-linkedin"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://twitter.com/codequest" title="Follow us on Twitter" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em"
+                aria-labelledby="twitterIcon--footer twitterIconDesc--footer" role="img">
+                <title id="twitterIcon--footer">Follow us on Twitter</title>
+                <desc id="twitterIconDesc--footer">codequest's Twitter profile</desc>
+                <use xlink:href="#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-profiles__item"><a class="social-profiles__link" itemprop="sameAs"
+              href="https://github.com/codequest-eu" title="Fork us on GitHub" target="_blank">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="githubIcon--footer githubIconDesc--footer"
+                role="img">
+                <title id="githubIcon--footer">Fork us on GitHub</title>
+                <desc id="githubIconDesc--footer">codequest's GitHub profile</desc>
+                <use xlink:href="#icon-github"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">Office address and Invoice details</h3><span
+          class="page-footer__office-address-title" itemprop="name">Office address:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Plac Dąbrowskiego 1</span><br><span
+            itemprop="postalCode">00-057</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p><span class="page-footer__invoice-address-title" itemprop="name">Invoice details:</span>
+        <p class="page-footer__contact-details" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span>code quest sp. z o.o.</span><br><span itemprop="streetAddress">Zamiany 8 LU 202</span><br><span
+            itemprop="postalCode">02-786</span> <span itemprop="addressLocality">Warsaw</span><br><span
+            itemprop="addressCountry">Poland</span>
+        </p>
+      </section>
+      <section class="page-footer__address-details">
+        <h3 class="visuallyhidden">REGON, VAT UE and KRS</h3>
+        <dl class="page-footer__finances">
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">REGON</dt>
+            <dd class="page-footer__finances-desc">146176183</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">VAT UE</dt>
+            <dd class="page-footer__finances-desc" itemprop="taxID">9512357282</dd>
+          </div>
+          <div class="page-footer__finances-data">
+            <dt class="page-footer__finances-term">KRS</dt>
+            <dd class="page-footer__finances-desc">0000424452</dd>
+          </div>
+        </dl>
+        <ul class="page-footer__list page-footer__subsidies">
+          <li class="page-footer__list-item page-footer__subsidies-ue-funds"><a class="page-footer__link"
+              href="https://www.poir.gov.pl/en/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="EFIcon UEPOIRLink" role="img">
+                <title id="EFIcon">European Funds Smart Growth</title>
+                <desc id="UEPOIRLink">Go to European Operational Programme Smart Growth website</desc>
+                <use xlink:href="#icon-funds-uf"></use>
+              </svg></a></li>
+          <li class="page-footer__list-item page-footer__subsidies-er-funds"><a class="page-footer__link"
+              href="http://ec.europa.eu/regional_policy/en/funding/erdf/">
+              <svg class="svg-icon" width="1em" height="1em" aria-labelledby="ERDFIcon UEERDFLink" role="img">
+                <title id="ERDFIcon">European Regional Development Fund</title>
+                <desc id="UEERDFLink">Go to European Regional Development Fund website</desc>
+                <use xlink:href="#icon-funds-eu"></use>
+              </svg></a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+  <footer class="cookies-footer" id="cookies-footer">
+    <div class="cookies-footer__content">
+      <svg class="svg-icon" width="32px" height="32px" aria-hidden="true">
+        <use xlink:href="#icon-cookie-small-icon"></use>
+      </svg>
+      <p class="cookies-footer__desc">I am aware, that information about the administrator and my rights related to my
+        personal data, as well as the <a href="privacy-policy.html">cookies policy</a>, can be found in the Rules
+        for the
+        Processing and Protection of Personal Data in codequest sp. z o.o.</p>
+    </div>
+    <button class="cookies-footer__button" id="understand-button">Thanks!
+      <svg class="svg-icon" width="12px" height="12px" aria-hidden="true">
+        <use xlink:href="#icon-thumbs-up-solid"></use>
+      </svg>
+    </button>
+  </footer>
+  <script>
+    WebFontConfig = {
+      google: {
+        families: [
+          'Lato:400,700,900',
+          'PT Serif:400,400i,700,700i'
+        ],
+      },
+      timeout: 2000
+    };
+  </script>
+  <script src="../ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
+  <script>
+    const goToContactPage = function () {
+      fbq('track', 'goToContactPage', {
+        content_name: 'Go to contact page',
+        content_ids: ['contact'],
+        content_type: 'product',
+      });
+      window.location.pathname = '/contact';
+    }
+  </script>
+  <script type="text/javascript">
+    _linkedin_partner_id = "2597492";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function () {
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "../snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })();
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://px.ads.linkedin.com/collect/?pid=2597492&amp;fmt=gif" />
+  </noscript>  <script type="text/javascript" src="assets/main.js"></script>
+</body>
+
+
+<!-- Mirrored from codequest.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 17:13:39 GMT -->
+</html>
